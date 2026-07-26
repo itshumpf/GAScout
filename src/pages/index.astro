@@ -1,0 +1,205 @@
+---
+import "../styles/global.css";
+import StatCard from "../components/StatCard.astro";
+import dashboard from "../data/dashboard.json";
+
+const {
+  generated_at,
+  county,
+  source,
+  run_date,
+  records,
+  owners,
+  total_due,
+  by_year,
+  amount_bands,
+  median_due,
+  largest_single_bill,
+} = dashboard;
+
+const fmtInt = (n: number): string => n.toLocaleString("en-US");
+const fmtMoney = (n: number): string =>
+  "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmtCompactMoney = (n: number): string =>
+  n >= 1_000_000
+    ? `$${(n / 1_000_000).toFixed(2)}M`
+    : n >= 10_000
+      ? `$${(n / 1_000).toFixed(1)}K`
+      : fmtMoney(n);
+
+const years = Object.entries(by_year).map(([year, v]) => ({
+  year,
+  records: v.records,
+  due: v.due,
+}));
+const yearRange = `${years[0].year}–${years[years.length - 1].year}`;
+const maxYearRecords = Math.max(...years.map((y) => y.records));
+const maxYearDue = Math.max(...years.map((y) => y.due));
+
+const bands = Object.entries(amount_bands).map(([label, count]) => ({
+  label,
+  count,
+  pct: (count / records) * 100,
+}));
+const maxBand = Math.max(...bands.map((b) => b.count));
+
+const pipelineChecks = [
+  {
+    title: "9,915-page county report",
+    detail: "One fixed-width mainframe PDF (DQ205GADEK), parsed line by line with pypdf.",
+  },
+  {
+    title: "0 malformed rows",
+    detail: "Every line of the full listing accounted for — headers, totals, and money rows.",
+  },
+  {
+    title: "32 column-overflows auto-corrected",
+    detail: "County rows that print OTHER after TOTAL are detected and un-swapped via the 5-column checksum.",
+  },
+  {
+    title: "Byte-identical output, two machines",
+    detail: "Deterministic parse: the same PDF yields the same 409,142-row CSV everywhere.",
+  },
+  {
+    title: "90 automated tests",
+    detail: "Parser, model, registry, validation, CLI, and stats export — all offline against real fixtures.",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="GAScout — Georgia public records pipeline. Aggregate statistics from county-published delinquent tax listings. No names, no addresses, no individual lookup."
+    />
+    <title>GAScout — Georgia Public Records Pipeline</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <div class="brand">
+          <h1>GA<span class="scrape">Scrape</span> — Georgia Public Records Pipeline</h1>
+          <span class="source-badge">county: {county}</span>
+        </div>
+        <p class="tagline">Live county data, honestly sourced.</p>
+        <p class="generated">generated {generated_at} · source: {source}</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="stats" aria-label="Dataset summary">
+        <StatCard value={fmtInt(records)} label="Records" variant="accent" />
+        <StatCard value={fmtInt(owners)} label="Owners" />
+        <StatCard value={fmtCompactMoney(total_due)} label="Total due" variant="accent" />
+        <StatCard value={yearRange} label="Tax years" />
+        <StatCard value={fmtMoney(median_due)} label="Median due" />
+        <StatCard value={fmtMoney(largest_single_bill)} label="Largest single bill" />
+      </section>
+
+      <section class="section" aria-label="By tax year">
+        <h2 class="section-heading">
+          By tax year
+          <span class="note">records and dollars due, {yearRange}</span>
+        </h2>
+        <p class="section-sub">
+          Delinquency volume surges in the most recent cycle: {fmtInt(years[years.length - 1].records)}
+          of {fmtInt(records)} records are tax year {years[years.length - 1].year}, but older years
+          carry the long tail of unresolved bills.
+        </p>
+        <div class="chart">
+          <div class="legend">
+            <span class="key"><span class="swatch records"></span>Records</span>
+            <span class="key"><span class="swatch due"></span>Total due</span>
+          </div>
+          {years.map(({ year, records: n, due }) => (
+            <div class="bar-row">
+              <span class="row-label">{year}</span>
+              <div class="bar-track">
+                <div class="bar-line">
+                  <div class="bar records" style={`width: ${(n / maxYearRecords) * 100}%`}></div>
+                  <span class="bar-value">{fmtInt(n)}</span>
+                </div>
+                <div class="bar-line">
+                  <div class="bar due" style={`width: ${(due / maxYearDue) * 100}%`}></div>
+                  <span class="bar-value">{fmtCompactMoney(due)}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="section" aria-label="Amount bands">
+        <h2 class="section-heading">
+          Amount bands
+          <span class="note">records by total due</span>
+        </h2>
+        <p class="section-sub">
+          Most rows are small: {fmtInt(amount_bands["$0–100"])} records
+          ({((amount_bands["$0–100"] / records) * 100).toFixed(1)}%) are under $100. The
+          {fmtInt(amount_bands["$5K+"])} bills over $5K account for a disproportionate share of
+          the {fmtCompactMoney(total_due)} total.
+        </p>
+        <div class="chart">
+          {bands.map(({ label, count, pct }) => (
+            <div class="bar-row">
+              <span class="row-label">{label}</span>
+              <div class="bar-track">
+                <div class="bar-line">
+                  <div class="bar band" style={`width: ${(count / maxBand) * 100}%`}></div>
+                  <span class="bar-value">{fmtInt(count)} · {pct.toFixed(1)}%</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="section" aria-label="The pipeline">
+        <h2 class="section-heading">
+          The pipeline
+          <span class="note">how this data gets made</span>
+        </h2>
+        <p class="section-sub">
+          Source: {source} — county report run date {run_date}. The pipeline fetches the
+          county's published PDF once, caches it, and parses it offline; nothing here is
+          scraped at page-view time.
+        </p>
+        <div class="pipeline-grid">
+          {pipelineChecks.map(({ title, detail }) => (
+            <div class="pipeline-card">
+              <span class="pc-title"><span class="check">✓</span>{title}</span>
+              <div class="pc-detail">{detail}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="section" aria-label="Ethics note">
+        <div class="ethics-card">
+          <h2>A note on ethics</h2>
+          <p>
+            This dataset contains personal financial records. This dashboard publishes
+            aggregate statistics only — no names, no addresses, no individual lookup.
+            The underlying county report is a public record; how you republish public
+            data is a choice.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Data: DeKalb County Tax Commissioner (public records) · Built with Astro ·
+          Source: <a href="https://github.com/itshumpf">github.com/itshumpf</a>
+        </p>
+        <p>Data as of county run date {run_date}</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+{
+ "generated_at": "2026-07-27",
+ "county": "dekalb",
+ "source": "DeKalb County Tax Commissioner \u2014 Delinquent Tax Cross Reference Listing",
+ "run_date": "2026-06-17",
+ "records": 409142,
+ "owners": 15144,
+ "total_due": 62751158.99,
+ "by_year": {
+  "2018": {
+   "records": 26943,
+   "due": 1917053.81
+  },
+  "2019": {
+   "records": 31695,
+   "due": 4092820.72
+  },
+  "2020": {
+   "records": 27267,
+   "due": 2240043.17
+  },
+  "2021": {
+   "records": 27860,
+   "due": 2622645.5
+  },
+  "2022": {
+   "records": 30606,
+   "due": 3000192.05
+  },
+  "2023": {
+   "records": 35168,
+   "due": 3891183.07
+  },
+  "2024": {
+   "records": 56502,
+   "due": 9258152.01
+  },
+  "2025": {
+   "records": 173101,
+   "due": 35729068.66
+  }
+ },
+ "amount_bands": {
+  "$0\u2013100": 318431,
+  "$100\u2013500": 68515,
+  "$500\u20131K": 12394,
+  "$1K\u20135K": 8779,
+  "$5K+": 1023
+ },
+ "flags": {
+  "S": 224214,
+  "F": 177162,
+  "A": 7716,
+  "T": 46,
+  "(blank)": 4
+ },
+ "median_due": 19.23,
+ "largest_single_bill": 206250.32
+}

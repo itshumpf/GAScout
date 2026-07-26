@@ -1,0 +1,325 @@
+/* GAScrape dashboard — dark theme, deep-green accent */
+
+:root {
+  --bg: #111113;
+  --bg-raised: #17171a;
+  --bg-card: #1a1a1e;
+  --border: #2a2a30;
+  --border-subtle: #232327;
+  --text: #e8e6e3;
+  --text-muted: #9c9a95;
+  --text-faint: #6d6b66;
+  --accent: #2e7d4f;
+  --accent-bright: #4cc38a;
+  --accent-soft: rgba(46, 125, 79, 0.14);
+  --accent-border: rgba(76, 195, 138, 0.35);
+  --series-a: #4cc38a;
+  --series-b: #2e7d4f;
+  --radius: 10px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: dark; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent-bright); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- header ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 40px 0 32px;
+  background:
+    radial-gradient(600px 200px at 15% 0%, rgba(46, 125, 79, 0.16), transparent 70%),
+    var(--bg);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.brand h1 .scrape { color: var(--accent-bright); }
+
+.source-badge {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.tagline {
+  margin: 10px 0 0;
+  color: var(--text-muted);
+  max-width: 640px;
+}
+
+.generated {
+  margin: 14px 0 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+/* ---------- stat cards ---------- */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin: 32px 0 8px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 18px 20px 16px;
+}
+
+.stat-card .value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-card .label {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.stat-card.accent { border-color: var(--accent-border); }
+.stat-card.accent .value { color: var(--accent-bright); }
+
+/* ---------- sections ---------- */
+
+.section { margin: 48px 0 12px; }
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 0 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-heading .note {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-faint);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.section-sub {
+  margin: 0 0 20px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  max-width: 720px;
+}
+
+/* ---------- bar charts (pure CSS, no JS) ---------- */
+
+.chart {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legend {
+  display: flex;
+  gap: 20px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.legend .key {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.legend .swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.legend .swatch.records { background: var(--series-a); }
+.legend .swatch.due { background: var(--series-b); }
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar-row .row-label {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.bar-track {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.bar-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.bar {
+  height: 13px;
+  border-radius: 3px;
+  min-width: 2px;
+}
+
+.bar.records { background: var(--series-a); }
+.bar.due { background: var(--series-b); }
+.bar.band { background: var(--accent); }
+
+.bar-value {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ---------- pipeline section ---------- */
+
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.pipeline-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 16px 18px 14px;
+}
+
+.pipeline-card .check {
+  color: var(--accent-bright);
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+.pipeline-card .pc-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.pipeline-card .pc-detail {
+  margin-top: 5px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ---------- ethics card ---------- */
+
+.ethics-card {
+  border: 1px solid var(--accent-border);
+  border-left: 4px solid var(--accent-bright);
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+}
+
+.ethics-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-bright);
+}
+
+.ethics-card p {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  max-width: 860px;
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 56px;
+  padding: 28px 0 40px;
+  color: var(--text-faint);
+  font-size: 0.82rem;
+}
+
+.site-footer p { margin: 0 0 6px; }
+.site-footer p:last-child { margin-bottom: 0; }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 640px) {
+  .site-header { padding: 28px 0 24px; }
+  .brand h1 { font-size: 1.5rem; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .bar-row { grid-template-columns: 44px 1fr; }
+}

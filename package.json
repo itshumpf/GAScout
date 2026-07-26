@@ -1,0 +1,14 @@
+{
+  "name": "gascrape-site",
+  "version": "1.0.0",
+  "description": "Static dashboard for the GAScrape Georgia public-records pipeline (aggregate statistics only)",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^5.0.0"
+  }
+}
