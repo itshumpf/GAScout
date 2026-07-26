@@ -1,0 +1,132 @@
+---
+import dashboard from "../data/dashboard.json";
+
+const totalDue = dashboard.total_due;
+const totalRecords = dashboard.records;
+const totalOwners = dashboard.owners;
+
+// Bands data prepared for client calculation
+const bandData = [
+  { min: 0, max: 100, count: dashboard.amount_bands["$0–100"], approxDue: 6370000 },
+  { min: 100, max: 500, count: dashboard.amount_bands["$100–500"], approxDue: 15070000 },
+  { min: 500, max: 1000, count: dashboard.amount_bands["$500–1K"], approxDue: 8920000 },
+  { min: 1000, max: 5000, count: dashboard.amount_bands["$1K–5K"], approxDue: 21070000 },
+  { min: 5000, max: Infinity, count: dashboard.amount_bands["$5K+"], approxDue: 11321158.99 }
+];
+---
+
+<div class="simulator-box" id="revenue-simulator">
+  <div class="sim-header">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+      <span style="background: rgba(16, 185, 129, 0.2); color: var(--accent-emerald-bright); font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--border-glow-emerald);">INTERACTIVE POLICY TOOL</span>
+    </div>
+    <h3 style="font-size: 1.35rem; font-weight: 800; color: #ffffff;">Tax Collection Revenue Simulator</h3>
+    <p style="color: var(--text-muted); font-size: 0.92rem; margin-top: 4px;">
+      Drag the threshold slider to simulate county revenue recovery by targeting delinquent bills over a specific dollar amount.
+    </p>
+  </div>
+
+  <div class="sim-slider-container">
+    <div class="sim-slider-header">
+      <span class="sim-slider-label">Target Minimum Bill Threshold:</span>
+      <span class="sim-threshold-val" id="threshold-display">$1,000</span>
+    </div>
+    <input 
+      type="range" 
+      min="0" 
+      max="4" 
+      step="1" 
+      value="3" 
+      class="sim-range-input" 
+      id="threshold-slider" 
+      aria-label="Target Minimum Bill Threshold Slider"
+    />
+    <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint); margin-top: 8px;">
+      <span>$0 (All Bills)</span>
+      <span>$100</span>
+      <span>$500</span>
+      <span>$1,000</span>
+      <span>$5,000+ (Whale Debt)</span>
+    </div>
+  </div>
+
+  <div class="sim-results-grid">
+    <div class="sim-res-card">
+      <div class="sim-res-val" id="res-revenue">$32.4M</div>
+      <div class="sim-res-lbl">Est. Recoverable Debt</div>
+      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-emerald-bright); margin-top: 4px;" id="res-pct-debt">51.6% of total debt</div>
+    </div>
+
+    <div class="sim-res-card">
+      <div class="sim-res-val" id="res-records" style="color: var(--accent-cyan-bright);">9,802</div>
+      <div class="sim-res-lbl">Records Targeted</div>
+      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-cyan-bright); margin-top: 4px;" id="res-pct-records">Only 2.4% of rows</div>
+    </div>
+
+    <div class="sim-res-card">
+      <div class="sim-res-val" id="res-owners" style="color: var(--accent-amber-bright);">~363</div>
+      <div class="sim-res-lbl">Approx. Owners Affected</div>
+      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-amber-bright); margin-top: 4px;">High-yield targets</div>
+    </div>
+
+    <div class="sim-res-card">
+      <div class="sim-res-val" id="res-efficiency" style="color: #c084fc;">Ultra High</div>
+      <div class="sim-res-lbl">Collection Efficiency</div>
+      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #c084fc; margin-top: 4px;" id="res-efficiency-desc">Maximum ROI per letter</div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function() {
+    const thresholds = [
+      { label: "$0 (All Bills)", min: 0, records: 409142, due: 62751158.99, efficiency: "Baseline", effDesc: "High admin burden" },
+      { label: "$100+", min: 100, records: 90711, due: 56381158.99, efficiency: "Moderate", effDesc: "Filters 318k micro-bills" },
+      { label: "$500+", min: 500, records: 22202, due: 41311588.99, efficiency: "High", effDesc: "Recovers 65.8% debt" },
+      { label: "$1,000+", min: 1000, records: 9802, due: 32391158.99, efficiency: "Ultra High", effDesc: "51.6% debt from 2.4% rows" },
+      { label: "$5,000+ (Whale Debt)", min: 5000, records: 1023, due: 11321158.99, efficiency: "Laser Focused", effDesc: "18.0% debt from 0.25% rows" }
+    ];
+
+    const slider = document.getElementById('threshold-slider');
+    const display = document.getElementById('threshold-display');
+    const resRevenue = document.getElementById('res-revenue');
+    const resPctDebt = document.getElementById('res-pct-debt');
+    const resRecords = document.getElementById('res-records');
+    const resPctRecords = document.getElementById('res-pct-records');
+    const resOwners = document.getElementById('res-owners');
+    const resEfficiency = document.getElementById('res-efficiency');
+    const resEfficiencyDesc = document.getElementById('res-efficiency-desc');
+
+    const totalDueVal = 62751158.99;
+    const totalRecVal = 409142;
+
+    function updateSimulator() {
+      if (!slider) return;
+      const idx = parseInt(slider.value, 10);
+      const data = thresholds[idx];
+
+      display.textContent = data.label;
+      
+      const revM = (data.due / 1000000).toFixed(1);
+      resRevenue.textContent = `$${revM}M`;
+      
+      const pctDebt = ((data.due / totalDueVal) * 100).toFixed(1);
+      resPctDebt.textContent = `${pctDebt}% of total debt`;
+
+      resRecords.textContent = data.records.toLocaleString();
+      const pctRec = ((data.records / totalRecVal) * 100).toFixed(1);
+      resPctRecords.textContent = `${pctRec}% of all rows`;
+
+      const approxOwners = Math.round(data.records / 27);
+      resOwners.textContent = `~${approxOwners.toLocaleString()}`;
+
+      resEfficiency.textContent = data.efficiency;
+      resEfficiencyDesc.textContent = data.effDesc;
+    }
+
+    if (slider) {
+      slider.addEventListener('input', updateSimulator);
+      updateSimulator();
+    }
+  })();
+</script>

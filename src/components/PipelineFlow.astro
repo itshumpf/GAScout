@@ -1,0 +1,58 @@
+---
+const steps = [
+  {
+    step: "01 / INGESTION",
+    title: "9,915-Page PDF Document",
+    detail: "Mainframe PDF report (DQ205GADEK) ingested offline via pypdf stream extraction.",
+    badge: "Offline Source"
+  },
+  {
+    step: "02 / INTEGRITY",
+    title: "0 Malformed Rows",
+    detail: "100% line accounting. Headers, subtotals, and dollar amounts validated without skipping.",
+    badge: "Zero Dropped Rows"
+  },
+  {
+    step: "03 / REPAIR",
+    title: "32 Column Swaps Fixed",
+    detail: "Auto-corrected overflow rows using a deterministic 5-column checksum verification.",
+    badge: "Auto-Corrected"
+  },
+  {
+    step: "04 / DETERMINISM",
+    title: "Byte-Identical Hash",
+    detail: "Runs reproducibly on any machine yielding exact 409,142-row CSV outputs.",
+    badge: "100% Deterministic"
+  },
+  {
+    step: "05 / AGGREGATION",
+    title: "JSON Analytics Engine",
+    detail: "Compiles amount bands, tax flags, and yearly totals into dashboard JSON feeds.",
+    badge: "Structured Output"
+  },
+  {
+    step: "06 / TESTING",
+    title: "90 Automated Tests",
+    detail: "Full test suite covering parser, models, registry, schemas, and export integrity.",
+    badge: "90 Fixtures Passing"
+  }
+];
+---
+
+<div class="pipeline-nodes-container">
+  {steps.map(({ step, title, detail, badge }) => (
+    <div class="pipeline-node glass-panel">
+      <div class="node-step-num">{step}</div>
+      <div class="node-title">
+        <span class="check-mark">✓</span>
+        {title}
+      </div>
+      <div class="node-desc">{detail}</div>
+      <div style="margin-top: 12px;">
+        <span style="font-family: var(--font-mono); font-size: 0.7rem; padding: 3px 8px; border-radius: 4px; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald-bright); border: 1px solid var(--border-glow-emerald);">
+          {badge}
+        </span>
+      </div>
+    </div>
+  ))}
+</div>
