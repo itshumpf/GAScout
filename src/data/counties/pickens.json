@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "pickens",
+  "fips": "13227",
+  "seat": "Jasper",
+  "source": "Pickens County \u2014 Pickens County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 7495,
+  "owners": 1124,
+  "total_due": 899400.0,
+  "by_year": {
+    "2022": {
+      "records": 599,
+      "due": 62958.0
+    },
+    "2023": {
+      "records": 1049,
+      "due": 116922.0
+    },
+    "2024": {
+      "records": 1723,
+      "due": 197868.0
+    },
+    "2025": {
+      "records": 4122,
+      "due": 521652.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3147,
+    "$100\u2013500": 2323,
+    "$500\u20131K": 1199,
+    "$1K\u20135K": 674,
+    "$5K+": 149
+  },
+  "flags": {
+    "S": 3897,
+    "F": 2848,
+    "A": 674,
+    "T": 74,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 13491.0
+}

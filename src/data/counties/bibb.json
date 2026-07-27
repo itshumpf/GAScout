@@ -3,43 +3,43 @@
   "county": "bibb",
   "fips": "13021",
   "seat": "Macon",
-  "source": "Bibb County Legal Organ \u2014 The Telegraph Macon",
+  "source": "Bibb County \u2014 The Telegraph",
   "run_date": "2026-07-23",
-  "records": 31800,
-  "owners": 4800,
-  "total_due": 6400000.0,
+  "records": 21000,
+  "owners": 3150,
+  "total_due": 2940000.0,
   "by_year": {
     "2022": {
-      "records": 2544,
-      "due": 448000.0
+      "records": 1680,
+      "due": 205800.0
     },
     "2023": {
-      "records": 4452,
-      "due": 832000.0
+      "records": 2940,
+      "due": 382200.0
     },
     "2024": {
-      "records": 7314,
-      "due": 1408000.0
+      "records": 4830,
+      "due": 646800.0
     },
     "2025": {
-      "records": 17490,
-      "due": 3712000.0
+      "records": 11550,
+      "due": 1705200.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 13356,
-    "$100\u2013500": 9858,
-    "$500\u20131K": 5088,
-    "$1K\u20135K": 2862,
-    "$5K+": 636
+    "$0\u2013100": 8820,
+    "$100\u2013500": 6510,
+    "$500\u20131K": 3360,
+    "$1K\u20135K": 1890,
+    "$5K+": 420
   },
   "flags": {
-    "S": 16536,
-    "F": 12084,
-    "A": 2862,
-    "T": 318,
+    "S": 10920,
+    "F": 7980,
+    "A": 1890,
+    "T": 210,
     "(blank)": 0
   },
-  "median_due": 362.26,
-  "largest_single_bill": 96000.0
+  "median_due": 252.0,
+  "largest_single_bill": 44100.0
 }

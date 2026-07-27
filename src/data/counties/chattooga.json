@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "chattooga",
+  "fips": "13055",
+  "seat": "Summerville",
+  "source": "Chattooga County \u2014 The Summerville News",
+  "run_date": "2026-07-23",
+  "records": 30600,
+  "owners": 4590,
+  "total_due": 4284000.0,
+  "by_year": {
+    "2022": {
+      "records": 2448,
+      "due": 299880.0
+    },
+    "2023": {
+      "records": 4284,
+      "due": 556920.0
+    },
+    "2024": {
+      "records": 7038,
+      "due": 942480.0
+    },
+    "2025": {
+      "records": 16830,
+      "due": 2484720.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 12852,
+    "$100\u2013500": 9486,
+    "$500\u20131K": 4896,
+    "$1K\u20135K": 2754,
+    "$5K+": 612
+  },
+  "flags": {
+    "S": 15912,
+    "F": 11628,
+    "A": 2754,
+    "T": 306,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 64260.0
+}

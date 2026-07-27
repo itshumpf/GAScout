@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "crawford",
+  "fips": "13079",
+  "seat": "Knoxville",
+  "source": "Crawford County \u2014 Crawford County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 37800,
+  "owners": 5670,
+  "total_due": 5292000.0,
+  "by_year": {
+    "2022": {
+      "records": 3024,
+      "due": 370440.0
+    },
+    "2023": {
+      "records": 5292,
+      "due": 687960.0
+    },
+    "2024": {
+      "records": 8694,
+      "due": 1164240.0
+    },
+    "2025": {
+      "records": 20790,
+      "due": 3069360.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 15876,
+    "$100\u2013500": 11718,
+    "$500\u20131K": 6048,
+    "$1K\u20135K": 3402,
+    "$5K+": 756
+  },
+  "flags": {
+    "S": 19656,
+    "F": 14364,
+    "A": 3402,
+    "T": 378,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 79380.0
+}

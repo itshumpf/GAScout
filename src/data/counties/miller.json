@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "miller",
+  "fips": "13201",
+  "seat": "Colquitt",
+  "source": "Miller County \u2014 Miller County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 6955,
+  "owners": 1043,
+  "total_due": 834600.0,
+  "by_year": {
+    "2022": {
+      "records": 556,
+      "due": 58422.0
+    },
+    "2023": {
+      "records": 973,
+      "due": 108498.0
+    },
+    "2024": {
+      "records": 1599,
+      "due": 183612.0
+    },
+    "2025": {
+      "records": 3825,
+      "due": 484068.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 2921,
+    "$100\u2013500": 2156,
+    "$500\u20131K": 1112,
+    "$1K\u20135K": 625,
+    "$5K+": 139
+  },
+  "flags": {
+    "S": 3616,
+    "F": 2642,
+    "A": 625,
+    "T": 69,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 12519.0
+}

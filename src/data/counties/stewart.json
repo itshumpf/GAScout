@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "stewart",
+  "fips": "13259",
+  "seat": "Lumpkin",
+  "source": "Stewart County \u2014 Stewart County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8215,
+  "owners": 1232,
+  "total_due": 985800.0,
+  "by_year": {
+    "2022": {
+      "records": 657,
+      "due": 69006.0
+    },
+    "2023": {
+      "records": 1150,
+      "due": 128154.0
+    },
+    "2024": {
+      "records": 1889,
+      "due": 216876.0
+    },
+    "2025": {
+      "records": 4518,
+      "due": 571764.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3450,
+    "$100\u2013500": 2546,
+    "$500\u20131K": 1314,
+    "$1K\u20135K": 739,
+    "$5K+": 164
+  },
+  "flags": {
+    "S": 4271,
+    "F": 3121,
+    "A": 739,
+    "T": 82,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 14787.0
+}

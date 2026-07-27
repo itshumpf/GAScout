@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "habersham",
+  "fips": "13137",
+  "seat": "Clarkesville",
+  "source": "Habersham County \u2014 Habersham County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 16050,
+  "owners": 2407,
+  "total_due": 2086500.0,
+  "by_year": {
+    "2022": {
+      "records": 1284,
+      "due": 146055.0
+    },
+    "2023": {
+      "records": 2247,
+      "due": 271245.0
+    },
+    "2024": {
+      "records": 3691,
+      "due": 459030.0
+    },
+    "2025": {
+      "records": 8827,
+      "due": 1210170.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 6741,
+    "$100\u2013500": 4975,
+    "$500\u20131K": 2568,
+    "$1K\u20135K": 1444,
+    "$5K+": 321
+  },
+  "flags": {
+    "S": 8346,
+    "F": 6099,
+    "A": 1444,
+    "T": 160,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 31297.5
+}

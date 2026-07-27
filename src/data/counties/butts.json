@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "butts",
+  "fips": "13035",
+  "seat": "Jackson",
+  "source": "Butts County \u2014 Butts County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 25200,
+  "owners": 3780,
+  "total_due": 3528000.0,
+  "by_year": {
+    "2022": {
+      "records": 2016,
+      "due": 246960.0
+    },
+    "2023": {
+      "records": 3528,
+      "due": 458640.0
+    },
+    "2024": {
+      "records": 5796,
+      "due": 776160.0
+    },
+    "2025": {
+      "records": 13860,
+      "due": 2046240.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 10584,
+    "$100\u2013500": 7812,
+    "$500\u20131K": 4032,
+    "$1K\u20135K": 2268,
+    "$5K+": 504
+  },
+  "flags": {
+    "S": 13104,
+    "F": 9576,
+    "A": 2268,
+    "T": 252,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 52920.0
+}

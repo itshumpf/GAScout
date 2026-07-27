@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "mcduffie",
+  "fips": "13189",
+  "seat": "Thomson",
+  "source": "Mcduffie County \u2014 The McDuffie Progress",
+  "run_date": "2026-07-23",
+  "records": 6685,
+  "owners": 1002,
+  "total_due": 802200.0,
+  "by_year": {
+    "2022": {
+      "records": 534,
+      "due": 56154.0
+    },
+    "2023": {
+      "records": 935,
+      "due": 104286.0
+    },
+    "2024": {
+      "records": 1537,
+      "due": 176484.0
+    },
+    "2025": {
+      "records": 3676,
+      "due": 465276.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 2807,
+    "$100\u2013500": 2072,
+    "$500\u20131K": 1069,
+    "$1K\u20135K": 601,
+    "$5K+": 133
+  },
+  "flags": {
+    "S": 3476,
+    "F": 2540,
+    "A": 601,
+    "T": 66,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 12033.0
+}

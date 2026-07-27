@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "lee",
+  "fips": "13177",
+  "seat": "Leesburg",
+  "source": "Lee County \u2014 Lee County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 19050,
+  "owners": 2857,
+  "total_due": 2476500.0,
+  "by_year": {
+    "2022": {
+      "records": 1524,
+      "due": 173355.0
+    },
+    "2023": {
+      "records": 2667,
+      "due": 321945.0
+    },
+    "2024": {
+      "records": 4381,
+      "due": 544830.0
+    },
+    "2025": {
+      "records": 10477,
+      "due": 1436370.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 8001,
+    "$100\u2013500": 5905,
+    "$500\u20131K": 3048,
+    "$1K\u20135K": 1714,
+    "$5K+": 381
+  },
+  "flags": {
+    "S": 9906,
+    "F": 7239,
+    "A": 1714,
+    "T": 190,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 37147.5
+}

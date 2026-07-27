@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "peach",
+  "fips": "13225",
+  "seat": "Fort Valley",
+  "source": "Peach County \u2014 Peach County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 7450,
+  "owners": 1117,
+  "total_due": 894000.0,
+  "by_year": {
+    "2022": {
+      "records": 596,
+      "due": 62580.0
+    },
+    "2023": {
+      "records": 1043,
+      "due": 116220.0
+    },
+    "2024": {
+      "records": 1713,
+      "due": 196680.0
+    },
+    "2025": {
+      "records": 4097,
+      "due": 518520.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3129,
+    "$100\u2013500": 2309,
+    "$500\u20131K": 1192,
+    "$1K\u20135K": 670,
+    "$5K+": 149
+  },
+  "flags": {
+    "S": 3874,
+    "F": 2831,
+    "A": 670,
+    "T": 74,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 13410.0
+}

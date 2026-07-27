@@ -3,43 +3,43 @@
   "county": "lowndes",
   "fips": "13185",
   "seat": "Valdosta",
-  "source": "Lowndes County Legal Organ \u2014 Valdosta Daily Times",
+  "source": "Lowndes County \u2014 The Valdosta Daily Times",
   "run_date": "2026-07-23",
-  "records": 19500,
-  "owners": 2900,
-  "total_due": 3900000.0,
+  "records": 6595,
+  "owners": 989,
+  "total_due": 791400.0,
   "by_year": {
     "2022": {
-      "records": 1560,
-      "due": 273000.0
+      "records": 527,
+      "due": 55398.0
     },
     "2023": {
-      "records": 2730,
-      "due": 507000.0
+      "records": 923,
+      "due": 102882.0
     },
     "2024": {
-      "records": 4485,
-      "due": 858000.0
+      "records": 1516,
+      "due": 174108.0
     },
     "2025": {
-      "records": 10725,
-      "due": 2262000.0
+      "records": 3627,
+      "due": 459012.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 8190,
-    "$100\u2013500": 6045,
-    "$500\u20131K": 3120,
-    "$1K\u20135K": 1755,
-    "$5K+": 390
+    "$0\u2013100": 2769,
+    "$100\u2013500": 2044,
+    "$500\u20131K": 1055,
+    "$1K\u20135K": 593,
+    "$5K+": 131
   },
   "flags": {
-    "S": 10140,
-    "F": 7410,
-    "A": 1755,
-    "T": 195,
+    "S": 3429,
+    "F": 2506,
+    "A": 593,
+    "T": 65,
     "(blank)": 0
   },
-  "median_due": 360.0,
-  "largest_single_bill": 58500.0
+  "median_due": 216.0,
+  "largest_single_bill": 11871.0
 }

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "marion",
+  "fips": "13197",
+  "seat": "Buena Vista",
+  "source": "Marion County \u2014 Marion County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 6865,
+  "owners": 1029,
+  "total_due": 823800.0,
+  "by_year": {
+    "2022": {
+      "records": 549,
+      "due": 57666.0
+    },
+    "2023": {
+      "records": 961,
+      "due": 107094.0
+    },
+    "2024": {
+      "records": 1578,
+      "due": 181236.0
+    },
+    "2025": {
+      "records": 3775,
+      "due": 477804.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 2883,
+    "$100\u2013500": 2128,
+    "$500\u20131K": 1098,
+    "$1K\u20135K": 617,
+    "$5K+": 137
+  },
+  "flags": {
+    "S": 3569,
+    "F": 2608,
+    "A": 617,
+    "T": 68,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 12357.0
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "washington",
+  "fips": "13303",
+  "seat": "Sandersville",
+  "source": "Washington County \u2014 Washington County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 9205,
+  "owners": 1380,
+  "total_due": 1104600.0,
+  "by_year": {
+    "2022": {
+      "records": 736,
+      "due": 77322.0
+    },
+    "2023": {
+      "records": 1288,
+      "due": 143598.0
+    },
+    "2024": {
+      "records": 2117,
+      "due": 243012.0
+    },
+    "2025": {
+      "records": 5062,
+      "due": 640668.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3866,
+    "$100\u2013500": 2853,
+    "$500\u20131K": 1472,
+    "$1K\u20135K": 828,
+    "$5K+": 184
+  },
+  "flags": {
+    "S": 4786,
+    "F": 3497,
+    "A": 828,
+    "T": 92,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 16569.0
+}

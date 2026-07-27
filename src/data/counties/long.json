@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "long",
+  "fips": "13183",
+  "seat": "Ludowici",
+  "source": "Long County \u2014 Long County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 6550,
+  "owners": 982,
+  "total_due": 786000.0,
+  "by_year": {
+    "2022": {
+      "records": 524,
+      "due": 55020.0
+    },
+    "2023": {
+      "records": 917,
+      "due": 102180.0
+    },
+    "2024": {
+      "records": 1506,
+      "due": 172920.0
+    },
+    "2025": {
+      "records": 3602,
+      "due": 455880.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 2751,
+    "$100\u2013500": 2030,
+    "$500\u20131K": 1048,
+    "$1K\u20135K": 589,
+    "$5K+": 131
+  },
+  "flags": {
+    "S": 3406,
+    "F": 2489,
+    "A": 589,
+    "T": 65,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 11790.0
+}

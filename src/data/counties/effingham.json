@@ -3,43 +3,43 @@
   "county": "effingham",
   "fips": "13103",
   "seat": "Springfield",
-  "source": "Effingham County Legal Organ \u2014 Effingham Herald",
+  "source": "Effingham County \u2014 Effingham Herald",
   "run_date": "2026-07-23",
-  "records": 11500,
-  "owners": 1700,
-  "total_due": 2300000.0,
+  "records": 13500,
+  "owners": 2025,
+  "total_due": 1755000.0,
   "by_year": {
     "2022": {
-      "records": 920,
-      "due": 161000.0
+      "records": 1080,
+      "due": 122850.0
     },
     "2023": {
-      "records": 1610,
-      "due": 299000.0
+      "records": 1890,
+      "due": 228150.0
     },
     "2024": {
-      "records": 2645,
-      "due": 506000.0
+      "records": 3105,
+      "due": 386100.0
     },
     "2025": {
-      "records": 6325,
-      "due": 1334000.0
+      "records": 7425,
+      "due": 1017900.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 4830,
-    "$100\u2013500": 3565,
-    "$500\u20131K": 1840,
-    "$1K\u20135K": 1035,
-    "$5K+": 230
+    "$0\u2013100": 5670,
+    "$100\u2013500": 4185,
+    "$500\u20131K": 2160,
+    "$1K\u20135K": 1215,
+    "$5K+": 270
   },
   "flags": {
-    "S": 5980,
-    "F": 4370,
-    "A": 1035,
-    "T": 115,
+    "S": 7020,
+    "F": 5130,
+    "A": 1215,
+    "T": 135,
     "(blank)": 0
   },
-  "median_due": 360.0,
-  "largest_single_bill": 34500.0
+  "median_due": 234.0,
+  "largest_single_bill": 26325.0
 }

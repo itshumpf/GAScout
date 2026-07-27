@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "white",
+  "fips": "13311",
+  "seat": "Cleveland",
+  "source": "White County \u2014 White County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 9385,
+  "owners": 1407,
+  "total_due": 1126200.0,
+  "by_year": {
+    "2022": {
+      "records": 750,
+      "due": 78834.0
+    },
+    "2023": {
+      "records": 1313,
+      "due": 146406.0
+    },
+    "2024": {
+      "records": 2158,
+      "due": 247764.0
+    },
+    "2025": {
+      "records": 5161,
+      "due": 653196.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3941,
+    "$100\u2013500": 2909,
+    "$500\u20131K": 1501,
+    "$1K\u20135K": 844,
+    "$5K+": 187
+  },
+  "flags": {
+    "S": 4880,
+    "F": 3566,
+    "A": 844,
+    "T": 93,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 16893.0
+}

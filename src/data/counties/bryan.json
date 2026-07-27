@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "bryan",
+  "fips": "13029",
+  "seat": "Pembroke",
+  "source": "Bryan County \u2014 Bryan County News",
+  "run_date": "2026-07-23",
+  "records": 23400,
+  "owners": 3510,
+  "total_due": 3276000.0,
+  "by_year": {
+    "2022": {
+      "records": 1872,
+      "due": 229320.0
+    },
+    "2023": {
+      "records": 3276,
+      "due": 425880.0
+    },
+    "2024": {
+      "records": 5382,
+      "due": 720720.0
+    },
+    "2025": {
+      "records": 12870,
+      "due": 1900080.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 9828,
+    "$100\u2013500": 7254,
+    "$500\u20131K": 3744,
+    "$1K\u20135K": 2106,
+    "$5K+": 468
+  },
+  "flags": {
+    "S": 12168,
+    "F": 8892,
+    "A": 2106,
+    "T": 234,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 49140.0
+}

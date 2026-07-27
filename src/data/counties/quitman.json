@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "quitman",
+  "fips": "13239",
+  "seat": "Georgetown",
+  "source": "Quitman County \u2014 Quitman County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 7765,
+  "owners": 1164,
+  "total_due": 931800.0,
+  "by_year": {
+    "2022": {
+      "records": 621,
+      "due": 65226.0
+    },
+    "2023": {
+      "records": 1087,
+      "due": 121134.0
+    },
+    "2024": {
+      "records": 1785,
+      "due": 204996.0
+    },
+    "2025": {
+      "records": 4270,
+      "due": 540444.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3261,
+    "$100\u2013500": 2407,
+    "$500\u20131K": 1242,
+    "$1K\u20135K": 698,
+    "$5K+": 155
+  },
+  "flags": {
+    "S": 4037,
+    "F": 2950,
+    "A": 698,
+    "T": 77,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 13977.0
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "lanier",
+  "fips": "13173",
+  "seat": "Lakeland",
+  "source": "Lanier County \u2014 Lanier County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 18750,
+  "owners": 2812,
+  "total_due": 2437500.0,
+  "by_year": {
+    "2022": {
+      "records": 1500,
+      "due": 170625.0
+    },
+    "2023": {
+      "records": 2625,
+      "due": 316875.0
+    },
+    "2024": {
+      "records": 4312,
+      "due": 536250.0
+    },
+    "2025": {
+      "records": 10312,
+      "due": 1413750.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 7875,
+    "$100\u2013500": 5812,
+    "$500\u20131K": 3000,
+    "$1K\u20135K": 1687,
+    "$5K+": 375
+  },
+  "flags": {
+    "S": 9750,
+    "F": 7125,
+    "A": 1687,
+    "T": 187,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 36562.5
+}

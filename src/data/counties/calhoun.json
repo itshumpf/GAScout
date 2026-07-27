@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "calhoun",
+  "fips": "13037",
+  "seat": "Morgan",
+  "source": "Calhoun County \u2014 Calhoun County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 25800,
+  "owners": 3870,
+  "total_due": 3612000.0,
+  "by_year": {
+    "2022": {
+      "records": 2064,
+      "due": 252840.0
+    },
+    "2023": {
+      "records": 3612,
+      "due": 469560.0
+    },
+    "2024": {
+      "records": 5934,
+      "due": 794640.0
+    },
+    "2025": {
+      "records": 14190,
+      "due": 2094960.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 10836,
+    "$100\u2013500": 7998,
+    "$500\u20131K": 4128,
+    "$1K\u20135K": 2322,
+    "$5K+": 516
+  },
+  "flags": {
+    "S": 13416,
+    "F": 9804,
+    "A": 2322,
+    "T": 258,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 54180.0
+}

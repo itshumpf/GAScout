@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "webster",
+  "fips": "13307",
+  "seat": "Preston",
+  "source": "Webster County \u2014 Webster County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 9295,
+  "owners": 1394,
+  "total_due": 1115400.0,
+  "by_year": {
+    "2022": {
+      "records": 743,
+      "due": 78078.0
+    },
+    "2023": {
+      "records": 1301,
+      "due": 145002.0
+    },
+    "2024": {
+      "records": 2137,
+      "due": 245388.0
+    },
+    "2025": {
+      "records": 5112,
+      "due": 646932.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3903,
+    "$100\u2013500": 2881,
+    "$500\u20131K": 1487,
+    "$1K\u20135K": 836,
+    "$5K+": 185
+  },
+  "flags": {
+    "S": 4833,
+    "F": 3532,
+    "A": 836,
+    "T": 92,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 16731.0
+}

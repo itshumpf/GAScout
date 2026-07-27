@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "screven",
+  "fips": "13251",
+  "seat": "Sylvania",
+  "source": "Screven County \u2014 Screven County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8035,
+  "owners": 1205,
+  "total_due": 964200.0,
+  "by_year": {
+    "2022": {
+      "records": 642,
+      "due": 67494.0
+    },
+    "2023": {
+      "records": 1124,
+      "due": 125346.0
+    },
+    "2024": {
+      "records": 1848,
+      "due": 212124.0
+    },
+    "2025": {
+      "records": 4419,
+      "due": 559236.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3374,
+    "$100\u2013500": 2490,
+    "$500\u20131K": 1285,
+    "$1K\u20135K": 723,
+    "$5K+": 160
+  },
+  "flags": {
+    "S": 4178,
+    "F": 3053,
+    "A": 723,
+    "T": 80,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 14463.0
+}

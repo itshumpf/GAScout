@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "franklin",
+  "fips": "13119",
+  "seat": "Carnesville",
+  "source": "Franklin County \u2014 Franklin County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 14700,
+  "owners": 2205,
+  "total_due": 1911000.0,
+  "by_year": {
+    "2022": {
+      "records": 1176,
+      "due": 133770.0
+    },
+    "2023": {
+      "records": 2058,
+      "due": 248430.0
+    },
+    "2024": {
+      "records": 3381,
+      "due": 420420.0
+    },
+    "2025": {
+      "records": 8085,
+      "due": 1108380.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 6174,
+    "$100\u2013500": 4557,
+    "$500\u20131K": 2352,
+    "$1K\u20135K": 1323,
+    "$5K+": 294
+  },
+  "flags": {
+    "S": 7644,
+    "F": 5586,
+    "A": 1323,
+    "T": 147,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 28665.0
+}

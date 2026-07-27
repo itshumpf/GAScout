@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "sumter",
+  "fips": "13261",
+  "seat": "Americus",
+  "source": "Sumter County \u2014 Sumter County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8260,
+  "owners": 1239,
+  "total_due": 991200.0,
+  "by_year": {
+    "2022": {
+      "records": 660,
+      "due": 69384.0
+    },
+    "2023": {
+      "records": 1156,
+      "due": 128856.0
+    },
+    "2024": {
+      "records": 1899,
+      "due": 218064.0
+    },
+    "2025": {
+      "records": 4543,
+      "due": 574896.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3469,
+    "$100\u2013500": 2560,
+    "$500\u20131K": 1321,
+    "$1K\u20135K": 743,
+    "$5K+": 165
+  },
+  "flags": {
+    "S": 4295,
+    "F": 3138,
+    "A": 743,
+    "T": 82,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 14868.0
+}

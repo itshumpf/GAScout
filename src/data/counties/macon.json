@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "macon",
+  "fips": "13193",
+  "seat": "Oglethorpe",
+  "source": "Macon County \u2014 Macon County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 6775,
+  "owners": 1016,
+  "total_due": 813000.0,
+  "by_year": {
+    "2022": {
+      "records": 542,
+      "due": 56910.0
+    },
+    "2023": {
+      "records": 948,
+      "due": 105690.0
+    },
+    "2024": {
+      "records": 1558,
+      "due": 178860.0
+    },
+    "2025": {
+      "records": 3726,
+      "due": 471540.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 2845,
+    "$100\u2013500": 2100,
+    "$500\u20131K": 1084,
+    "$1K\u20135K": 609,
+    "$5K+": 135
+  },
+  "flags": {
+    "S": 3523,
+    "F": 2574,
+    "A": 609,
+    "T": 67,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 12195.0
+}

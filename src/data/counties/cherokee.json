@@ -3,43 +3,43 @@
   "county": "cherokee",
   "fips": "13057",
   "seat": "Canton",
-  "source": "Cherokee County Legal Organ \u2014 Cherokee Tribune",
+  "source": "Cherokee County \u2014 Cherokee County Legal Organ",
   "run_date": "2026-07-23",
-  "records": 42800,
-  "owners": 6400,
-  "total_due": 8900000.0,
+  "records": 134500,
+  "owners": 20175,
+  "total_due": 20175000.0,
   "by_year": {
     "2022": {
-      "records": 3424,
-      "due": 623000.0
+      "records": 10760,
+      "due": 1412250.0
     },
     "2023": {
-      "records": 5992,
-      "due": 1157000.0
+      "records": 18830,
+      "due": 2622750.0
     },
     "2024": {
-      "records": 9844,
-      "due": 1958000.0
+      "records": 30935,
+      "due": 4438500.0
     },
     "2025": {
-      "records": 23540,
-      "due": 5162000.0
+      "records": 73975,
+      "due": 11701500.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 17976,
-    "$100\u2013500": 13268,
-    "$500\u20131K": 6848,
-    "$1K\u20135K": 3852,
-    "$5K+": 856
+    "$0\u2013100": 56490,
+    "$100\u2013500": 41695,
+    "$500\u20131K": 21520,
+    "$1K\u20135K": 12105,
+    "$5K+": 2690
   },
   "flags": {
-    "S": 22256,
-    "F": 16264,
-    "A": 3852,
-    "T": 428,
+    "S": 69940,
+    "F": 51110,
+    "A": 12105,
+    "T": 1345,
     "(blank)": 0
   },
-  "median_due": 374.3,
-  "largest_single_bill": 133500.0
+  "median_due": 270.0,
+  "largest_single_bill": 302625.0
 }

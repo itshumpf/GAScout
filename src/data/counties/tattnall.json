@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "tattnall",
+  "fips": "13267",
+  "seat": "Reidsville",
+  "source": "Tattnall County \u2014 Tattnall County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8395,
+  "owners": 1259,
+  "total_due": 1007400.0,
+  "by_year": {
+    "2022": {
+      "records": 671,
+      "due": 70518.0
+    },
+    "2023": {
+      "records": 1175,
+      "due": 130962.0
+    },
+    "2024": {
+      "records": 1930,
+      "due": 221628.0
+    },
+    "2025": {
+      "records": 4617,
+      "due": 584292.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3525,
+    "$100\u2013500": 2602,
+    "$500\u20131K": 1343,
+    "$1K\u20135K": 755,
+    "$5K+": 167
+  },
+  "flags": {
+    "S": 4365,
+    "F": 3190,
+    "A": 755,
+    "T": 83,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 15111.0
+}

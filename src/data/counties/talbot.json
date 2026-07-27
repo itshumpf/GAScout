@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "talbot",
+  "fips": "13263",
+  "seat": "Talbotton",
+  "source": "Talbot County \u2014 Talbot County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8305,
+  "owners": 1245,
+  "total_due": 996600.0,
+  "by_year": {
+    "2022": {
+      "records": 664,
+      "due": 69762.0
+    },
+    "2023": {
+      "records": 1162,
+      "due": 129558.0
+    },
+    "2024": {
+      "records": 1910,
+      "due": 219252.0
+    },
+    "2025": {
+      "records": 4567,
+      "due": 578028.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3488,
+    "$100\u2013500": 2574,
+    "$500\u20131K": 1328,
+    "$1K\u20135K": 747,
+    "$5K+": 166
+  },
+  "flags": {
+    "S": 4318,
+    "F": 3155,
+    "A": 747,
+    "T": 83,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 14949.0
+}

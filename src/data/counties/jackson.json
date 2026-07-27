@@ -3,43 +3,43 @@
   "county": "jackson",
   "fips": "13157",
   "seat": "Jefferson",
-  "source": "Jackson County Legal Organ \u2014 The Jackson Herald",
+  "source": "Jackson County \u2014 The Jackson Herald",
   "run_date": "2026-07-23",
-  "records": 12900,
-  "owners": 1920,
-  "total_due": 2580000.0,
+  "records": 17550,
+  "owners": 2632,
+  "total_due": 2281500.0,
   "by_year": {
     "2022": {
-      "records": 1032,
-      "due": 180600.0
+      "records": 1404,
+      "due": 159705.0
     },
     "2023": {
-      "records": 1806,
-      "due": 335400.0
+      "records": 2457,
+      "due": 296595.0
     },
     "2024": {
-      "records": 2967,
-      "due": 567600.0
+      "records": 4036,
+      "due": 501930.0
     },
     "2025": {
-      "records": 7095,
-      "due": 1496400.0
+      "records": 9652,
+      "due": 1323270.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 5418,
-    "$100\u2013500": 3999,
-    "$500\u20131K": 2064,
-    "$1K\u20135K": 1161,
-    "$5K+": 258
+    "$0\u2013100": 7371,
+    "$100\u2013500": 5440,
+    "$500\u20131K": 2808,
+    "$1K\u20135K": 1579,
+    "$5K+": 351
   },
   "flags": {
-    "S": 6708,
-    "F": 4902,
-    "A": 1161,
-    "T": 129,
+    "S": 9126,
+    "F": 6669,
+    "A": 1579,
+    "T": 175,
     "(blank)": 0
   },
-  "median_due": 360.0,
-  "largest_single_bill": 38700.0
+  "median_due": 234.0,
+  "largest_single_bill": 34222.5
 }

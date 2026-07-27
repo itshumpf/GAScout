@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "lamar",
+  "fips": "13171",
+  "seat": "Barnesville",
+  "source": "Lamar County \u2014 Lamar County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 18600,
+  "owners": 2790,
+  "total_due": 2418000.0,
+  "by_year": {
+    "2022": {
+      "records": 1488,
+      "due": 169260.0
+    },
+    "2023": {
+      "records": 2604,
+      "due": 314340.0
+    },
+    "2024": {
+      "records": 4278,
+      "due": 531960.0
+    },
+    "2025": {
+      "records": 10230,
+      "due": 1402440.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 7812,
+    "$100\u2013500": 5766,
+    "$500\u20131K": 2976,
+    "$1K\u20135K": 1674,
+    "$5K+": 372
+  },
+  "flags": {
+    "S": 9672,
+    "F": 7068,
+    "A": 1674,
+    "T": 186,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 36270.0
+}

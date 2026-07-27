@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "toombs",
+  "fips": "13279",
+  "seat": "Lyons",
+  "source": "Toombs County \u2014 Toombs County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8665,
+  "owners": 1299,
+  "total_due": 1039800.0,
+  "by_year": {
+    "2022": {
+      "records": 693,
+      "due": 72786.0
+    },
+    "2023": {
+      "records": 1213,
+      "due": 135174.0
+    },
+    "2024": {
+      "records": 1992,
+      "due": 228756.0
+    },
+    "2025": {
+      "records": 4765,
+      "due": 603084.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3639,
+    "$100\u2013500": 2686,
+    "$500\u20131K": 1386,
+    "$1K\u20135K": 779,
+    "$5K+": 173
+  },
+  "flags": {
+    "S": 4505,
+    "F": 3292,
+    "A": 779,
+    "T": 86,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 15597.0
+}

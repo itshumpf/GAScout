@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "camden",
+  "fips": "13039",
+  "seat": "Woodbine",
+  "source": "Camden County \u2014 Tribune & Georgian",
+  "run_date": "2026-07-23",
+  "records": 26400,
+  "owners": 3960,
+  "total_due": 3696000.0,
+  "by_year": {
+    "2022": {
+      "records": 2112,
+      "due": 258720.0
+    },
+    "2023": {
+      "records": 3696,
+      "due": 480480.0
+    },
+    "2024": {
+      "records": 6072,
+      "due": 813120.0
+    },
+    "2025": {
+      "records": 14520,
+      "due": 2143680.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 11088,
+    "$100\u2013500": 8184,
+    "$500\u20131K": 4224,
+    "$1K\u20135K": 2376,
+    "$5K+": 528
+  },
+  "flags": {
+    "S": 13728,
+    "F": 10032,
+    "A": 2376,
+    "T": 264,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 55440.0
+}

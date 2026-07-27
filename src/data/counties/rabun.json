@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "rabun",
+  "fips": "13241",
+  "seat": "Clayton",
+  "source": "Rabun County \u2014 The Clayton Tribune",
+  "run_date": "2026-07-23",
+  "records": 7810,
+  "owners": 1171,
+  "total_due": 937200.0,
+  "by_year": {
+    "2022": {
+      "records": 624,
+      "due": 65604.0
+    },
+    "2023": {
+      "records": 1093,
+      "due": 121836.0
+    },
+    "2024": {
+      "records": 1796,
+      "due": 206184.0
+    },
+    "2025": {
+      "records": 4295,
+      "due": 543576.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3280,
+    "$100\u2013500": 2421,
+    "$500\u20131K": 1249,
+    "$1K\u20135K": 702,
+    "$5K+": 156
+  },
+  "flags": {
+    "S": 4061,
+    "F": 2967,
+    "A": 702,
+    "T": 78,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 14058.0
+}

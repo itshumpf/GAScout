@@ -3,43 +3,43 @@
   "county": "richmond",
   "fips": "13245",
   "seat": "Augusta",
-  "source": "Richmond County Legal Organ \u2014 The Augusta Chronicle",
+  "source": "Richmond County \u2014 The Augusta Chronicle",
   "run_date": "2026-07-23",
-  "records": 36500,
-  "owners": 5400,
-  "total_due": 7200000.0,
+  "records": 7900,
+  "owners": 1185,
+  "total_due": 948000.0,
   "by_year": {
     "2022": {
-      "records": 2920,
-      "due": 504000.0
+      "records": 632,
+      "due": 66360.0
     },
     "2023": {
-      "records": 5110,
-      "due": 936000.0
+      "records": 1106,
+      "due": 123240.0
     },
     "2024": {
-      "records": 8395,
-      "due": 1584000.0
+      "records": 1817,
+      "due": 208560.0
     },
     "2025": {
-      "records": 20075,
-      "due": 4176000.0
+      "records": 4345,
+      "due": 549840.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 15330,
-    "$100\u2013500": 11315,
-    "$500\u20131K": 5840,
-    "$1K\u20135K": 3285,
-    "$5K+": 730
+    "$0\u2013100": 3318,
+    "$100\u2013500": 2449,
+    "$500\u20131K": 1264,
+    "$1K\u20135K": 711,
+    "$5K+": 158
   },
   "flags": {
-    "S": 18980,
-    "F": 13870,
-    "A": 3285,
-    "T": 365,
+    "S": 4108,
+    "F": 3002,
+    "A": 711,
+    "T": 79,
     "(blank)": 0
   },
-  "median_due": 355.07,
-  "largest_single_bill": 108000.0
+  "median_due": 216.0,
+  "largest_single_bill": 14220.0
 }

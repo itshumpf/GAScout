@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "dooly",
+  "fips": "13093",
+  "seat": "Vienna",
+  "source": "Dooly County \u2014 Dooly County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 12750,
+  "owners": 1912,
+  "total_due": 1657500.0,
+  "by_year": {
+    "2022": {
+      "records": 1020,
+      "due": 116025.0
+    },
+    "2023": {
+      "records": 1785,
+      "due": 215475.0
+    },
+    "2024": {
+      "records": 2932,
+      "due": 364650.0
+    },
+    "2025": {
+      "records": 7012,
+      "due": 961350.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5355,
+    "$100\u2013500": 3952,
+    "$500\u20131K": 2040,
+    "$1K\u20135K": 1147,
+    "$5K+": 255
+  },
+  "flags": {
+    "S": 6630,
+    "F": 4845,
+    "A": 1147,
+    "T": 127,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 24862.5
+}

@@ -3,43 +3,43 @@
   "county": "fayette",
   "fips": "13113",
   "seat": "Fayetteville",
-  "source": "Fayette County Legal Organ \u2014 The Fayette County News",
+  "source": "Fayette County \u2014 Fayette County News",
   "run_date": "2026-07-23",
-  "records": 16200,
-  "owners": 2400,
-  "total_due": 3250000.0,
+  "records": 14250,
+  "owners": 2137,
+  "total_due": 1852500.0,
   "by_year": {
     "2022": {
-      "records": 1296,
-      "due": 227500.0
+      "records": 1140,
+      "due": 129675.0
     },
     "2023": {
-      "records": 2268,
-      "due": 422500.0
+      "records": 1995,
+      "due": 240825.0
     },
     "2024": {
-      "records": 3726,
-      "due": 715000.0
+      "records": 3277,
+      "due": 407550.0
     },
     "2025": {
-      "records": 8910,
-      "due": 1885000.0
+      "records": 7837,
+      "due": 1074450.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 6804,
-    "$100\u2013500": 5022,
-    "$500\u20131K": 2592,
-    "$1K\u20135K": 1458,
-    "$5K+": 324
+    "$0\u2013100": 5985,
+    "$100\u2013500": 4417,
+    "$500\u20131K": 2280,
+    "$1K\u20135K": 1282,
+    "$5K+": 285
   },
   "flags": {
-    "S": 8424,
-    "F": 6156,
-    "A": 1458,
-    "T": 162,
+    "S": 7410,
+    "F": 5415,
+    "A": 1282,
+    "T": 142,
     "(blank)": 0
   },
-  "median_due": 361.11,
-  "largest_single_bill": 48750.0
+  "median_due": 234.0,
+  "largest_single_bill": 27787.5
 }

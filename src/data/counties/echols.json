@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "echols",
+  "fips": "13101",
+  "seat": "Statenville",
+  "source": "Echols County \u2014 Echols County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 13350,
+  "owners": 2002,
+  "total_due": 1735500.0,
+  "by_year": {
+    "2022": {
+      "records": 1068,
+      "due": 121485.0
+    },
+    "2023": {
+      "records": 1869,
+      "due": 225615.0
+    },
+    "2024": {
+      "records": 3070,
+      "due": 381810.0
+    },
+    "2025": {
+      "records": 7342,
+      "due": 1006590.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5607,
+    "$100\u2013500": 4138,
+    "$500\u20131K": 2136,
+    "$1K\u20135K": 1201,
+    "$5K+": 267
+  },
+  "flags": {
+    "S": 6942,
+    "F": 5073,
+    "A": 1201,
+    "T": 133,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 26032.5
+}

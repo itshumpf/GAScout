@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "worth",
+  "fips": "13321",
+  "seat": "Sylvester",
+  "source": "Worth County \u2014 Worth County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 9610,
+  "owners": 1441,
+  "total_due": 1153200.0,
+  "by_year": {
+    "2022": {
+      "records": 768,
+      "due": 80724.0
+    },
+    "2023": {
+      "records": 1345,
+      "due": 149916.0
+    },
+    "2024": {
+      "records": 2210,
+      "due": 253704.0
+    },
+    "2025": {
+      "records": 5285,
+      "due": 668856.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 4036,
+    "$100\u2013500": 2979,
+    "$500\u20131K": 1537,
+    "$1K\u20135K": 864,
+    "$5K+": 192
+  },
+  "flags": {
+    "S": 4997,
+    "F": 3651,
+    "A": 864,
+    "T": 96,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 17298.0
+}

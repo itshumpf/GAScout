@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "murray",
+  "fips": "13213",
+  "seat": "Chatsworth",
+  "source": "Murray County \u2014 Murray County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 7180,
+  "owners": 1077,
+  "total_due": 861600.0,
+  "by_year": {
+    "2022": {
+      "records": 574,
+      "due": 60312.0
+    },
+    "2023": {
+      "records": 1005,
+      "due": 112008.0
+    },
+    "2024": {
+      "records": 1651,
+      "due": 189552.0
+    },
+    "2025": {
+      "records": 3949,
+      "due": 499728.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3015,
+    "$100\u2013500": 2225,
+    "$500\u20131K": 1148,
+    "$1K\u20135K": 646,
+    "$5K+": 143
+  },
+  "flags": {
+    "S": 3733,
+    "F": 2728,
+    "A": 646,
+    "T": 71,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 12924.0
+}

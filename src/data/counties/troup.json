@@ -3,43 +3,43 @@
   "county": "troup",
   "fips": "13285",
   "seat": "LaGrange",
-  "source": "Troup County Legal Organ \u2014 LaGrange Daily News",
+  "source": "Troup County \u2014 LaGrange Daily News",
   "run_date": "2026-07-23",
-  "records": 12400,
-  "owners": 1850,
-  "total_due": 2480000.0,
+  "records": 8800,
+  "owners": 1320,
+  "total_due": 1056000.0,
   "by_year": {
     "2022": {
-      "records": 992,
-      "due": 173600.0
+      "records": 704,
+      "due": 73920.0
     },
     "2023": {
-      "records": 1736,
-      "due": 322400.0
+      "records": 1232,
+      "due": 137280.0
     },
     "2024": {
-      "records": 2852,
-      "due": 545600.0
+      "records": 2024,
+      "due": 232320.0
     },
     "2025": {
-      "records": 6820,
-      "due": 1438400.0
+      "records": 4840,
+      "due": 612480.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 5208,
-    "$100\u2013500": 3844,
-    "$500\u20131K": 1984,
-    "$1K\u20135K": 1116,
-    "$5K+": 248
+    "$0\u2013100": 3696,
+    "$100\u2013500": 2728,
+    "$500\u20131K": 1408,
+    "$1K\u20135K": 792,
+    "$5K+": 176
   },
   "flags": {
-    "S": 6448,
-    "F": 4712,
-    "A": 1116,
-    "T": 124,
+    "S": 4576,
+    "F": 3344,
+    "A": 792,
+    "T": 88,
     "(blank)": 0
   },
-  "median_due": 360.0,
-  "largest_single_bill": 37200.0
+  "median_due": 216.0,
+  "largest_single_bill": 15840.0
 }

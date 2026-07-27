@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "pike",
+  "fips": "13231",
+  "seat": "Zebulon",
+  "source": "Pike County \u2014 Pike County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 7585,
+  "owners": 1137,
+  "total_due": 910200.0,
+  "by_year": {
+    "2022": {
+      "records": 606,
+      "due": 63714.0
+    },
+    "2023": {
+      "records": 1061,
+      "due": 118326.0
+    },
+    "2024": {
+      "records": 1744,
+      "due": 200244.0
+    },
+    "2025": {
+      "records": 4171,
+      "due": 527916.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3185,
+    "$100\u2013500": 2351,
+    "$500\u20131K": 1213,
+    "$1K\u20135K": 682,
+    "$5K+": 151
+  },
+  "flags": {
+    "S": 3944,
+    "F": 2882,
+    "A": 682,
+    "T": 75,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 13653.0
+}

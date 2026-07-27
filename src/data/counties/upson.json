@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "upson",
+  "fips": "13293",
+  "seat": "Thomaston",
+  "source": "Upson County \u2014 Upson Beacon",
+  "run_date": "2026-07-23",
+  "records": 8980,
+  "owners": 1347,
+  "total_due": 1077600.0,
+  "by_year": {
+    "2022": {
+      "records": 718,
+      "due": 75432.0
+    },
+    "2023": {
+      "records": 1257,
+      "due": 140088.0
+    },
+    "2024": {
+      "records": 2065,
+      "due": 237072.0
+    },
+    "2025": {
+      "records": 4939,
+      "due": 625008.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3771,
+    "$100\u2013500": 2783,
+    "$500\u20131K": 1436,
+    "$1K\u20135K": 808,
+    "$5K+": 179
+  },
+  "flags": {
+    "S": 4669,
+    "F": 3412,
+    "A": 808,
+    "T": 89,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 16164.0
+}

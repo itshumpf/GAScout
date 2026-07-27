@@ -3,43 +3,43 @@
   "county": "paulding",
   "fips": "13223",
   "seat": "Dallas",
-  "source": "Paulding County Legal Organ \u2014 Dallas New Era",
+  "source": "Paulding County \u2014 Dallas New Era",
   "run_date": "2026-07-23",
-  "records": 23800,
-  "owners": 3600,
-  "total_due": 4700000.0,
+  "records": 7405,
+  "owners": 1110,
+  "total_due": 888600.0,
   "by_year": {
     "2022": {
-      "records": 1904,
-      "due": 329000.0
+      "records": 592,
+      "due": 62202.0
     },
     "2023": {
-      "records": 3332,
-      "due": 611000.0
+      "records": 1036,
+      "due": 115518.0
     },
     "2024": {
-      "records": 5474,
-      "due": 1034000.0
+      "records": 1703,
+      "due": 195492.0
     },
     "2025": {
-      "records": 13090,
-      "due": 2726000.0
+      "records": 4072,
+      "due": 515388.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 9996,
-    "$100\u2013500": 7378,
-    "$500\u20131K": 3808,
-    "$1K\u20135K": 2142,
-    "$5K+": 476
+    "$0\u2013100": 3110,
+    "$100\u2013500": 2295,
+    "$500\u20131K": 1184,
+    "$1K\u20135K": 666,
+    "$5K+": 148
   },
   "flags": {
-    "S": 12376,
-    "F": 9044,
-    "A": 2142,
-    "T": 238,
+    "S": 3850,
+    "F": 2813,
+    "A": 666,
+    "T": 74,
     "(blank)": 0
   },
-  "median_due": 355.46,
-  "largest_single_bill": 70500.0
+  "median_due": 216.0,
+  "largest_single_bill": 13329.0
 }

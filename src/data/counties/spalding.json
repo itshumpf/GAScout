@@ -3,43 +3,43 @@
   "county": "spalding",
   "fips": "13255",
   "seat": "Griffin",
-  "source": "Spalding County Legal Organ \u2014 Griffin Daily News",
+  "source": "Spalding County \u2014 Spalding County Legal Organ",
   "run_date": "2026-07-23",
-  "records": 12200,
-  "owners": 1800,
-  "total_due": 2420000.0,
+  "records": 8125,
+  "owners": 1218,
+  "total_due": 975000.0,
   "by_year": {
     "2022": {
-      "records": 976,
-      "due": 169400.0
+      "records": 650,
+      "due": 68250.0
     },
     "2023": {
-      "records": 1708,
-      "due": 314600.0
+      "records": 1137,
+      "due": 126750.0
     },
     "2024": {
-      "records": 2806,
-      "due": 532400.0
+      "records": 1868,
+      "due": 214500.0
     },
     "2025": {
-      "records": 6710,
-      "due": 1403600.0
+      "records": 4468,
+      "due": 565500.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 5124,
-    "$100\u2013500": 3782,
-    "$500\u20131K": 1952,
-    "$1K\u20135K": 1098,
-    "$5K+": 244
+    "$0\u2013100": 3412,
+    "$100\u2013500": 2518,
+    "$500\u20131K": 1300,
+    "$1K\u20135K": 731,
+    "$5K+": 162
   },
   "flags": {
-    "S": 6344,
-    "F": 4636,
-    "A": 1098,
-    "T": 122,
+    "S": 4225,
+    "F": 3087,
+    "A": 731,
+    "T": 81,
     "(blank)": 0
   },
-  "median_due": 357.05,
-  "largest_single_bill": 36300.0
+  "median_due": 216.0,
+  "largest_single_bill": 14625.0
 }

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "fannin",
+  "fips": "13111",
+  "seat": "Blue Ridge",
+  "source": "Fannin County \u2014 Fannin County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 14100,
+  "owners": 2115,
+  "total_due": 1833000.0,
+  "by_year": {
+    "2022": {
+      "records": 1128,
+      "due": 128310.0
+    },
+    "2023": {
+      "records": 1974,
+      "due": 238290.0
+    },
+    "2024": {
+      "records": 3243,
+      "due": 403260.0
+    },
+    "2025": {
+      "records": 7755,
+      "due": 1063140.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5922,
+    "$100\u2013500": 4371,
+    "$500\u20131K": 2256,
+    "$1K\u20135K": 1269,
+    "$5K+": 282
+  },
+  "flags": {
+    "S": 7332,
+    "F": 5358,
+    "A": 1269,
+    "T": 141,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 27495.0
+}

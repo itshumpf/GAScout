@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "turner",
+  "fips": "13287",
+  "seat": "Ashburn",
+  "source": "Turner County \u2014 Turner County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8845,
+  "owners": 1326,
+  "total_due": 1061400.0,
+  "by_year": {
+    "2022": {
+      "records": 707,
+      "due": 74298.0
+    },
+    "2023": {
+      "records": 1238,
+      "due": 137982.0
+    },
+    "2024": {
+      "records": 2034,
+      "due": 233508.0
+    },
+    "2025": {
+      "records": 4864,
+      "due": 615612.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3714,
+    "$100\u2013500": 2741,
+    "$500\u20131K": 1415,
+    "$1K\u20135K": 796,
+    "$5K+": 176
+  },
+  "flags": {
+    "S": 4599,
+    "F": 3361,
+    "A": 796,
+    "T": 88,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 15921.0
+}

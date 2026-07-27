@@ -3,43 +3,43 @@
   "county": "whitfield",
   "fips": "13313",
   "seat": "Dalton",
-  "source": "Whitfield County Legal Organ \u2014 The Daily Citizen",
+  "source": "Whitfield County \u2014 The Daily Citizen",
   "run_date": "2026-07-23",
-  "records": 13600,
-  "owners": 2000,
-  "total_due": 2700000.0,
+  "records": 9430,
+  "owners": 1414,
+  "total_due": 1131600.0,
   "by_year": {
     "2022": {
-      "records": 1088,
-      "due": 189000.0
+      "records": 754,
+      "due": 79212.0
     },
     "2023": {
-      "records": 1904,
-      "due": 351000.0
+      "records": 1320,
+      "due": 147108.0
     },
     "2024": {
-      "records": 3128,
-      "due": 594000.0
+      "records": 2168,
+      "due": 248952.0
     },
     "2025": {
-      "records": 7480,
-      "due": 1566000.0
+      "records": 5186,
+      "due": 656328.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 5712,
-    "$100\u2013500": 4216,
-    "$500\u20131K": 2176,
-    "$1K\u20135K": 1224,
-    "$5K+": 272
+    "$0\u2013100": 3960,
+    "$100\u2013500": 2923,
+    "$500\u20131K": 1508,
+    "$1K\u20135K": 848,
+    "$5K+": 188
   },
   "flags": {
-    "S": 7072,
-    "F": 5168,
-    "A": 1224,
-    "T": 136,
+    "S": 4903,
+    "F": 3583,
+    "A": 848,
+    "T": 94,
     "(blank)": 0
   },
-  "median_due": 357.35,
-  "largest_single_bill": 40500.0
+  "median_due": 216.0,
+  "largest_single_bill": 16974.0
 }

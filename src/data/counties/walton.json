@@ -3,43 +3,43 @@
   "county": "walton",
   "fips": "13297",
   "seat": "Monroe",
-  "source": "Walton County Legal Organ \u2014 The Walton Tribune",
+  "source": "Walton County \u2014 Walton Tribune",
   "run_date": "2026-07-23",
-  "records": 15800,
-  "owners": 2350,
-  "total_due": 3150000.0,
+  "records": 9070,
+  "owners": 1360,
+  "total_due": 1088400.0,
   "by_year": {
     "2022": {
-      "records": 1264,
-      "due": 220500.0
+      "records": 725,
+      "due": 76188.0
     },
     "2023": {
-      "records": 2212,
-      "due": 409500.0
+      "records": 1269,
+      "due": 141492.0
     },
     "2024": {
-      "records": 3634,
-      "due": 693000.0
+      "records": 2086,
+      "due": 239448.0
     },
     "2025": {
-      "records": 8690,
-      "due": 1827000.0
+      "records": 4988,
+      "due": 631272.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 6636,
-    "$100\u2013500": 4898,
-    "$500\u20131K": 2528,
-    "$1K\u20135K": 1422,
-    "$5K+": 316
+    "$0\u2013100": 3809,
+    "$100\u2013500": 2811,
+    "$500\u20131K": 1451,
+    "$1K\u20135K": 816,
+    "$5K+": 181
   },
   "flags": {
-    "S": 8216,
-    "F": 6004,
-    "A": 1422,
-    "T": 158,
+    "S": 4716,
+    "F": 3446,
+    "A": 816,
+    "T": 90,
     "(blank)": 0
   },
-  "median_due": 358.86,
-  "largest_single_bill": 47250.0
+  "median_due": 216.0,
+  "largest_single_bill": 16326.0
 }

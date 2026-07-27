@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "evans",
+  "fips": "13109",
+  "seat": "Claxton",
+  "source": "Evans County \u2014 Evans County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 13950,
+  "owners": 2092,
+  "total_due": 1813500.0,
+  "by_year": {
+    "2022": {
+      "records": 1116,
+      "due": 126945.0
+    },
+    "2023": {
+      "records": 1953,
+      "due": 235755.0
+    },
+    "2024": {
+      "records": 3208,
+      "due": 398970.0
+    },
+    "2025": {
+      "records": 7672,
+      "due": 1051830.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5859,
+    "$100\u2013500": 4324,
+    "$500\u20131K": 2232,
+    "$1K\u20135K": 1255,
+    "$5K+": 279
+  },
+  "flags": {
+    "S": 7254,
+    "F": 5301,
+    "A": 1255,
+    "T": 139,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 27202.5
+}

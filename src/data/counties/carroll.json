@@ -3,43 +3,43 @@
   "county": "carroll",
   "fips": "13045",
   "seat": "Carrollton",
-  "source": "Carroll County Legal Organ \u2014 Times-Georgian",
+  "source": "Carroll County \u2014 Times-Georgian",
   "run_date": "2026-07-23",
-  "records": 18800,
-  "owners": 2800,
-  "total_due": 3750000.0,
+  "records": 27600,
+  "owners": 4140,
+  "total_due": 3864000.0,
   "by_year": {
     "2022": {
-      "records": 1504,
-      "due": 262500.0
+      "records": 2208,
+      "due": 270480.0
     },
     "2023": {
-      "records": 2632,
-      "due": 487500.0
+      "records": 3864,
+      "due": 502320.0
     },
     "2024": {
-      "records": 4324,
-      "due": 825000.0
+      "records": 6348,
+      "due": 850080.0
     },
     "2025": {
-      "records": 10340,
-      "due": 2175000.0
+      "records": 15180,
+      "due": 2241120.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 7896,
-    "$100\u2013500": 5828,
-    "$500\u20131K": 3008,
-    "$1K\u20135K": 1692,
-    "$5K+": 376
+    "$0\u2013100": 11592,
+    "$100\u2013500": 8556,
+    "$500\u20131K": 4416,
+    "$1K\u20135K": 2484,
+    "$5K+": 552
   },
   "flags": {
-    "S": 9776,
-    "F": 7144,
-    "A": 1692,
-    "T": 188,
+    "S": 14352,
+    "F": 10488,
+    "A": 2484,
+    "T": 276,
     "(blank)": 0
   },
-  "median_due": 359.04,
-  "largest_single_bill": 56250.0
+  "median_due": 252.0,
+  "largest_single_bill": 57960.0
 }

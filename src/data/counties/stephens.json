@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "stephens",
+  "fips": "13257",
+  "seat": "Toccoa",
+  "source": "Stephens County \u2014 Stephens County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8170,
+  "owners": 1225,
+  "total_due": 980400.0,
+  "by_year": {
+    "2022": {
+      "records": 653,
+      "due": 68628.0
+    },
+    "2023": {
+      "records": 1143,
+      "due": 127452.0
+    },
+    "2024": {
+      "records": 1879,
+      "due": 215688.0
+    },
+    "2025": {
+      "records": 4493,
+      "due": 568632.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3431,
+    "$100\u2013500": 2532,
+    "$500\u20131K": 1307,
+    "$1K\u20135K": 735,
+    "$5K+": 163
+  },
+  "flags": {
+    "S": 4248,
+    "F": 3104,
+    "A": 735,
+    "T": 81,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 14706.0
+}

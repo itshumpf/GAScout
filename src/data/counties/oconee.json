@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "oconee",
+  "fips": "13219",
+  "seat": "Watkinsville",
+  "source": "Oconee County \u2014 The Oconee Enterprise",
+  "run_date": "2026-07-23",
+  "records": 7315,
+  "owners": 1097,
+  "total_due": 877800.0,
+  "by_year": {
+    "2022": {
+      "records": 585,
+      "due": 61446.0
+    },
+    "2023": {
+      "records": 1024,
+      "due": 114114.0
+    },
+    "2024": {
+      "records": 1682,
+      "due": 193116.0
+    },
+    "2025": {
+      "records": 4023,
+      "due": 509124.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3072,
+    "$100\u2013500": 2267,
+    "$500\u20131K": 1170,
+    "$1K\u20135K": 658,
+    "$5K+": 146
+  },
+  "flags": {
+    "S": 3803,
+    "F": 2779,
+    "A": 658,
+    "T": 73,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 13167.0
+}

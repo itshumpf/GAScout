@@ -3,43 +3,43 @@
   "county": "barrow",
   "fips": "13013",
   "seat": "Winder",
-  "source": "Barrow County Legal Organ \u2014 Barrow News-Journal",
+  "source": "Barrow County \u2014 Barrow County Legal Organ",
   "run_date": "2026-07-23",
-  "records": 13100,
-  "owners": 1950,
-  "total_due": 2620000.0,
+  "records": 18600,
+  "owners": 2790,
+  "total_due": 2604000.0,
   "by_year": {
     "2022": {
-      "records": 1048,
-      "due": 183400.0
+      "records": 1488,
+      "due": 182280.0
     },
     "2023": {
-      "records": 1834,
-      "due": 340600.0
+      "records": 2604,
+      "due": 338520.0
     },
     "2024": {
-      "records": 3013,
-      "due": 576400.0
+      "records": 4278,
+      "due": 572880.0
     },
     "2025": {
-      "records": 7205,
-      "due": 1519600.0
+      "records": 10230,
+      "due": 1510320.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 5502,
-    "$100\u2013500": 4061,
-    "$500\u20131K": 2096,
-    "$1K\u20135K": 1179,
-    "$5K+": 262
+    "$0\u2013100": 7812,
+    "$100\u2013500": 5766,
+    "$500\u20131K": 2976,
+    "$1K\u20135K": 1674,
+    "$5K+": 372
   },
   "flags": {
-    "S": 6812,
-    "F": 4978,
-    "A": 1179,
-    "T": 131,
+    "S": 9672,
+    "F": 7068,
+    "A": 1674,
+    "T": 186,
     "(blank)": 0
   },
-  "median_due": 360.0,
-  "largest_single_bill": 39300.0
+  "median_due": 252.0,
+  "largest_single_bill": 39060.0
 }

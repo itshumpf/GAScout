@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "glascock",
+  "fips": "13125",
+  "seat": "Gibson",
+  "source": "Glascock County \u2014 Glascock County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 15150,
+  "owners": 2272,
+  "total_due": 1969500.0,
+  "by_year": {
+    "2022": {
+      "records": 1212,
+      "due": 137865.0
+    },
+    "2023": {
+      "records": 2121,
+      "due": 256035.0
+    },
+    "2024": {
+      "records": 3484,
+      "due": 433290.0
+    },
+    "2025": {
+      "records": 8332,
+      "due": 1142310.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 6363,
+    "$100\u2013500": 4696,
+    "$500\u20131K": 2424,
+    "$1K\u20135K": 1363,
+    "$5K+": 303
+  },
+  "flags": {
+    "S": 7878,
+    "F": 5757,
+    "A": 1363,
+    "T": 151,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 29542.5
+}

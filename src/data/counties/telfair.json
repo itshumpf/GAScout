@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "telfair",
+  "fips": "13271",
+  "seat": "McRae-Helena",
+  "source": "Telfair County \u2014 Telfair County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8485,
+  "owners": 1272,
+  "total_due": 1018200.0,
+  "by_year": {
+    "2022": {
+      "records": 678,
+      "due": 71274.0
+    },
+    "2023": {
+      "records": 1187,
+      "due": 132366.0
+    },
+    "2024": {
+      "records": 1951,
+      "due": 224004.0
+    },
+    "2025": {
+      "records": 4666,
+      "due": 590556.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3563,
+    "$100\u2013500": 2630,
+    "$500\u20131K": 1357,
+    "$1K\u20135K": 763,
+    "$5K+": 169
+  },
+  "flags": {
+    "S": 4412,
+    "F": 3224,
+    "A": 763,
+    "T": 84,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 15273.0
+}

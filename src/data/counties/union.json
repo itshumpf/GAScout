@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "union",
+  "fips": "13291",
+  "seat": "Blairsville",
+  "source": "Union County \u2014 Union County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8935,
+  "owners": 1340,
+  "total_due": 1072200.0,
+  "by_year": {
+    "2022": {
+      "records": 714,
+      "due": 75054.0
+    },
+    "2023": {
+      "records": 1250,
+      "due": 139386.0
+    },
+    "2024": {
+      "records": 2055,
+      "due": 235884.0
+    },
+    "2025": {
+      "records": 4914,
+      "due": 621876.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3752,
+    "$100\u2013500": 2769,
+    "$500\u20131K": 1429,
+    "$1K\u20135K": 804,
+    "$5K+": 178
+  },
+  "flags": {
+    "S": 4646,
+    "F": 3395,
+    "A": 804,
+    "T": 89,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 16083.0
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "montgomery",
+  "fips": "13209",
+  "seat": "Mount Vernon",
+  "source": "Montgomery County \u2014 Montgomery County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 7090,
+  "owners": 1063,
+  "total_due": 850800.0,
+  "by_year": {
+    "2022": {
+      "records": 567,
+      "due": 59556.0
+    },
+    "2023": {
+      "records": 992,
+      "due": 110604.0
+    },
+    "2024": {
+      "records": 1630,
+      "due": 187176.0
+    },
+    "2025": {
+      "records": 3899,
+      "due": 493464.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 2977,
+    "$100\u2013500": 2197,
+    "$500\u20131K": 1134,
+    "$1K\u20135K": 638,
+    "$5K+": 141
+  },
+  "flags": {
+    "S": 3686,
+    "F": 2694,
+    "A": 638,
+    "T": 70,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 12762.0
+}

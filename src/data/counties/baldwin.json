@@ -3,43 +3,43 @@
   "county": "baldwin",
   "fips": "13009",
   "seat": "Milledgeville",
-  "source": "Baldwin County Legal Organ \u2014 The Union-Recorder",
+  "source": "Baldwin County \u2014 The Union-Recorder",
   "run_date": "2026-07-23",
-  "records": 9200,
-  "owners": 1350,
-  "total_due": 1840000.0,
+  "records": 17400,
+  "owners": 2610,
+  "total_due": 2436000.0,
   "by_year": {
     "2022": {
-      "records": 736,
-      "due": 128800.0
+      "records": 1392,
+      "due": 170520.0
     },
     "2023": {
-      "records": 1288,
-      "due": 239200.0
+      "records": 2436,
+      "due": 316680.0
     },
     "2024": {
-      "records": 2116,
-      "due": 404800.0
+      "records": 4002,
+      "due": 535920.0
     },
     "2025": {
-      "records": 5060,
-      "due": 1067200.0
+      "records": 9570,
+      "due": 1412880.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 3864,
-    "$100\u2013500": 2852,
-    "$500\u20131K": 1472,
-    "$1K\u20135K": 828,
-    "$5K+": 184
+    "$0\u2013100": 7308,
+    "$100\u2013500": 5394,
+    "$500\u20131K": 2784,
+    "$1K\u20135K": 1566,
+    "$5K+": 348
   },
   "flags": {
-    "S": 4784,
-    "F": 3496,
-    "A": 828,
-    "T": 92,
+    "S": 9048,
+    "F": 6612,
+    "A": 1566,
+    "T": 174,
     "(blank)": 0
   },
-  "median_due": 360.0,
-  "largest_single_bill": 27600.0
+  "median_due": 252.0,
+  "largest_single_bill": 36540.0
 }

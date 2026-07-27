@@ -3,43 +3,43 @@
   "county": "liberty",
   "fips": "13179",
   "seat": "Hinesville",
-  "source": "Liberty County Legal Organ \u2014 Coastal Courier",
+  "source": "Liberty County \u2014 Coastal Courier",
   "run_date": "2026-07-23",
-  "records": 10800,
-  "owners": 1600,
-  "total_due": 2150000.0,
+  "records": 19200,
+  "owners": 2880,
+  "total_due": 2496000.0,
   "by_year": {
     "2022": {
-      "records": 864,
-      "due": 150500.0
+      "records": 1536,
+      "due": 174720.0
     },
     "2023": {
-      "records": 1512,
-      "due": 279500.0
+      "records": 2688,
+      "due": 324480.0
     },
     "2024": {
-      "records": 2484,
-      "due": 473000.0
+      "records": 4416,
+      "due": 549120.0
     },
     "2025": {
-      "records": 5940,
-      "due": 1247000.0
+      "records": 10560,
+      "due": 1447680.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 4536,
-    "$100\u2013500": 3348,
-    "$500\u20131K": 1728,
-    "$1K\u20135K": 972,
-    "$5K+": 216
+    "$0\u2013100": 8064,
+    "$100\u2013500": 5952,
+    "$500\u20131K": 3072,
+    "$1K\u20135K": 1728,
+    "$5K+": 384
   },
   "flags": {
-    "S": 5616,
-    "F": 4104,
-    "A": 972,
-    "T": 108,
+    "S": 9984,
+    "F": 7296,
+    "A": 1728,
+    "T": 192,
     "(blank)": 0
   },
-  "median_due": 358.33,
-  "largest_single_bill": 32250.0
+  "median_due": 234.0,
+  "largest_single_bill": 37440.0
 }

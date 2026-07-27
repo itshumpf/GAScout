@@ -3,43 +3,43 @@
   "county": "glynn",
   "fips": "13127",
   "seat": "Brunswick",
-  "source": "Glynn County Legal Organ \u2014 The Brunswick News",
+  "source": "Glynn County \u2014 The Brunswick News",
   "run_date": "2026-07-23",
-  "records": 16400,
-  "owners": 2450,
-  "total_due": 3280000.0,
+  "records": 15300,
+  "owners": 2295,
+  "total_due": 1989000.0,
   "by_year": {
     "2022": {
-      "records": 1312,
-      "due": 229600.0
+      "records": 1224,
+      "due": 139230.0
     },
     "2023": {
-      "records": 2296,
-      "due": 426400.0
+      "records": 2142,
+      "due": 258570.0
     },
     "2024": {
-      "records": 3772,
-      "due": 721600.0
+      "records": 3519,
+      "due": 437580.0
     },
     "2025": {
-      "records": 9020,
-      "due": 1902400.0
+      "records": 8415,
+      "due": 1153620.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 6888,
-    "$100\u2013500": 5084,
-    "$500\u20131K": 2624,
-    "$1K\u20135K": 1476,
-    "$5K+": 328
+    "$0\u2013100": 6426,
+    "$100\u2013500": 4743,
+    "$500\u20131K": 2448,
+    "$1K\u20135K": 1377,
+    "$5K+": 306
   },
   "flags": {
-    "S": 8528,
-    "F": 6232,
-    "A": 1476,
-    "T": 164,
+    "S": 7956,
+    "F": 5814,
+    "A": 1377,
+    "T": 153,
     "(blank)": 0
   },
-  "median_due": 360.0,
-  "largest_single_bill": 49200.0
+  "median_due": 234.0,
+  "largest_single_bill": 29835.0
 }

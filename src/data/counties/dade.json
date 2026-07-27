@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "dade",
+  "fips": "13083",
+  "seat": "Trenton",
+  "source": "Dade County \u2014 Dade County Sentinel",
+  "run_date": "2026-07-23",
+  "records": 12000,
+  "owners": 1800,
+  "total_due": 1560000.0,
+  "by_year": {
+    "2022": {
+      "records": 960,
+      "due": 109200.0
+    },
+    "2023": {
+      "records": 1680,
+      "due": 202800.0
+    },
+    "2024": {
+      "records": 2760,
+      "due": 343200.0
+    },
+    "2025": {
+      "records": 6600,
+      "due": 904800.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5040,
+    "$100\u2013500": 3720,
+    "$500\u20131K": 1920,
+    "$1K\u20135K": 1080,
+    "$5K+": 240
+  },
+  "flags": {
+    "S": 6240,
+    "F": 4560,
+    "A": 1080,
+    "T": 120,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 23400.0
+}

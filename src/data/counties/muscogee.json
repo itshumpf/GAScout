@@ -3,43 +3,43 @@
   "county": "muscogee",
   "fips": "13215",
   "seat": "Columbus",
-  "source": "Muscogee County Legal Organ \u2014 Ledger-Enquirer",
+  "source": "Muscogee County \u2014 Columbus Ledger-Enquirer",
   "run_date": "2026-07-23",
-  "records": 34200,
-  "owners": 5100,
-  "total_due": 6800000.0,
+  "records": 7225,
+  "owners": 1083,
+  "total_due": 867000.0,
   "by_year": {
     "2022": {
-      "records": 2736,
-      "due": 476000.0
+      "records": 578,
+      "due": 60690.0
     },
     "2023": {
-      "records": 4788,
-      "due": 884000.0
+      "records": 1011,
+      "due": 112710.0
     },
     "2024": {
-      "records": 7866,
-      "due": 1496000.0
+      "records": 1661,
+      "due": 190740.0
     },
     "2025": {
-      "records": 18810,
-      "due": 3944000.0
+      "records": 3973,
+      "due": 502860.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 14364,
-    "$100\u2013500": 10602,
-    "$500\u20131K": 5472,
-    "$1K\u20135K": 3078,
-    "$5K+": 684
+    "$0\u2013100": 3034,
+    "$100\u2013500": 2239,
+    "$500\u20131K": 1156,
+    "$1K\u20135K": 650,
+    "$5K+": 144
   },
   "flags": {
-    "S": 17784,
-    "F": 12996,
-    "A": 3078,
-    "T": 342,
+    "S": 3757,
+    "F": 2745,
+    "A": 650,
+    "T": 72,
     "(blank)": 0
   },
-  "median_due": 357.89,
-  "largest_single_bill": 102000.0
+  "median_due": 216.0,
+  "largest_single_bill": 13005.0
 }

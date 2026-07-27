@@ -3,43 +3,43 @@
   "county": "fulton",
   "fips": "13121",
   "seat": "Atlanta",
-  "source": "Fulton County Legal Organ \u2014 The South Fulton Neighbor",
+  "source": "Fulton County \u2014 The South Fulton Neighbor",
   "run_date": "2026-07-23",
-  "records": 124500,
-  "owners": 18400,
-  "total_due": 24850000.0,
+  "records": 246500,
+  "owners": 36975,
+  "total_due": 36975000.0,
   "by_year": {
     "2022": {
-      "records": 9960,
-      "due": 1739500.0
+      "records": 19720,
+      "due": 2588250.0
     },
     "2023": {
-      "records": 17430,
-      "due": 3230500.0
+      "records": 34510,
+      "due": 4806750.0
     },
     "2024": {
-      "records": 28635,
-      "due": 5467000.0
+      "records": 56695,
+      "due": 8134500.0
     },
     "2025": {
-      "records": 68475,
-      "due": 14413000.0
+      "records": 135575,
+      "due": 21445500.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 52290,
-    "$100\u2013500": 38595,
-    "$500\u20131K": 19920,
-    "$1K\u20135K": 11205,
-    "$5K+": 2490
+    "$0\u2013100": 103530,
+    "$100\u2013500": 76415,
+    "$500\u20131K": 39440,
+    "$1K\u20135K": 22185,
+    "$5K+": 4930
   },
   "flags": {
-    "S": 64740,
-    "F": 47310,
-    "A": 11205,
-    "T": 1245,
+    "S": 128180,
+    "F": 93670,
+    "A": 22185,
+    "T": 2465,
     "(blank)": 0
   },
-  "median_due": 359.28,
-  "largest_single_bill": 372750.0
+  "median_due": 270.0,
+  "largest_single_bill": 554625.0
 }

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "clay",
+  "fips": "13061",
+  "seat": "Fort Gaines",
+  "source": "Clay County \u2014 Clay County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 32400,
+  "owners": 4860,
+  "total_due": 4536000.0,
+  "by_year": {
+    "2022": {
+      "records": 2592,
+      "due": 317520.0
+    },
+    "2023": {
+      "records": 4536,
+      "due": 589680.0
+    },
+    "2024": {
+      "records": 7452,
+      "due": 997920.0
+    },
+    "2025": {
+      "records": 17820,
+      "due": 2630880.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 13608,
+    "$100\u2013500": 10044,
+    "$500\u20131K": 5184,
+    "$1K\u20135K": 2916,
+    "$5K+": 648
+  },
+  "flags": {
+    "S": 16848,
+    "F": 12312,
+    "A": 2916,
+    "T": 324,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 68040.0
+}

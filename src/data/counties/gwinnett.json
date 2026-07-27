@@ -3,43 +3,43 @@
   "county": "gwinnett",
   "fips": "13135",
   "seat": "Lawrenceville",
-  "source": "Gwinnett County Legal Organ \u2014 Gwinnett Daily Post",
+  "source": "Gwinnett County \u2014 Gwinnett Daily Post",
   "run_date": "2026-07-23",
-  "records": 98400,
-  "owners": 14200,
-  "total_due": 19200000.0,
+  "records": 271000,
+  "owners": 40650,
+  "total_due": 40650000.0,
   "by_year": {
     "2022": {
-      "records": 7872,
-      "due": 1344000.0
+      "records": 21680,
+      "due": 2845500.0
     },
     "2023": {
-      "records": 13776,
-      "due": 2496000.0
+      "records": 37940,
+      "due": 5284500.0
     },
     "2024": {
-      "records": 22632,
-      "due": 4224000.0
+      "records": 62330,
+      "due": 8943000.0
     },
     "2025": {
-      "records": 54120,
-      "due": 11136000.0
+      "records": 149050,
+      "due": 23577000.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 41328,
-    "$100\u2013500": 30504,
-    "$500\u20131K": 15744,
-    "$1K\u20135K": 8856,
-    "$5K+": 1968
+    "$0\u2013100": 113820,
+    "$100\u2013500": 84010,
+    "$500\u20131K": 43360,
+    "$1K\u20135K": 24390,
+    "$5K+": 5420
   },
   "flags": {
-    "S": 51168,
-    "F": 37392,
-    "A": 8856,
-    "T": 984,
+    "S": 140920,
+    "F": 102980,
+    "A": 24390,
+    "T": 2710,
     "(blank)": 0
   },
-  "median_due": 351.22,
-  "largest_single_bill": 288000.0
+  "median_due": 270.0,
+  "largest_single_bill": 609750.0
 }

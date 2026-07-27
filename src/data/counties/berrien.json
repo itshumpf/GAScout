@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "berrien",
+  "fips": "13019",
+  "seat": "Nashville",
+  "source": "Berrien County \u2014 Berrien County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 20400,
+  "owners": 3060,
+  "total_due": 2856000.0,
+  "by_year": {
+    "2022": {
+      "records": 1632,
+      "due": 199920.0
+    },
+    "2023": {
+      "records": 2856,
+      "due": 371280.0
+    },
+    "2024": {
+      "records": 4692,
+      "due": 628320.0
+    },
+    "2025": {
+      "records": 11220,
+      "due": 1656480.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 8568,
+    "$100\u2013500": 6324,
+    "$500\u20131K": 3264,
+    "$1K\u20135K": 1836,
+    "$5K+": 408
+  },
+  "flags": {
+    "S": 10608,
+    "F": 7752,
+    "A": 1836,
+    "T": 204,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 42840.0
+}

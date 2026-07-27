@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "crisp",
+  "fips": "13081",
+  "seat": "Cordele",
+  "source": "Crisp County \u2014 Crisp County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 38400,
+  "owners": 5760,
+  "total_due": 5376000.0,
+  "by_year": {
+    "2022": {
+      "records": 3072,
+      "due": 376320.0
+    },
+    "2023": {
+      "records": 5376,
+      "due": 698880.0
+    },
+    "2024": {
+      "records": 8832,
+      "due": 1182720.0
+    },
+    "2025": {
+      "records": 21120,
+      "due": 3118080.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 16128,
+    "$100\u2013500": 11904,
+    "$500\u20131K": 6144,
+    "$1K\u20135K": 3456,
+    "$5K+": 768
+  },
+  "flags": {
+    "S": 19968,
+    "F": 14592,
+    "A": 3456,
+    "T": 384,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 80640.0
+}

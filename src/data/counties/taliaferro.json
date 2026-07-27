@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "taliaferro",
+  "fips": "13265",
+  "seat": "Crawfordville",
+  "source": "Taliaferro County \u2014 Taliaferro County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 8350,
+  "owners": 1252,
+  "total_due": 1002000.0,
+  "by_year": {
+    "2022": {
+      "records": 668,
+      "due": 70140.0
+    },
+    "2023": {
+      "records": 1169,
+      "due": 130260.0
+    },
+    "2024": {
+      "records": 1920,
+      "due": 220440.0
+    },
+    "2025": {
+      "records": 4592,
+      "due": 581160.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3507,
+    "$100\u2013500": 2588,
+    "$500\u20131K": 1336,
+    "$1K\u20135K": 751,
+    "$5K+": 167
+  },
+  "flags": {
+    "S": 4342,
+    "F": 3173,
+    "A": 751,
+    "T": 83,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 15030.0
+}

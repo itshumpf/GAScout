@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "mcintosh",
+  "fips": "13191",
+  "seat": "Darien",
+  "source": "Mcintosh County \u2014 Mcintosh County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 6730,
+  "owners": 1009,
+  "total_due": 807600.0,
+  "by_year": {
+    "2022": {
+      "records": 538,
+      "due": 56532.0
+    },
+    "2023": {
+      "records": 942,
+      "due": 104988.0
+    },
+    "2024": {
+      "records": 1547,
+      "due": 177672.0
+    },
+    "2025": {
+      "records": 3701,
+      "due": 468408.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 2826,
+    "$100\u2013500": 2086,
+    "$500\u20131K": 1076,
+    "$1K\u20135K": 605,
+    "$5K+": 134
+  },
+  "flags": {
+    "S": 3499,
+    "F": 2557,
+    "A": 605,
+    "T": 67,
+    "(blank)": 0
+  },
+  "median_due": 216.0,
+  "largest_single_bill": 12114.0
+}

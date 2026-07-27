@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "dodge",
+  "fips": "13091",
+  "seat": "Eastman",
+  "source": "Dodge County \u2014 Dodge County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 12600,
+  "owners": 1890,
+  "total_due": 1638000.0,
+  "by_year": {
+    "2022": {
+      "records": 1008,
+      "due": 114660.0
+    },
+    "2023": {
+      "records": 1764,
+      "due": 212940.0
+    },
+    "2024": {
+      "records": 2898,
+      "due": 360360.0
+    },
+    "2025": {
+      "records": 6930,
+      "due": 950040.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5292,
+    "$100\u2013500": 3906,
+    "$500\u20131K": 2016,
+    "$1K\u20135K": 1134,
+    "$5K+": 252
+  },
+  "flags": {
+    "S": 6552,
+    "F": 4788,
+    "A": 1134,
+    "T": 126,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 24570.0
+}

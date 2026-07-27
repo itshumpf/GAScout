@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "cook",
+  "fips": "13075",
+  "seat": "Adel",
+  "source": "Cook County \u2014 Cook County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 36600,
+  "owners": 5490,
+  "total_due": 5124000.0,
+  "by_year": {
+    "2022": {
+      "records": 2928,
+      "due": 358680.0
+    },
+    "2023": {
+      "records": 5124,
+      "due": 666120.0
+    },
+    "2024": {
+      "records": 8418,
+      "due": 1127280.0
+    },
+    "2025": {
+      "records": 20130,
+      "due": 2971920.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 15372,
+    "$100\u2013500": 11346,
+    "$500\u20131K": 5856,
+    "$1K\u20135K": 3294,
+    "$5K+": 732
+  },
+  "flags": {
+    "S": 19032,
+    "F": 13908,
+    "A": 3294,
+    "T": 366,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 76860.0
+}

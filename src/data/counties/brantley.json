@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "brantley",
+  "fips": "13025",
+  "seat": "Nahunta",
+  "source": "Brantley County \u2014 Brantley County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 22200,
+  "owners": 3330,
+  "total_due": 3108000.0,
+  "by_year": {
+    "2022": {
+      "records": 1776,
+      "due": 217560.0
+    },
+    "2023": {
+      "records": 3108,
+      "due": 404040.0
+    },
+    "2024": {
+      "records": 5106,
+      "due": 683760.0
+    },
+    "2025": {
+      "records": 12210,
+      "due": 1802640.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 9324,
+    "$100\u2013500": 6882,
+    "$500\u20131K": 3552,
+    "$1K\u20135K": 1998,
+    "$5K+": 444
+  },
+  "flags": {
+    "S": 11544,
+    "F": 8436,
+    "A": 1998,
+    "T": 222,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 46620.0
+}

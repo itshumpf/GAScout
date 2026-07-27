@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "irwin",
+  "fips": "13155",
+  "seat": "Ocilla",
+  "source": "Irwin County \u2014 Irwin County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 17400,
+  "owners": 2610,
+  "total_due": 2262000.0,
+  "by_year": {
+    "2022": {
+      "records": 1392,
+      "due": 158340.0
+    },
+    "2023": {
+      "records": 2436,
+      "due": 294060.0
+    },
+    "2024": {
+      "records": 4002,
+      "due": 497640.0
+    },
+    "2025": {
+      "records": 9570,
+      "due": 1311960.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 7308,
+    "$100\u2013500": 5394,
+    "$500\u20131K": 2784,
+    "$1K\u20135K": 1566,
+    "$5K+": 348
+  },
+  "flags": {
+    "S": 9048,
+    "F": 6612,
+    "A": 1566,
+    "T": 174,
+    "(blank)": 0
+  },
+  "median_due": 234.0,
+  "largest_single_bill": 33930.0
+}

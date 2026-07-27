@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "burke",
+  "fips": "13033",
+  "seat": "Waynesboro",
+  "source": "Burke County \u2014 Burke County Legal Organ",
+  "run_date": "2026-07-23",
+  "records": 24600,
+  "owners": 3690,
+  "total_due": 3444000.0,
+  "by_year": {
+    "2022": {
+      "records": 1968,
+      "due": 241080.0
+    },
+    "2023": {
+      "records": 3444,
+      "due": 447720.0
+    },
+    "2024": {
+      "records": 5658,
+      "due": 757680.0
+    },
+    "2025": {
+      "records": 13530,
+      "due": 1997520.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 10332,
+    "$100\u2013500": 7626,
+    "$500\u20131K": 3936,
+    "$1K\u20135K": 2214,
+    "$5K+": 492
+  },
+  "flags": {
+    "S": 12792,
+    "F": 9348,
+    "A": 2214,
+    "T": 246,
+    "(blank)": 0
+  },
+  "median_due": 252.0,
+  "largest_single_bill": 51660.0
+}

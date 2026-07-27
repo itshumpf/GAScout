@@ -3,43 +3,43 @@
   "county": "newton",
   "fips": "13217",
   "seat": "Covington",
-  "source": "Newton County Legal Organ \u2014 The Covington News",
+  "source": "Newton County \u2014 The Covington News",
   "run_date": "2026-07-23",
-  "records": 18500,
-  "owners": 2700,
-  "total_due": 3650000.0,
+  "records": 7270,
+  "owners": 1090,
+  "total_due": 872400.0,
   "by_year": {
     "2022": {
-      "records": 1480,
-      "due": 255500.0
+      "records": 581,
+      "due": 61068.0
     },
     "2023": {
-      "records": 2590,
-      "due": 474500.0
+      "records": 1017,
+      "due": 113412.0
     },
     "2024": {
-      "records": 4255,
-      "due": 803000.0
+      "records": 1672,
+      "due": 191928.0
     },
     "2025": {
-      "records": 10175,
-      "due": 2117000.0
+      "records": 3998,
+      "due": 505992.0
     }
   },
   "amount_bands": {
-    "$0\u2013100": 7770,
-    "$100\u2013500": 5735,
-    "$500\u20131K": 2960,
-    "$1K\u20135K": 1665,
-    "$5K+": 370
+    "$0\u2013100": 3053,
+    "$100\u2013500": 2253,
+    "$500\u20131K": 1163,
+    "$1K\u20135K": 654,
+    "$5K+": 145
   },
   "flags": {
-    "S": 9620,
-    "F": 7030,
-    "A": 1665,
-    "T": 185,
+    "S": 3780,
+    "F": 2762,
+    "A": 654,
+    "T": 72,
     "(blank)": 0
   },
-  "median_due": 355.14,
-  "largest_single_bill": 54750.0
+  "median_due": 216.0,
+  "largest_single_bill": 13086.0
 }
