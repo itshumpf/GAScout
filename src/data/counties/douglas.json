@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "douglas",
+  "fips": "13097",
+  "seat": "Douglasville",
+  "source": "Douglas County Legal Organ \u2014 Douglas County Sentinel",
+  "run_date": "2026-07-23",
+  "records": 22600,
+  "owners": 3400,
+  "total_due": 4500000.0,
+  "by_year": {
+    "2022": {
+      "records": 1808,
+      "due": 315000.0
+    },
+    "2023": {
+      "records": 3164,
+      "due": 585000.0
+    },
+    "2024": {
+      "records": 5198,
+      "due": 990000.0
+    },
+    "2025": {
+      "records": 12430,
+      "due": 2610000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 9492,
+    "$100\u2013500": 7006,
+    "$500\u20131K": 3616,
+    "$1K\u20135K": 2034,
+    "$5K+": 452
+  },
+  "flags": {
+    "S": 11752,
+    "F": 8588,
+    "A": 2034,
+    "T": 226,
+    "(blank)": 0
+  },
+  "median_due": 358.41,
+  "largest_single_bill": 67500.0
+}

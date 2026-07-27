@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "gordon",
+  "fips": "13129",
+  "seat": "Calhoun",
+  "source": "Gordon County Legal Organ \u2014 Calhoun Times",
+  "run_date": "2026-07-23",
+  "records": 10200,
+  "owners": 1500,
+  "total_due": 2040000.0,
+  "by_year": {
+    "2022": {
+      "records": 816,
+      "due": 142800.0
+    },
+    "2023": {
+      "records": 1428,
+      "due": 265200.0
+    },
+    "2024": {
+      "records": 2346,
+      "due": 448800.0
+    },
+    "2025": {
+      "records": 5610,
+      "due": 1183200.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 4284,
+    "$100\u2013500": 3162,
+    "$500\u20131K": 1632,
+    "$1K\u20135K": 918,
+    "$5K+": 204
+  },
+  "flags": {
+    "S": 5304,
+    "F": 3876,
+    "A": 918,
+    "T": 102,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 30600.0
+}

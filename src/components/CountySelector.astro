@@ -1,0 +1,51 @@
+---
+import manifest from "../data/manifest.json";
+
+interface Props {
+  currentSlug: string;
+}
+
+const { currentSlug } = Astro.props;
+
+const fmtCompactMoney = (n: number): string =>
+  n >= 1_000_000
+    ? `$${(n / 1_000_000).toFixed(1)}M`
+    : `$${(n / 1_000).toFixed(0)}K`;
+---
+
+<div class="county-selector-bar glass-panel" style="margin-top: 18px; padding: 14px 20px; border-radius: 12px;">
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span style="font-size: 1.2rem;">🏛️</span>
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; color: var(--text-primary);">
+          GEORGIA MULTI-COUNTY ENGINE (44 COUNTIES TRACKED)
+        </div>
+        <div style="font-size: 0.78rem; color: var(--text-muted);">
+          Select any county below to view real-time tax liens, property records, and recovery metrics.
+        </div>
+      </div>
+    </div>
+
+    <!-- County Select Dropdown -->
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <label for="county-select" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">
+        Switch County:
+      </label>
+      <select
+        id="county-select"
+        onchange="window.location.href = this.value === 'dekalb' ? '/' : '/' + this.value"
+        style="font-family: var(--font-mono); font-size: 0.85rem; background: #0f172a; color: #38bdf8; border: 1px solid #38bdf8; padding: 8px 14px; border-radius: 8px; cursor: pointer; outline: none;"
+      >
+        {manifest.map((item) => (
+          <option
+            value={item.slug}
+            selected={item.slug === currentSlug}
+          >
+            {item.name} County ({fmtCompactMoney(item.total_due)} Debt • {item.records.toLocaleString()} records)
+          </option>
+        ))}
+      </select>
+    </div>
+  </div>
+</div>

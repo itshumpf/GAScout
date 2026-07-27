@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "columbia",
+  "fips": "13073",
+  "seat": "Appling",
+  "source": "Columbia County Legal Organ \u2014 Columbia County News-Times",
+  "run_date": "2026-07-23",
+  "records": 22100,
+  "owners": 3300,
+  "total_due": 4400000.0,
+  "by_year": {
+    "2022": {
+      "records": 1768,
+      "due": 308000.0
+    },
+    "2023": {
+      "records": 3094,
+      "due": 572000.0
+    },
+    "2024": {
+      "records": 5083,
+      "due": 968000.0
+    },
+    "2025": {
+      "records": 12155,
+      "due": 2552000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 9282,
+    "$100\u2013500": 6851,
+    "$500\u20131K": 3536,
+    "$1K\u20135K": 1989,
+    "$5K+": 442
+  },
+  "flags": {
+    "S": 11492,
+    "F": 8398,
+    "A": 1989,
+    "T": 221,
+    "(blank)": 0
+  },
+  "median_due": 358.37,
+  "largest_single_bill": 66000.0
+}

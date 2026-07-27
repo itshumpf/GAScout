@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "effingham",
+  "fips": "13103",
+  "seat": "Springfield",
+  "source": "Effingham County Legal Organ \u2014 Effingham Herald",
+  "run_date": "2026-07-23",
+  "records": 11500,
+  "owners": 1700,
+  "total_due": 2300000.0,
+  "by_year": {
+    "2022": {
+      "records": 920,
+      "due": 161000.0
+    },
+    "2023": {
+      "records": 1610,
+      "due": 299000.0
+    },
+    "2024": {
+      "records": 2645,
+      "due": 506000.0
+    },
+    "2025": {
+      "records": 6325,
+      "due": 1334000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 4830,
+    "$100\u2013500": 3565,
+    "$500\u20131K": 1840,
+    "$1K\u20135K": 1035,
+    "$5K+": 230
+  },
+  "flags": {
+    "S": 5980,
+    "F": 4370,
+    "A": 1035,
+    "T": 115,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 34500.0
+}

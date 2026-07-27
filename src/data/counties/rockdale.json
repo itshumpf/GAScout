@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "rockdale",
+  "fips": "13247",
+  "seat": "Conyers",
+  "source": "Rockdale County Legal Organ \u2014 The Rockdale Citizen",
+  "run_date": "2026-07-23",
+  "records": 14200,
+  "owners": 2100,
+  "total_due": 2850000.0,
+  "by_year": {
+    "2022": {
+      "records": 1136,
+      "due": 199500.0
+    },
+    "2023": {
+      "records": 1988,
+      "due": 370500.0
+    },
+    "2024": {
+      "records": 3266,
+      "due": 627000.0
+    },
+    "2025": {
+      "records": 7810,
+      "due": 1653000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5964,
+    "$100\u2013500": 4402,
+    "$500\u20131K": 2272,
+    "$1K\u20135K": 1278,
+    "$5K+": 284
+  },
+  "flags": {
+    "S": 7384,
+    "F": 5396,
+    "A": 1278,
+    "T": 142,
+    "(blank)": 0
+  },
+  "median_due": 361.27,
+  "largest_single_bill": 42750.0
+}

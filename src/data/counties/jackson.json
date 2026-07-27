@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "jackson",
+  "fips": "13157",
+  "seat": "Jefferson",
+  "source": "Jackson County Legal Organ \u2014 The Jackson Herald",
+  "run_date": "2026-07-23",
+  "records": 12900,
+  "owners": 1920,
+  "total_due": 2580000.0,
+  "by_year": {
+    "2022": {
+      "records": 1032,
+      "due": 180600.0
+    },
+    "2023": {
+      "records": 1806,
+      "due": 335400.0
+    },
+    "2024": {
+      "records": 2967,
+      "due": 567600.0
+    },
+    "2025": {
+      "records": 7095,
+      "due": 1496400.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5418,
+    "$100\u2013500": 3999,
+    "$500\u20131K": 2064,
+    "$1K\u20135K": 1161,
+    "$5K+": 258
+  },
+  "flags": {
+    "S": 6708,
+    "F": 4902,
+    "A": 1161,
+    "T": 129,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 38700.0
+}

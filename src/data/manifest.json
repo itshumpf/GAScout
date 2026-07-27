@@ -1,0 +1,354 @@
+[
+  {
+    "slug": "dekalb",
+    "name": "Dekalb",
+    "fips": "13089",
+    "seat": "Decatur",
+    "records": 409142,
+    "total_due": 62751158.99
+  },
+  {
+    "slug": "fulton",
+    "name": "Fulton",
+    "fips": "13121",
+    "seat": "Atlanta",
+    "records": 124500,
+    "total_due": 24850000.0
+  },
+  {
+    "slug": "gwinnett",
+    "name": "Gwinnett",
+    "fips": "13135",
+    "seat": "Lawrenceville",
+    "records": 98400,
+    "total_due": 19200000.0
+  },
+  {
+    "slug": "cobb",
+    "name": "Cobb",
+    "fips": "13067",
+    "seat": "Marietta",
+    "records": 86500,
+    "total_due": 16800000.0
+  },
+  {
+    "slug": "chatham",
+    "name": "Chatham",
+    "fips": "13051",
+    "seat": "Savannah",
+    "records": 54200,
+    "total_due": 11400000.0
+  },
+  {
+    "slug": "cherokee",
+    "name": "Cherokee",
+    "fips": "13057",
+    "seat": "Canton",
+    "records": 42800,
+    "total_due": 8900000.0
+  },
+  {
+    "slug": "henry",
+    "name": "Henry",
+    "fips": "13151",
+    "seat": "McDonough",
+    "records": 38400,
+    "total_due": 7850000.0
+  },
+  {
+    "slug": "forsyth",
+    "name": "Forsyth",
+    "fips": "13117",
+    "seat": "Cumming",
+    "records": 32100,
+    "total_due": 6900000.0
+  },
+  {
+    "slug": "hall",
+    "name": "Hall",
+    "fips": "13139",
+    "seat": "Gainesville",
+    "records": 29800,
+    "total_due": 6200000.0
+  },
+  {
+    "slug": "clayton",
+    "name": "Clayton",
+    "fips": "13063",
+    "seat": "Jonesboro",
+    "records": 41200,
+    "total_due": 8400000.0
+  },
+  {
+    "slug": "richmond",
+    "name": "Richmond",
+    "fips": "13245",
+    "seat": "Augusta",
+    "records": 36500,
+    "total_due": 7200000.0
+  },
+  {
+    "slug": "muscogee",
+    "name": "Muscogee",
+    "fips": "13215",
+    "seat": "Columbus",
+    "records": 34200,
+    "total_due": 6800000.0
+  },
+  {
+    "slug": "bibb",
+    "name": "Bibb",
+    "fips": "13021",
+    "seat": "Macon",
+    "records": 31800,
+    "total_due": 6400000.0
+  },
+  {
+    "slug": "houston",
+    "name": "Houston",
+    "fips": "13153",
+    "seat": "Perry",
+    "records": 24500,
+    "total_due": 4900000.0
+  },
+  {
+    "slug": "columbia",
+    "name": "Columbia",
+    "fips": "13073",
+    "seat": "Appling",
+    "records": 22100,
+    "total_due": 4400000.0
+  },
+  {
+    "slug": "coweta",
+    "name": "Coweta",
+    "fips": "13077",
+    "seat": "Newnan",
+    "records": 21400,
+    "total_due": 4250000.0
+  },
+  {
+    "slug": "paulding",
+    "name": "Paulding",
+    "fips": "13223",
+    "seat": "Dallas",
+    "records": 23800,
+    "total_due": 4700000.0
+  },
+  {
+    "slug": "douglas",
+    "name": "Douglas",
+    "fips": "13097",
+    "seat": "Douglasville",
+    "records": 22600,
+    "total_due": 4500000.0
+  },
+  {
+    "slug": "lowndes",
+    "name": "Lowndes",
+    "fips": "13185",
+    "seat": "Valdosta",
+    "records": 19500,
+    "total_due": 3900000.0
+  },
+  {
+    "slug": "carroll",
+    "name": "Carroll",
+    "fips": "13045",
+    "seat": "Carrollton",
+    "records": 18800,
+    "total_due": 3750000.0
+  },
+  {
+    "slug": "clarke",
+    "name": "Clarke",
+    "fips": "13059",
+    "seat": "Athens",
+    "records": 17400,
+    "total_due": 3450000.0
+  },
+  {
+    "slug": "fayette",
+    "name": "Fayette",
+    "fips": "13113",
+    "seat": "Fayetteville",
+    "records": 16200,
+    "total_due": 3250000.0
+  },
+  {
+    "slug": "newton",
+    "name": "Newton",
+    "fips": "13217",
+    "seat": "Covington",
+    "records": 18500,
+    "total_due": 3650000.0
+  },
+  {
+    "slug": "bartow",
+    "name": "Bartow",
+    "fips": "13015",
+    "seat": "Cartersville",
+    "records": 17900,
+    "total_due": 3550000.0
+  },
+  {
+    "slug": "walton",
+    "name": "Walton",
+    "fips": "13297",
+    "seat": "Monroe",
+    "records": 15800,
+    "total_due": 3150000.0
+  },
+  {
+    "slug": "glynn",
+    "name": "Glynn",
+    "fips": "13127",
+    "seat": "Brunswick",
+    "records": 16400,
+    "total_due": 3280000.0
+  },
+  {
+    "slug": "floyd",
+    "name": "Floyd",
+    "fips": "13115",
+    "seat": "Rome",
+    "records": 15200,
+    "total_due": 3050000.0
+  },
+  {
+    "slug": "bulloch",
+    "name": "Bulloch",
+    "fips": "13031",
+    "seat": "Statesboro",
+    "records": 14500,
+    "total_due": 2900000.0
+  },
+  {
+    "slug": "dougherty",
+    "name": "Dougherty",
+    "fips": "13095",
+    "seat": "Albany",
+    "records": 16800,
+    "total_due": 3350000.0
+  },
+  {
+    "slug": "rockdale",
+    "name": "Rockdale",
+    "fips": "13247",
+    "seat": "Conyers",
+    "records": 14200,
+    "total_due": 2850000.0
+  },
+  {
+    "slug": "walker",
+    "name": "Walker",
+    "fips": "13295",
+    "seat": "Lafayette",
+    "records": 12800,
+    "total_due": 2550000.0
+  },
+  {
+    "slug": "catoosa",
+    "name": "Catoosa",
+    "fips": "13047",
+    "seat": "Ringgold",
+    "records": 11900,
+    "total_due": 2380000.0
+  },
+  {
+    "slug": "whitfield",
+    "name": "Whitfield",
+    "fips": "13313",
+    "seat": "Dalton",
+    "records": 13600,
+    "total_due": 2700000.0
+  },
+  {
+    "slug": "troup",
+    "name": "Troup",
+    "fips": "13285",
+    "seat": "LaGrange",
+    "records": 12400,
+    "total_due": 2480000.0
+  },
+  {
+    "slug": "barrow",
+    "name": "Barrow",
+    "fips": "13013",
+    "seat": "Winder",
+    "records": 13100,
+    "total_due": 2620000.0
+  },
+  {
+    "slug": "spalding",
+    "name": "Spalding",
+    "fips": "13255",
+    "seat": "Griffin",
+    "records": 12200,
+    "total_due": 2420000.0
+  },
+  {
+    "slug": "jackson",
+    "name": "Jackson",
+    "fips": "13157",
+    "seat": "Jefferson",
+    "records": 12900,
+    "total_due": 2580000.0
+  },
+  {
+    "slug": "effingham",
+    "name": "Effingham",
+    "fips": "13103",
+    "seat": "Springfield",
+    "records": 11500,
+    "total_due": 2300000.0
+  },
+  {
+    "slug": "liberty",
+    "name": "Liberty",
+    "fips": "13179",
+    "seat": "Hinesville",
+    "records": 10800,
+    "total_due": 2150000.0
+  },
+  {
+    "slug": "gordon",
+    "name": "Gordon",
+    "fips": "13129",
+    "seat": "Calhoun",
+    "records": 10200,
+    "total_due": 2040000.0
+  },
+  {
+    "slug": "laurens",
+    "name": "Laurens",
+    "fips": "13175",
+    "seat": "Dublin",
+    "records": 9800,
+    "total_due": 1950000.0
+  },
+  {
+    "slug": "baldwin",
+    "name": "Baldwin",
+    "fips": "13009",
+    "seat": "Milledgeville",
+    "records": 9200,
+    "total_due": 1840000.0
+  },
+  {
+    "slug": "ware",
+    "name": "Ware",
+    "fips": "13299",
+    "seat": "Waycross",
+    "records": 8900,
+    "total_due": 1780000.0
+  },
+  {
+    "slug": "thomas",
+    "name": "Thomas",
+    "fips": "13275",
+    "seat": "Thomasville",
+    "records": 8500,
+    "total_due": 1700000.0
+  }
+]

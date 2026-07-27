@@ -3,7 +3,23 @@ import "../styles/global.css";
 import StatCard from "../components/StatCard.astro";
 import Simulator from "../components/Simulator.astro";
 import PipelineFlow from "../components/PipelineFlow.astro";
-import dashboard from "../data/chatham.json";
+import CountySelector from "../components/CountySelector.astro";
+import manifest from "../data/manifest.json";
+
+export async function getStaticPaths() {
+  const files = import.meta.glob('../data/counties/*.json', { eager: true });
+  
+  return manifest.map((item) => {
+    const filePath = `../data/counties/${item.slug}.json`;
+    const data = (files[filePath] as any).default || files[filePath];
+    return {
+      params: { county: item.slug },
+      props: { dashboard: data },
+    };
+  });
+}
+
+const { dashboard } = Astro.props;
 
 const {
   generated_at,
@@ -18,7 +34,10 @@ const {
   flags,
   median_due,
   largest_single_bill,
+  seat,
 } = dashboard;
+
+const countyName = county.charAt(0).toUpperCase() + county.slice(1);
 
 const fmtInt = (n: number): string => n.toLocaleString("en-US");
 const fmtMoney = (n: number): string =>
@@ -30,7 +49,7 @@ const fmtCompactMoney = (n: number): string =>
       ? `$${(n / 1_000).toFixed(1)}K`
       : fmtMoney(n);
 
-const years = Object.entries(by_year).map(([year, v]) => ({
+const years = Object.entries(by_year).map(([year, v]: [string, any]) => ({
   year,
   records: v.records,
   due: v.due,
@@ -51,9 +70,9 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="GAScout Chatham County — Georgia Public Records Analytics. Aggregate intelligence and tax sale statistics from Chatham County (Savannah)."
+      content={`GAScout ${countyName} County — Georgia Public Records Analytics. Aggregate intelligence and tax sale statistics from ${countyName} County (${seat}).`}
     />
-    <title>GAScout — Chatham County (Savannah) Public Records Intelligence</title>
+    <title>GAScout — {countyName} County ({seat}) Public Records Intelligence</title>
   </head>
   <body>
     <!-- Site Header -->
@@ -67,16 +86,16 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
                 LIVE PUBLIC RECORDS PIPELINE
               </div>
               <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); background: var(--bg-glass); padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border-glass);">
-                county: <strong style="color: #ec4899;">CHATHAM (SAVANNAH)</strong>
+                county: <strong style="color: #38bdf8;">{county.toUpperCase()} ({seat.toUpperCase()})</strong>
               </span>
             </div>
             
             <h1 class="hero-title">
-              GA<span class="brand-highlight">Scout</span> Chatham County
+              GA<span class="brand-highlight">Scout</span> {countyName} County
             </h1>
             
             <p class="hero-subtitle">
-              Public records analytics and tax sale intelligence from Chatham County (Savannah). Uncovering financial concentration, tax liens, and long-tail property trends.
+              Public records analytics and tax sale intelligence from {countyName} County (County Seat: {seat}). Uncovering financial concentration, tax liens, and long-tail property trends.
             </p>
 
             <div class="hero-meta">
@@ -84,25 +103,17 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
               <span>•</span>
               <span>🔄 Generated: <strong>{generated_at}</strong></span>
               <span>•</span>
-              <span>🏛️ Source: Chatham County Legal Organ</span>
+              <span>🏛️ Source: {source}</span>
             </div>
 
-            <!-- County Switcher -->
-            <div style="display: flex; align-items: center; gap: 8px; margin-top: 16px; font-family: var(--font-mono); font-size: 0.78rem; flex-wrap: wrap;">
-              <span style="color: var(--text-muted);">GA Counties:</span>
-              <a href="/" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">DeKalb (409k)</a>
-              <a href="/fulton" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Fulton</a>
-              <a href="/gwinnett" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Gwinnett</a>
-              <a href="/cobb" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Cobb</a>
-              <a href="/chatham" style="color: #ec4899; font-weight: 700; text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid #ec4899; background: rgba(236, 72, 153, 0.1);">Chatham</a>
-              <a href="/cherokee" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Cherokee</a>
-            </div>
+            <!-- 44 County Selector Bar -->
+            <CountySelector currentSlug={county} />
           </div>
 
           <div class="quick-action-badge glass-panel">
             <span class="qa-number">{fmtCompactMoney(total_due)}</span>
-            <span class="qa-label">Total Chatham Uncollected Debt</span>
-            <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #ec4899; margin-top: 4px;">
+            <span class="qa-label">Total {countyName} Uncollected Debt</span>
+            <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #38bdf8; margin-top: 4px;">
               Across {fmtInt(records)} Property Bills
             </div>
           </div>
@@ -112,7 +123,7 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
 
     <main class="wrap main-content">
       <!-- 6-Metric Stat Row -->
-      <section class="stats-grid" aria-label="Chatham Summary Statistics">
+      <section class="stats-grid" aria-label={`${countyName} Summary Statistics`}>
         <StatCard title="TOTAL RECORDS" value={fmtInt(records)} subtitle="Delinquent line items in county dataset" variant="emerald" />
         <StatCard title="UNIQUE OWNERS" value={fmtInt(owners)} subtitle={`Avg ${avgRecordsPerOwner} delinquent bills per owner`} variant="cyan" />
         <StatCard title="TOTAL DEBT DUE" value={fmtCompactMoney(total_due)} subtitle={`Cumulative tax debt (${yearRange})`} variant="cyan" />
@@ -127,7 +138,7 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
           <span class="section-icon">📊</span>
           <div>
             <h2>Tax Year Trend Analysis</h2>
-            <p>Delinquency distribution across Chatham tax cycles ({yearRange}).</p>
+            <p>Delinquency distribution across {countyName} tax cycles ({yearRange}).</p>
           </div>
         </div>
 
@@ -162,10 +173,10 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
       <div class="wrap footer-content">
         <div>
           <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
-            GAScout Intelligence Engine — Chatham County (Savannah)
+            GAScout Intelligence Engine — {countyName} County ({seat})
           </div>
           <div>
-            Built with Astro & Vanilla CSS. Data parsed from Chatham County public legal notices.
+            Built with Astro & Vanilla CSS. Data parsed from {countyName} County public legal notices.
           </div>
         </div>
         <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">

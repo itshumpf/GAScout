@@ -3,6 +3,7 @@ import "../styles/global.css";
 import StatCard from "../components/StatCard.astro";
 import Simulator from "../components/Simulator.astro";
 import PipelineFlow from "../components/PipelineFlow.astro";
+import CountySelector from "../components/CountySelector.astro";
 import dashboard from "../data/dashboard.json";
 
 const {
@@ -96,16 +97,8 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
               <span>🏛️ Source: DeKalb Tax Commissioner</span>
             </div>
 
-            <!-- County Switcher -->
-            <div style="display: flex; align-items: center; gap: 8px; margin-top: 16px; font-family: var(--font-mono); font-size: 0.78rem; flex-wrap: wrap;">
-              <span style="color: var(--text-muted);">GA Counties:</span>
-              <a href="/" style="color: var(--accent-emerald-bright); font-weight: 700; text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--accent-emerald-bright); background: rgba(16, 185, 129, 0.1);">DeKalb (409k)</a>
-              <a href="/fulton" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Fulton</a>
-              <a href="/gwinnett" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Gwinnett</a>
-              <a href="/cobb" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Cobb</a>
-              <a href="/chatham" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Chatham</a>
-              <a href="/cherokee" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Cherokee</a>
-            </div>
+            <!-- 44 County Selector Bar -->
+            <CountySelector currentSlug="dekalb" />
           </div>
 
           <div class="quick-action-badge glass-panel">

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "clayton",
+  "fips": "13063",
+  "seat": "Jonesboro",
+  "source": "Clayton County Legal Organ \u2014 Clayton News Daily",
+  "run_date": "2026-07-23",
+  "records": 41200,
+  "owners": 6200,
+  "total_due": 8400000.0,
+  "by_year": {
+    "2022": {
+      "records": 3296,
+      "due": 588000.0
+    },
+    "2023": {
+      "records": 5768,
+      "due": 1092000.0
+    },
+    "2024": {
+      "records": 9476,
+      "due": 1848000.0
+    },
+    "2025": {
+      "records": 22660,
+      "due": 4872000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 17304,
+    "$100\u2013500": 12772,
+    "$500\u20131K": 6592,
+    "$1K\u20135K": 3708,
+    "$5K+": 824
+  },
+  "flags": {
+    "S": 21424,
+    "F": 15656,
+    "A": 3708,
+    "T": 412,
+    "(blank)": 0
+  },
+  "median_due": 366.99,
+  "largest_single_bill": 126000.0
+}

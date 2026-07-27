@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "fayette",
+  "fips": "13113",
+  "seat": "Fayetteville",
+  "source": "Fayette County Legal Organ \u2014 The Fayette County News",
+  "run_date": "2026-07-23",
+  "records": 16200,
+  "owners": 2400,
+  "total_due": 3250000.0,
+  "by_year": {
+    "2022": {
+      "records": 1296,
+      "due": 227500.0
+    },
+    "2023": {
+      "records": 2268,
+      "due": 422500.0
+    },
+    "2024": {
+      "records": 3726,
+      "due": 715000.0
+    },
+    "2025": {
+      "records": 8910,
+      "due": 1885000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 6804,
+    "$100\u2013500": 5022,
+    "$500\u20131K": 2592,
+    "$1K\u20135K": 1458,
+    "$5K+": 324
+  },
+  "flags": {
+    "S": 8424,
+    "F": 6156,
+    "A": 1458,
+    "T": 162,
+    "(blank)": 0
+  },
+  "median_due": 361.11,
+  "largest_single_bill": 48750.0
+}

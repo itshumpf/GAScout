@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "chatham",
+  "fips": "13051",
+  "seat": "Savannah",
+  "source": "Chatham County Legal Organ \u2014 Savannah Morning News",
+  "run_date": "2026-07-23",
+  "records": 54200,
+  "owners": 8100,
+  "total_due": 11400000.0,
+  "by_year": {
+    "2022": {
+      "records": 4336,
+      "due": 798000.0
+    },
+    "2023": {
+      "records": 7588,
+      "due": 1482000.0
+    },
+    "2024": {
+      "records": 12466,
+      "due": 2508000.0
+    },
+    "2025": {
+      "records": 29810,
+      "due": 6612000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 22764,
+    "$100\u2013500": 16802,
+    "$500\u20131K": 8672,
+    "$1K\u20135K": 4878,
+    "$5K+": 1084
+  },
+  "flags": {
+    "S": 28184,
+    "F": 20596,
+    "A": 4878,
+    "T": 542,
+    "(blank)": 0
+  },
+  "median_due": 378.6,
+  "largest_single_bill": 171000.0
+}

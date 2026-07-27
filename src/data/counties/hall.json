@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "hall",
+  "fips": "13139",
+  "seat": "Gainesville",
+  "source": "Hall County Legal Organ \u2014 The Times Gainesville",
+  "run_date": "2026-07-23",
+  "records": 29800,
+  "owners": 4500,
+  "total_due": 6200000.0,
+  "by_year": {
+    "2022": {
+      "records": 2384,
+      "due": 434000.0
+    },
+    "2023": {
+      "records": 4172,
+      "due": 806000.0
+    },
+    "2024": {
+      "records": 6854,
+      "due": 1364000.0
+    },
+    "2025": {
+      "records": 16390,
+      "due": 3596000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 12516,
+    "$100\u2013500": 9238,
+    "$500\u20131K": 4768,
+    "$1K\u20135K": 2682,
+    "$5K+": 596
+  },
+  "flags": {
+    "S": 15496,
+    "F": 11324,
+    "A": 2682,
+    "T": 298,
+    "(blank)": 0
+  },
+  "median_due": 374.5,
+  "largest_single_bill": 93000.0
+}

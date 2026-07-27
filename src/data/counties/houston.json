@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "houston",
+  "fips": "13153",
+  "seat": "Perry",
+  "source": "Houston County Legal Organ \u2014 Houston Home Journal",
+  "run_date": "2026-07-23",
+  "records": 24500,
+  "owners": 3700,
+  "total_due": 4900000.0,
+  "by_year": {
+    "2022": {
+      "records": 1960,
+      "due": 343000.0
+    },
+    "2023": {
+      "records": 3430,
+      "due": 637000.0
+    },
+    "2024": {
+      "records": 5635,
+      "due": 1078000.0
+    },
+    "2025": {
+      "records": 13475,
+      "due": 2842000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 10290,
+    "$100\u2013500": 7595,
+    "$500\u20131K": 3920,
+    "$1K\u20135K": 2205,
+    "$5K+": 490
+  },
+  "flags": {
+    "S": 12740,
+    "F": 9310,
+    "A": 2205,
+    "T": 245,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 73500.0
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "barrow",
+  "fips": "13013",
+  "seat": "Winder",
+  "source": "Barrow County Legal Organ \u2014 Barrow News-Journal",
+  "run_date": "2026-07-23",
+  "records": 13100,
+  "owners": 1950,
+  "total_due": 2620000.0,
+  "by_year": {
+    "2022": {
+      "records": 1048,
+      "due": 183400.0
+    },
+    "2023": {
+      "records": 1834,
+      "due": 340600.0
+    },
+    "2024": {
+      "records": 3013,
+      "due": 576400.0
+    },
+    "2025": {
+      "records": 7205,
+      "due": 1519600.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5502,
+    "$100\u2013500": 4061,
+    "$500\u20131K": 2096,
+    "$1K\u20135K": 1179,
+    "$5K+": 262
+  },
+  "flags": {
+    "S": 6812,
+    "F": 4978,
+    "A": 1179,
+    "T": 131,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 39300.0
+}

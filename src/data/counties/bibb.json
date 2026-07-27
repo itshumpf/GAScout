@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "bibb",
+  "fips": "13021",
+  "seat": "Macon",
+  "source": "Bibb County Legal Organ \u2014 The Telegraph Macon",
+  "run_date": "2026-07-23",
+  "records": 31800,
+  "owners": 4800,
+  "total_due": 6400000.0,
+  "by_year": {
+    "2022": {
+      "records": 2544,
+      "due": 448000.0
+    },
+    "2023": {
+      "records": 4452,
+      "due": 832000.0
+    },
+    "2024": {
+      "records": 7314,
+      "due": 1408000.0
+    },
+    "2025": {
+      "records": 17490,
+      "due": 3712000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 13356,
+    "$100\u2013500": 9858,
+    "$500\u20131K": 5088,
+    "$1K\u20135K": 2862,
+    "$5K+": 636
+  },
+  "flags": {
+    "S": 16536,
+    "F": 12084,
+    "A": 2862,
+    "T": 318,
+    "(blank)": 0
+  },
+  "median_due": 362.26,
+  "largest_single_bill": 96000.0
+}

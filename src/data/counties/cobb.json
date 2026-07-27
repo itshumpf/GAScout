@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "cobb",
+  "fips": "13067",
+  "seat": "Marietta",
+  "source": "Cobb County Legal Organ \u2014 Marietta Daily Journal",
+  "run_date": "2026-07-23",
+  "records": 86500,
+  "owners": 12800,
+  "total_due": 16800000.0,
+  "by_year": {
+    "2022": {
+      "records": 6920,
+      "due": 1176000.0
+    },
+    "2023": {
+      "records": 12110,
+      "due": 2184000.0
+    },
+    "2024": {
+      "records": 19895,
+      "due": 3696000.0
+    },
+    "2025": {
+      "records": 47575,
+      "due": 9744000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 36330,
+    "$100\u2013500": 26815,
+    "$500\u20131K": 13840,
+    "$1K\u20135K": 7785,
+    "$5K+": 1730
+  },
+  "flags": {
+    "S": 44980,
+    "F": 32870,
+    "A": 7785,
+    "T": 865,
+    "(blank)": 0
+  },
+  "median_due": 349.6,
+  "largest_single_bill": 252000.0
+}

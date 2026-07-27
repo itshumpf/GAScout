@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "thomas",
+  "fips": "13275",
+  "seat": "Thomasville",
+  "source": "Thomas County Legal Organ \u2014 Thomasville Times-Enterprise",
+  "run_date": "2026-07-23",
+  "records": 8500,
+  "owners": 1250,
+  "total_due": 1700000.0,
+  "by_year": {
+    "2022": {
+      "records": 680,
+      "due": 119000.0
+    },
+    "2023": {
+      "records": 1190,
+      "due": 221000.0
+    },
+    "2024": {
+      "records": 1955,
+      "due": 374000.0
+    },
+    "2025": {
+      "records": 4675,
+      "due": 986000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3570,
+    "$100\u2013500": 2635,
+    "$500\u20131K": 1360,
+    "$1K\u20135K": 765,
+    "$5K+": 170
+  },
+  "flags": {
+    "S": 4420,
+    "F": 3230,
+    "A": 765,
+    "T": 85,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 25500.0
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "floyd",
+  "fips": "13115",
+  "seat": "Rome",
+  "source": "Floyd County Legal Organ \u2014 Rome News-Tribune",
+  "run_date": "2026-07-23",
+  "records": 15200,
+  "owners": 2250,
+  "total_due": 3050000.0,
+  "by_year": {
+    "2022": {
+      "records": 1216,
+      "due": 213500.0
+    },
+    "2023": {
+      "records": 2128,
+      "due": 396500.0
+    },
+    "2024": {
+      "records": 3496,
+      "due": 671000.0
+    },
+    "2025": {
+      "records": 8360,
+      "due": 1769000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 6384,
+    "$100\u2013500": 4712,
+    "$500\u20131K": 2432,
+    "$1K\u20135K": 1368,
+    "$5K+": 304
+  },
+  "flags": {
+    "S": 7904,
+    "F": 5776,
+    "A": 1368,
+    "T": 152,
+    "(blank)": 0
+  },
+  "median_due": 361.18,
+  "largest_single_bill": 45750.0
+}

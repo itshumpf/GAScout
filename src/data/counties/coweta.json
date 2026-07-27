@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "coweta",
+  "fips": "13077",
+  "seat": "Newnan",
+  "source": "Coweta County Legal Organ \u2014 The Times-Herald",
+  "run_date": "2026-07-23",
+  "records": 21400,
+  "owners": 3200,
+  "total_due": 4250000.0,
+  "by_year": {
+    "2022": {
+      "records": 1712,
+      "due": 297500.0
+    },
+    "2023": {
+      "records": 2996,
+      "due": 552500.0
+    },
+    "2024": {
+      "records": 4922,
+      "due": 935000.0
+    },
+    "2025": {
+      "records": 11770,
+      "due": 2465000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 8988,
+    "$100\u2013500": 6634,
+    "$500\u20131K": 3424,
+    "$1K\u20135K": 1926,
+    "$5K+": 428
+  },
+  "flags": {
+    "S": 11128,
+    "F": 8132,
+    "A": 1926,
+    "T": 214,
+    "(blank)": 0
+  },
+  "median_due": 357.48,
+  "largest_single_bill": 63750.0
+}

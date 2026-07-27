@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "bulloch",
+  "fips": "13031",
+  "seat": "Statesboro",
+  "source": "Bulloch County Legal Organ \u2014 Statesboro Herald",
+  "run_date": "2026-07-23",
+  "records": 14500,
+  "owners": 2150,
+  "total_due": 2900000.0,
+  "by_year": {
+    "2022": {
+      "records": 1160,
+      "due": 203000.0
+    },
+    "2023": {
+      "records": 2030,
+      "due": 377000.0
+    },
+    "2024": {
+      "records": 3335,
+      "due": 638000.0
+    },
+    "2025": {
+      "records": 7975,
+      "due": 1682000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 6090,
+    "$100\u2013500": 4495,
+    "$500\u20131K": 2320,
+    "$1K\u20135K": 1305,
+    "$5K+": 290
+  },
+  "flags": {
+    "S": 7540,
+    "F": 5510,
+    "A": 1305,
+    "T": 145,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 43500.0
+}

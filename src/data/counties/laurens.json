@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "laurens",
+  "fips": "13175",
+  "seat": "Dublin",
+  "source": "Laurens County Legal Organ \u2014 The Courier Herald",
+  "run_date": "2026-07-23",
+  "records": 9800,
+  "owners": 1450,
+  "total_due": 1950000.0,
+  "by_year": {
+    "2022": {
+      "records": 784,
+      "due": 136500.0
+    },
+    "2023": {
+      "records": 1372,
+      "due": 253500.0
+    },
+    "2024": {
+      "records": 2254,
+      "due": 429000.0
+    },
+    "2025": {
+      "records": 5390,
+      "due": 1131000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 4116,
+    "$100\u2013500": 3038,
+    "$500\u20131K": 1568,
+    "$1K\u20135K": 882,
+    "$5K+": 196
+  },
+  "flags": {
+    "S": 5096,
+    "F": 3724,
+    "A": 882,
+    "T": 98,
+    "(blank)": 0
+  },
+  "median_due": 358.16,
+  "largest_single_bill": 29250.0
+}

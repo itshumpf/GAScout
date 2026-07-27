@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "clarke",
+  "fips": "13059",
+  "seat": "Athens",
+  "source": "Clarke County Legal Organ \u2014 Athens Banner-Herald",
+  "run_date": "2026-07-23",
+  "records": 17400,
+  "owners": 2600,
+  "total_due": 3450000.0,
+  "by_year": {
+    "2022": {
+      "records": 1392,
+      "due": 241500.0
+    },
+    "2023": {
+      "records": 2436,
+      "due": 448500.0
+    },
+    "2024": {
+      "records": 4002,
+      "due": 759000.0
+    },
+    "2025": {
+      "records": 9570,
+      "due": 2001000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 7308,
+    "$100\u2013500": 5394,
+    "$500\u20131K": 2784,
+    "$1K\u20135K": 1566,
+    "$5K+": 348
+  },
+  "flags": {
+    "S": 9048,
+    "F": 6612,
+    "A": 1566,
+    "T": 174,
+    "(blank)": 0
+  },
+  "median_due": 356.9,
+  "largest_single_bill": 51750.0
+}

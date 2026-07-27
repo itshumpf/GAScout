@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "dekalb",
+  "fips": "13089",
+  "seat": "Decatur",
+  "source": "DeKalb County Tax Commissioner \u2014 Delinquent Tax Listing",
+  "run_date": "2026-07-23",
+  "records": 409142,
+  "owners": 15144,
+  "total_due": 62751158.99,
+  "by_year": {
+    "2022": {
+      "records": 32731,
+      "due": 4392581.13
+    },
+    "2023": {
+      "records": 57279,
+      "due": 8157650.67
+    },
+    "2024": {
+      "records": 94102,
+      "due": 13805254.98
+    },
+    "2025": {
+      "records": 225028,
+      "due": 36395672.21
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 171839,
+    "$100\u2013500": 126834,
+    "$500\u20131K": 65462,
+    "$1K\u20135K": 36822,
+    "$5K+": 8182
+  },
+  "flags": {
+    "S": 212753,
+    "F": 155473,
+    "A": 36822,
+    "T": 4091,
+    "(blank)": 0
+  },
+  "median_due": 276.07,
+  "largest_single_bill": 941267.38
+}

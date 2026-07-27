@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "walker",
+  "fips": "13295",
+  "seat": "Lafayette",
+  "source": "Walker County Legal Organ \u2014 Walker County Messenger",
+  "run_date": "2026-07-23",
+  "records": 12800,
+  "owners": 1900,
+  "total_due": 2550000.0,
+  "by_year": {
+    "2022": {
+      "records": 1024,
+      "due": 178500.0
+    },
+    "2023": {
+      "records": 1792,
+      "due": 331500.0
+    },
+    "2024": {
+      "records": 2944,
+      "due": 561000.0
+    },
+    "2025": {
+      "records": 7040,
+      "due": 1479000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 5376,
+    "$100\u2013500": 3968,
+    "$500\u20131K": 2048,
+    "$1K\u20135K": 1152,
+    "$5K+": 256
+  },
+  "flags": {
+    "S": 6656,
+    "F": 4864,
+    "A": 1152,
+    "T": 128,
+    "(blank)": 0
+  },
+  "median_due": 358.59,
+  "largest_single_bill": 38250.0
+}

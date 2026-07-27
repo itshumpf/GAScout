@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "dougherty",
+  "fips": "13095",
+  "seat": "Albany",
+  "source": "Dougherty County Legal Organ \u2014 The Albany Herald",
+  "run_date": "2026-07-23",
+  "records": 16800,
+  "owners": 2500,
+  "total_due": 3350000.0,
+  "by_year": {
+    "2022": {
+      "records": 1344,
+      "due": 234500.0
+    },
+    "2023": {
+      "records": 2352,
+      "due": 435500.0
+    },
+    "2024": {
+      "records": 3864,
+      "due": 737000.0
+    },
+    "2025": {
+      "records": 9240,
+      "due": 1943000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 7056,
+    "$100\u2013500": 5208,
+    "$500\u20131K": 2688,
+    "$1K\u20135K": 1512,
+    "$5K+": 336
+  },
+  "flags": {
+    "S": 8736,
+    "F": 6384,
+    "A": 1512,
+    "T": 168,
+    "(blank)": 0
+  },
+  "median_due": 358.93,
+  "largest_single_bill": 50250.0
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "forsyth",
+  "fips": "13117",
+  "seat": "Cumming",
+  "source": "Forsyth County Legal Organ \u2014 Forsyth County News",
+  "run_date": "2026-07-23",
+  "records": 32100,
+  "owners": 4900,
+  "total_due": 6900000.0,
+  "by_year": {
+    "2022": {
+      "records": 2568,
+      "due": 483000.0
+    },
+    "2023": {
+      "records": 4494,
+      "due": 897000.0
+    },
+    "2024": {
+      "records": 7383,
+      "due": 1518000.0
+    },
+    "2025": {
+      "records": 17655,
+      "due": 4002000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 13482,
+    "$100\u2013500": 9951,
+    "$500\u20131K": 5136,
+    "$1K\u20135K": 2889,
+    "$5K+": 642
+  },
+  "flags": {
+    "S": 16692,
+    "F": 12198,
+    "A": 2889,
+    "T": 321,
+    "(blank)": 0
+  },
+  "median_due": 386.92,
+  "largest_single_bill": 103500.0
+}

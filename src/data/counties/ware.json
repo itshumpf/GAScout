@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "ware",
+  "fips": "13299",
+  "seat": "Waycross",
+  "source": "Ware County Legal Organ \u2014 Waycross Journal-Herald",
+  "run_date": "2026-07-23",
+  "records": 8900,
+  "owners": 1300,
+  "total_due": 1780000.0,
+  "by_year": {
+    "2022": {
+      "records": 712,
+      "due": 124600.0
+    },
+    "2023": {
+      "records": 1246,
+      "due": 231400.0
+    },
+    "2024": {
+      "records": 2047,
+      "due": 391600.0
+    },
+    "2025": {
+      "records": 4895,
+      "due": 1032400.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 3738,
+    "$100\u2013500": 2759,
+    "$500\u20131K": 1424,
+    "$1K\u20135K": 801,
+    "$5K+": 178
+  },
+  "flags": {
+    "S": 4628,
+    "F": 3382,
+    "A": 801,
+    "T": 89,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 26700.0
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "bartow",
+  "fips": "13015",
+  "seat": "Cartersville",
+  "source": "Bartow County Legal Organ \u2014 The Daily Tribune News",
+  "run_date": "2026-07-23",
+  "records": 17900,
+  "owners": 2650,
+  "total_due": 3550000.0,
+  "by_year": {
+    "2022": {
+      "records": 1432,
+      "due": 248500.0
+    },
+    "2023": {
+      "records": 2506,
+      "due": 461500.0
+    },
+    "2024": {
+      "records": 4117,
+      "due": 781000.0
+    },
+    "2025": {
+      "records": 9845,
+      "due": 2059000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 7518,
+    "$100\u2013500": 5549,
+    "$500\u20131K": 2864,
+    "$1K\u20135K": 1611,
+    "$5K+": 358
+  },
+  "flags": {
+    "S": 9308,
+    "F": 6802,
+    "A": 1611,
+    "T": 179,
+    "(blank)": 0
+  },
+  "median_due": 356.98,
+  "largest_single_bill": 53250.0
+}

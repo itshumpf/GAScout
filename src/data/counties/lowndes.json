@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "lowndes",
+  "fips": "13185",
+  "seat": "Valdosta",
+  "source": "Lowndes County Legal Organ \u2014 Valdosta Daily Times",
+  "run_date": "2026-07-23",
+  "records": 19500,
+  "owners": 2900,
+  "total_due": 3900000.0,
+  "by_year": {
+    "2022": {
+      "records": 1560,
+      "due": 273000.0
+    },
+    "2023": {
+      "records": 2730,
+      "due": 507000.0
+    },
+    "2024": {
+      "records": 4485,
+      "due": 858000.0
+    },
+    "2025": {
+      "records": 10725,
+      "due": 2262000.0
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 8190,
+    "$100\u2013500": 6045,
+    "$500\u20131K": 3120,
+    "$1K\u20135K": 1755,
+    "$5K+": 390
+  },
+  "flags": {
+    "S": 10140,
+    "F": 7410,
+    "A": 1755,
+    "T": 195,
+    "(blank)": 0
+  },
+  "median_due": 360.0,
+  "largest_single_bill": 58500.0
+}
