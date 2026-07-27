@@ -11,6 +11,17 @@
     "total_due": 62751158.99
   },
   {
+    "slug": "fulton",
+    "name": "Fulton",
+    "fips": "13121",
+    "seat": "Atlanta",
+    "is_live": true,
+    "status": "LIVE SHERIFF TAX SALES",
+    "legal_organ": "Fulton County Sheriff Tax Sales Roll",
+    "records": 3,
+    "total_due": 48200.5
+  },
+  {
     "slug": "appling",
     "name": "Appling",
     "fips": "13001",
@@ -645,17 +656,6 @@
     "is_live": false,
     "status": "ADAPTER PLANNED",
     "legal_organ": "Franklin Legal Organ",
-    "records": 0,
-    "total_due": 0.0
-  },
-  {
-    "slug": "fulton",
-    "name": "Fulton",
-    "fips": "13121",
-    "seat": "Atlanta",
-    "is_live": false,
-    "status": "DEVELOPMENT",
-    "legal_organ": "The South Fulton Neighbor",
     "records": 0,
     "total_due": 0.0
   },

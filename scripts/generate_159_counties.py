@@ -1,8 +1,8 @@
 """Generate audit-proof 159 Georgia County datasets for GAScout.
 
-DeKalb is the single LIVE PRODUCTION INGESTION anchor ($62.75M / 409k records).
-The remaining 158 counties display authentic registry metadata (FIPS, Seat, Legal Organ, Adapter Status)
-without invented dollar or record counts.
+DeKalb is LIVE PRODUCTION ($62.75M / 409k records).
+Fulton is LIVE SHERIFF TAX SALES (3 records / Fulton Sheriff Levy Roll).
+The remaining 157 counties display authentic registry metadata (FIPS, Seat, Legal Organ, Adapter Status).
 """
 
 import json
@@ -14,6 +14,10 @@ raw_counties = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
 # Load real DeKalb dashboard data
 DEKALB_PATH = Path("C:/dev/georgia/gascrape-site/src/data/dashboard.json")
 dekalb_real = json.loads(DEKALB_PATH.read_text(encoding="utf-8"))
+
+# Load real Fulton Sheriff dashboard data
+FULTON_PATH = Path("C:/dev/georgia/gascrape-site/src/data/counties/fulton.json")
+fulton_real = json.loads(FULTON_PATH.read_text(encoding="utf-8")) if FULTON_PATH.exists() else None
 
 out_dir = Path("C:/dev/georgia/gascrape-site/src/data/counties")
 out_dir.mkdir(parents=True, exist_ok=True)
@@ -62,8 +66,21 @@ for county_info in raw_counties:
             "records": dekalb_real["records"],
             "total_due": dekalb_real["total_due"]
         })
+    elif slug == "fulton" and fulton_real:
+        data = fulton_real
+        manifest.append({
+            "slug": "fulton",
+            "name": "Fulton",
+            "fips": fips,
+            "seat": seat,
+            "is_live": True,
+            "status": "LIVE SHERIFF TAX SALES",
+            "legal_organ": "Fulton County Sheriff Tax Sales Roll",
+            "records": fulton_real["records"],
+            "total_due": fulton_real["total_due"]
+        })
     else:
-        # 158 Non-DeKalb Counties: Audit-proof metadata only (NO invented numbers)
+        # 157 Non-DeKalb/Fulton Counties: Audit-proof metadata only (NO invented numbers)
         status_label = "ADAPTER PLANNED" if status == "planned" else "DEVELOPMENT"
         data = {
             "county": slug,
@@ -97,4 +114,4 @@ for county_info in raw_counties:
 manifest.sort(key=lambda x: (not x["is_live"], x["name"]))
 
 (out_dir.parent / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-print(f"Successfully generated audit-proof 159 county registry data (1 Live, 158 Planned) in {out_dir}")
+print(f"Successfully generated audit-proof 159 county registry data (2 Live, 157 Planned) in {out_dir}")
