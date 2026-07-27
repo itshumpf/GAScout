@@ -771,3 +771,37 @@ input[type=range].sim-range-input::-webkit-slider-thumb:hover {
   .bar-item-row { grid-template-columns: 45px 1fr; }
   .chart-panel { padding: 18px; }
 }
+
+/* --- Tax-year bar chart layout (was missing; bars had width but no row/fill styling) --- */
+.custom-bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+.chart-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.chart-row .year-label {
+  width: 52px;
+  flex-shrink: 0;
+  text-align: left;
+}
+.bar-container {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 0;
+}
+.bar-value {
+  margin-left: auto;
+  padding: 0 10px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+}

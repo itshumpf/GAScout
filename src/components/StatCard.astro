@@ -1,17 +1,17 @@
 ---
 interface Props {
   value: number | string;
-  label: string;
-  description?: string;
+  title: string;
+  subtitle?: string;
   variant?: "emerald" | "cyan" | "amber" | "default";
 }
 
-const { value, label, description, variant = "default" } = Astro.props;
+const { value, title, subtitle, variant = "default" } = Astro.props;
 const variantClass = variant !== "default" ? `accent-${variant}` : "";
 ---
 
 <div class:list={["stat-card-glass", variantClass]}>
   <span class="stat-value">{value}</span>
-  <span class="stat-label">{label}</span>
-  {description && <div class="stat-desc">{description}</div>}
+  <span class="stat-label">{title}</span>
+  {subtitle && <div class="stat-desc">{subtitle}</div>}
 </div>

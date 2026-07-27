@@ -11,6 +11,12 @@ const fmtCompactMoney = (n: number): string =>
   n >= 1_000_000
     ? `$${(n / 1_000_000).toFixed(2)}M`
     : `$${(n / 1_000).toFixed(0)}K`;
+
+// Group all live counties first (any order they appear in the manifest),
+// then the planned ones — so live counties always anchor to the top.
+const live = manifest.filter((i: any) => i.is_live);
+const planned = manifest.filter((i: any) => !i.is_live);
+const ordered = [...live, ...planned];
 ---
 
 <div class="county-selector-bar glass-panel" style="margin-top: 18px; padding: 14px 20px; border-radius: 12px;">
@@ -22,7 +28,7 @@ const fmtCompactMoney = (n: number): string =>
           GEORGIA PUBLIC RECORDS COVERAGE ENGINE (159 GA COUNTIES)
         </div>
         <div style="font-size: 0.78rem; color: var(--text-muted);">
-          3 live counties (DeKalb $62.7M · Gwinnett $80.3M · Fulton 148 auction properties). Select any county to view dashboard or adapter roadmap.
+          {live.length} live {live.length === 1 ? "county" : "counties"} ({live.map((c: any) => c.name).join(" · ")}). Select any county to view dashboard or adapter roadmap.
         </div>
       </div>
     </div>
@@ -37,7 +43,7 @@ const fmtCompactMoney = (n: number): string =>
         onchange="window.location.href = this.value === 'dekalb' ? '/' : '/' + this.value"
         style="font-family: var(--font-mono); font-size: 0.85rem; background: #0f172a; color: #38bdf8; border: 1px solid #38bdf8; padding: 8px 14px; border-radius: 8px; cursor: pointer; outline: none;"
       >
-        {manifest.map((item) => (
+        {ordered.map((item: any) => (
           <option
             value={item.slug}
             selected={item.slug === currentSlug}
