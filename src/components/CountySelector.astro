@@ -40,9 +40,10 @@ const ordered = [...live, ...planned];
       </label>
       <select
         id="county-select"
-        onchange="window.location.href = this.value === 'dekalb' ? '/' : '/' + this.value"
+        onchange="if (this.value) window.location.href = '/' + this.value"
         style="font-family: var(--font-mono); font-size: 0.85rem; background: #0f172a; color: #38bdf8; border: 1px solid #38bdf8; padding: 8px 14px; border-radius: 8px; cursor: pointer; outline: none;"
       >
+        <option value="" disabled selected={currentSlug === ""}>Select your county…</option>
         {ordered.map((item: any) => (
           <option
             value={item.slug}

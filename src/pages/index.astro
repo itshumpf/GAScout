@@ -1,38 +1,29 @@
 ---
 import "../styles/global.css";
-import StatCard from "../components/StatCard.astro";
-import Simulator from "../components/Simulator.astro";
-import PipelineFlow from "../components/PipelineFlow.astro";
 import CountySelector from "../components/CountySelector.astro";
+import PipelineFlow from "../components/PipelineFlow.astro";
 import manifest from "../data/manifest.json";
-import dekalbData from "../data/dashboard.json";
 
 const liveCounties = manifest.filter((c: any) => c.is_live);
 const plannedCounties = manifest.filter((c: any) => !c.is_live);
 
-// Load county JSON files so live cards can read adapter, has_amounts, sale_date, parcels
 const countyFiles = import.meta.glob('../data/counties/*.json', { eager: true });
 const getCountyData = (slug: string): any => {
   const path = `../data/counties/${slug}.json`;
   return (countyFiles[path] as any)?.default || countyFiles[path] || {};
 };
 
-// Human-readable adapter labels (falls back to raw adapter slug for new counties)
 const adapterLabels: Record<string, string> = {
   dekalb_pdf: "Mainframe PDF Parser (DQ205GADEK)",
   gwinnett_xlsx: "Weekly XLSX Delinquent Roll (Tax Commissioner)",
+  cobb_pdf: "Monthly Delinquent PDF (Tax Commissioner)",
   fulton_sheriff: "Scanned PDF OCR (Sheriff Levy Roll)",
 };
 
-const fmtInt = (n: number): string => n.toLocaleString("en-US");
-const fmtMoney = (n: number): string =>
-  "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const fmtCompactMoney = (n: number): string =>
-  n >= 1_000_000
-    ? `$${(n / 1_000_000).toFixed(2)}M`
-    : n >= 10_000
-      ? `$${(n / 1_000).toFixed(1)}K`
-      : fmtMoney(n);
+  n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(2)}M`
+  : n >= 10_000 ? `$${(n / 1_000).toFixed(1)}K`
+  : `$${(n || 0).toFixed(2)}`;
 ---
 
 <!doctype html>
@@ -40,14 +31,10 @@ const fmtCompactMoney = (n: number): string =>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="GAScout — Statewide Georgia Public Records Intelligence Engine. Primary production pipeline tracking $62.7M in DeKalb tax liens across 159 Georgia county registry endpoints."
-    />
-    <title>GAScout — Georgia Public Records Pipeline ($62.7M Tracked • 159 Counties)</title>
+    <meta name="description" content="GAScout — statewide Georgia public-records pipeline. Live delinquent-roll and tax-sale data for multiple counties, every figure aggregate and traceable to an official source." />
+    <title>GAScout — Georgia Public Records Pipeline</title>
   </head>
   <body>
-    <!-- Site Header -->
     <header class="site-header">
       <div class="wrap">
         <div class="hero-grid">
@@ -55,38 +42,35 @@ const fmtCompactMoney = (n: number): string =>
             <div class="brand-row">
               <div class="logo-badge">
                 <span class="pulse-dot"></span>
-                LIVE PRODUCTION PIPELINE
+                {liveCounties.length} COUNTIES LIVE
               </div>
               <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); background: var(--bg-glass); padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border-glass);">
-                primary: <strong style="color: #10b981;">DEKALB COUNTY ($62.75M)</strong>
+                159-county Georgia registry
               </span>
             </div>
-            
+
             <h1 class="hero-title">
               GA<span class="brand-highlight">Scout</span> Intelligence Engine
             </h1>
-            
+
             <p class="hero-subtitle">
-              Enterprise public-records pipeline parsing <strong>409,142</strong> delinquent tax & property lien records ($62.7M tracked) from 9,915-page legacy mainframe PDFs with automated validation rails and a 159-county Georgia registry roadmap.
+              A statewide Georgia public-records pipeline. <strong>{liveCounties.length}</strong> counties are live with real delinquent-roll and tax-sale data; all 159 are on the registry roadmap. Every published figure is aggregate and traceable to an official county source — zero mock data.
             </p>
 
             <div class="hero-meta">
-              <span>🏛️ Primary Source: <strong>DeKalb Tax Commissioner Listing</strong></span>
-              <span>•</span>
-              <span>🔄 Built: <strong>1.53s Static SSG</strong></span>
+              <span>🏛️ Sources: <strong>County Tax Commissioner & Sheriff filings</strong></span>
               <span>•</span>
               <span>🛡️ Integrity: <strong>Zero Mock Data Policy</strong></span>
             </div>
 
-            <!-- 159 County Selector Bar -->
-            <CountySelector currentSlug="dekalb" />
+            <CountySelector currentSlug="" />
           </div>
 
           <div class="quick-action-badge glass-panel">
-            <span class="qa-number">{fmtCompactMoney(dekalbData.total_due)}</span>
-            <span class="qa-label">Verified DeKalb Tax Debt Tracked</span>
+            <span class="qa-number">{liveCounties.length}</span>
+            <span class="qa-label">Counties Live</span>
             <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #10b981; margin-top: 4px;">
-              Across {fmtInt(dekalbData.records)} Verified Property Bills
+              of 159 on the Georgia roadmap
             </div>
           </div>
         </div>
@@ -94,42 +78,29 @@ const fmtCompactMoney = (n: number): string =>
     </header>
 
     <main class="wrap main-content">
-      <!-- 6-Metric Stat Row -->
-      <section class="stats-grid" aria-label="DeKalb Production Summary Statistics">
-        <StatCard title="PRODUCTION DEBT" value={fmtCompactMoney(dekalbData.total_due)} subtitle="Verified DeKalb County tax liens" variant="emerald" />
-        <StatCard title="PARSED RECORDS" value={fmtInt(dekalbData.records)} subtitle="0 dropped rows from 9,915-page PDF" variant="cyan" />
-        <StatCard title="UNIQUE OWNERS" value={fmtInt(dekalbData.owners)} subtitle="Avg 27.0 delinquent bills per owner" variant="cyan" />
-        <StatCard title="REGISTRY SCOPE" value="159 Counties" subtitle="Complete Georgia coverage engine" variant="amber" />
-        <StatCard title="LARGEST SINGLE BILL" value={fmtCompactMoney(dekalbData.largest_single_bill)} subtitle="Single highest tax lien balance" variant="amber" />
-        <StatCard title="VALIDATION RAILS" value="90 Fixtures" subtitle="Count floors, 5-col checksums, alarms" variant="cyan" />
-      </section>
-
-      <!-- 159-County Pipeline Registry Roadmap Grid -->
       <section class="analysis-section glass-panel">
         <div class="section-header">
           <span class="section-icon">🗺️</span>
           <div>
-            <h2>Georgia Statewide Pipeline Registry Roadmap (159 Counties)</h2>
-            <p>{liveCounties.length} live production {liveCounties.length === 1 ? 'county' : 'counties'} ({liveCounties.map((c: any) => c.name).join(', ')}). Select any county to inspect dashboard or adapter status.</p>
+            <h2>Georgia Statewide Pipeline Registry (159 Counties)</h2>
+            <p>{liveCounties.length} live production {liveCounties.length === 1 ? 'county' : 'counties'} ({liveCounties.map((c: any) => c.name).join(', ')}). Select any county to inspect its dashboard or adapter status.</p>
           </div>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 16px;">
-          {/* Dynamic Live County Cards — auto-populated from manifest + county JSON */}
           {liveCounties.map((c: any) => {
             const data = getCountyData(c.slug);
             const isSaleList = data.has_amounts === false;
             const adapterLabel = adapterLabels[data.adapter] || data.adapter || 'unknown';
-            const parcelsStr = data.parcels ? ` \u2022 ${data.parcels.toLocaleString()} Parcels` : '';
+            const parcelsStr = data.parcels ? ` • ${data.parcels.toLocaleString()} Parcels` : '';
             const description = isSaleList
-              ? `${c.records.toLocaleString()} Auction Properties \u2022 ${data.sale_date || ''} Sheriff Sale`
-              : `${fmtCompactMoney(c.total_due)} Debt Tracked \u2022 ${c.records.toLocaleString()} Records${parcelsStr}`;
-            const href = c.slug === 'dekalb' ? '/' : `/${c.slug}`;
+              ? `${c.records.toLocaleString()} Auction Properties • ${data.sale_date || ''} Sheriff Sale`
+              : `${fmtCompactMoney(c.total_due)} Debt Tracked • ${c.records.toLocaleString()} Records${parcelsStr}`;
             return (
               <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
                   <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
-                    \uD83D\uDFE2 {c.name} County
+                    🟢 {c.name} County
                   </span>
                   <span style="font-family: var(--font-mono); font-size: 0.7rem; background: #10b981; color: #000; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
                     {c.status}
@@ -141,15 +112,14 @@ const fmtCompactMoney = (n: number): string =>
                 <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
                   Adapter: {adapterLabel}
                 </div>
-                <a href={href} style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
-                  {isSaleList ? 'Inspect Auction Dashboard \u2192' : 'Inspect Production Dashboard \u2192'}
+                <a href={`/${c.slug}`} style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
+                  {isSaleList ? 'Inspect Auction Dashboard →' : 'Inspect Production Dashboard →'}
                 </a>
               </div>
             );
           })}
 
-          <!-- Featured Planned County Cards -->
-          {plannedCounties.slice(0, 9).map((c) => (
+          {plannedCounties.slice(0, 9).map((c: any) => (
             <div style="background: var(--bg-glass); border: 1px solid var(--border-glass); padding: 16px; border-radius: 10px;">
               <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
                 <span style="font-family: var(--font-mono); font-weight: 700; color: var(--text-primary); font-size: 1rem;">
@@ -170,14 +140,9 @@ const fmtCompactMoney = (n: number): string =>
         </div>
       </section>
 
-      <!-- Revenue Recovery Simulator -->
-      <Simulator totalDue={dekalbData.total_due} records={dekalbData.records} owners={dekalbData.owners} amountBands={dekalbData.amount_bands} />
-
-      <!-- 6-Node Single Row Pipeline Architecture -->
       <PipelineFlow />
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
       <div class="wrap footer-content">
         <div>
@@ -185,11 +150,11 @@ const fmtCompactMoney = (n: number): string =>
             GAScout Intelligence Engine — Statewide Georgia Public Records Platform
           </div>
           <div>
-            Built with Astro & Vanilla CSS. Production pipeline anchored by DeKalb County Tax Commissioner listings.
+            Built with Astro &amp; Vanilla CSS. Aggregate figures only; every number traceable to an official county source.
           </div>
         </div>
         <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
-          1.53s SSG Build • 100/100 Lighthouse Performance
+          Zero Mock Data • Source-Verified
         </div>
       </div>
     </footer>
