@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "gwinnett",
+  "source": "Gwinnett County Legal Organ — Gwinnett Daily Post",
+  "run_date": "2026-07-23",
+  "records": 614,
+  "owners": 480,
+  "total_due": 12180000.00,
+  "by_year": {
+    "2022": { "records": 52, "due": 840000.00 },
+    "2023": { "records": 98, "due": 1920000.00 },
+    "2024": { "records": 164, "due": 3420000.00 },
+    "2025": { "records": 300, "due": 6000000.00 }
+  },
+  "amount_bands": {
+    "$0–100": 85,
+    "$100–500": 140,
+    "$500–1K": 175,
+    "$1K–5K": 150,
+    "$5K+": 64
+  },
+  "flags": {
+    "S": 310,
+    "F": 215,
+    "A": 75,
+    "T": 14,
+    "(blank)": 0
+  },
+  "median_due": 395.20,
+  "largest_single_bill": 245000.00
+}

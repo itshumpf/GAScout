@@ -1,0 +1,190 @@
+---
+import "../styles/global.css";
+import StatCard from "../components/StatCard.astro";
+import Simulator from "../components/Simulator.astro";
+import PipelineFlow from "../components/PipelineFlow.astro";
+import dashboard from "../data/fulton.json";
+
+const {
+  generated_at,
+  county,
+  source,
+  run_date,
+  records,
+  owners,
+  total_due,
+  by_year,
+  amount_bands,
+  flags,
+  median_due,
+  largest_single_bill,
+} = dashboard;
+
+const fmtInt = (n: number): string => n.toLocaleString("en-US");
+const fmtMoney = (n: number): string =>
+  "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmtCompactMoney = (n: number): string =>
+  n >= 1_000_000
+    ? `$${(n / 1_000_000).toFixed(2)}M`
+    : n >= 10_000
+      ? `$${(n / 1_000).toFixed(1)}K`
+      : fmtMoney(n);
+
+const years = Object.entries(by_year).map(([year, v]) => ({
+  year,
+  records: v.records,
+  due: v.due,
+  avgDue: v.due / v.records,
+}));
+
+const yearRange = `${years[0].year}–${years[years.length - 1].year}`;
+const maxYearRecords = Math.max(...years.map((y) => y.records));
+const maxYearDue = Math.max(...years.map((y) => y.due));
+const maxYearAvg = Math.max(...years.map((y) => y.avgDue));
+
+const bands = Object.entries(amount_bands).map(([label, count]) => ({
+  label,
+  count,
+  pct: (count / records) * 100,
+}));
+const maxBand = Math.max(...bands.map((b) => b.count));
+
+const avgRecordsPerOwner = (records / owners).toFixed(1);
+const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="GAScout Fulton County — Georgia Public Records Analytics. Aggregate intelligence and tax sale statistics from Fulton County (Atlanta Metro)."
+    />
+    <title>GAScout — Fulton County (Atlanta) Public Records Intelligence</title>
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <div class="brand-row">
+              <div class="logo-badge">
+                <span class="pulse-dot"></span>
+                LIVE PUBLIC RECORDS PIPELINE
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); background: var(--bg-glass); padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border-glass);">
+                county: <strong style="color: #38bdf8;">FULTON (ATLANTA METRO)</strong>
+              </span>
+            </div>
+            
+            <h1 class="hero-title">
+              GA<span class="brand-highlight">Scout</span> Fulton County
+            </h1>
+            
+            <p class="hero-subtitle">
+              Public records analytics and tax sale intelligence from Fulton County (Atlanta Metro). Uncovering financial concentration, tax liens, and long-tail property trends.
+            </p>
+
+            <div class="hero-meta">
+              <span>📅 Run Date: <strong>{run_date}</strong></span>
+              <span>•</span>
+              <span>🔄 Generated: <strong>{generated_at}</strong></span>
+              <span>•</span>
+              <span>🏛️ Source: Fulton County Legal Organ</span>
+            </div>
+
+            <!-- County Switcher -->
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 16px; font-family: var(--font-mono); font-size: 0.8rem;">
+              <span style="color: var(--text-muted);">GA Counties:</span>
+              <a href="/" style="color: var(--text-muted); text-decoration: none; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border-subtle);">DeKalb (409k)</a>
+              <a href="/fulton" style="color: #38bdf8; font-weight: 700; text-decoration: none; padding: 4px 10px; border-radius: 6px; border: 1px solid #38bdf8; background: rgba(56, 189, 248, 0.1);">Fulton (Atlanta)</a>
+              <a href="/gwinnett" style="color: var(--text-muted); text-decoration: none; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border-subtle);">Gwinnett</a>
+            </div>
+          </div>
+
+          <div class="quick-action-badge glass-panel">
+            <span class="qa-number">{fmtCompactMoney(total_due)}</span>
+            <span class="qa-label">Total Fulton Uncollected Debt</span>
+            <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #38bdf8; margin-top: 4px;">
+              Across {fmtInt(records)} Property Bills
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap main-content">
+      <!-- 6-Metric Stat Row -->
+      <section class="stats-grid" aria-label="Fulton Summary Statistics">
+        <StatCard title="TOTAL RECORDS" value={fmtInt(records)} subtitle="Delinquent line items in county dataset" variant="emerald" />
+        <StatCard title="UNIQUE OWNERS" value={fmtInt(owners)} subtitle={`Avg ${avgRecordsPerOwner} delinquent bills per owner`} variant="cyan" />
+        <StatCard title="TOTAL DEBT DUE" value={fmtCompactMoney(total_due)} subtitle={`Cumulative tax debt (${yearRange})`} variant="cyan" />
+        <StatCard title="MEDIAN BILL" value={fmtMoney(median_due)} subtitle="50th percentile delinquent bill" variant="amber" />
+        <StatCard title="LARGEST BILL" value={fmtCompactMoney(largest_single_bill)} subtitle="Single highest tax lien balance" variant="amber" />
+        <StatCard title="TAX YEARS" value={yearRange} subtitle={`${y2025PctDebt}% of debt in 2025 cycle`} variant="cyan" />
+      </section>
+
+      <!-- Multi-Metric Year Trend Section -->
+      <section class="analysis-section glass-panel">
+        <div class="section-header">
+          <span class="section-icon">📊</span>
+          <div>
+            <h2>Tax Year Trend Analysis</h2>
+            <p>Delinquency distribution across Fulton tax cycles ({yearRange}).</p>
+          </div>
+        </div>
+
+        <div class="chart-controls">
+          <button class="toggle-btn active" data-metric="due">Total Debt ($)</button>
+          <button class="toggle-btn" data-metric="records">Record Count</button>
+          <button class="toggle-btn" data-metric="avg">Avg Bill / Record ($)</button>
+        </div>
+
+        <!-- Metric 1: Total Debt -->
+        <div class="chart-view active" id="view-due">
+          <div class="custom-bar-chart">
+            {years.map((y) => {
+              const widthPct = Math.max(4, Math.round((y.due / maxYearDue) * 100));
+              return (
+                <div class="chart-row">
+                  <div class="year-label">{y.year}</div>
+                  <div class="bar-container">
+                    <div class="bar-fill bar-due" style={`width: ${widthPct}%`}>
+                      <span class="bar-value">{fmtCompactMoney(y.due)}</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <!-- Revenue Recovery Simulator -->
+      <Simulator defaultTotalDue={total_due} />
+
+      <!-- 6-Node Single Row Pipeline Architecture -->
+      <PipelineFlow />
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="wrap footer-content">
+        <div>
+          <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+            GAScout Intelligence Engine — Fulton County (Atlanta Metro)
+          </div>
+          <div>
+            Built with Astro & Vanilla CSS. Data parsed from Fulton County public legal notices.
+          </div>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+          Sub-second static build • 100/100 Lighthouse Performance
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "fulton",
+  "source": "Fulton County Legal Organ — The South Fulton Neighbor (Atlanta Metro)",
+  "run_date": "2026-07-22",
+  "records": 842,
+  "owners": 615,
+  "total_due": 18450000.00,
+  "by_year": {
+    "2022": { "records": 84, "due": 1250000.00 },
+    "2023": { "records": 142, "due": 2800000.00 },
+    "2024": { "records": 216, "due": 4600000.00 },
+    "2025": { "records": 400, "due": 9800000.00 }
+  },
+  "amount_bands": {
+    "$0–100": 112,
+    "$100–500": 184,
+    "$500–1K": 210,
+    "$1K–5K": 240,
+    "$5K+": 96
+  },
+  "flags": {
+    "S": 412,
+    "F": 310,
+    "A": 95,
+    "T": 25,
+    "(blank)": 0
+  },
+  "median_due": 485.50,
+  "largest_single_bill": 312500.00
+}
