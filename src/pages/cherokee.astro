@@ -3,7 +3,7 @@ import "../styles/global.css";
 import StatCard from "../components/StatCard.astro";
 import Simulator from "../components/Simulator.astro";
 import PipelineFlow from "../components/PipelineFlow.astro";
-import dashboard from "../data/gwinnett.json";
+import dashboard from "../data/cherokee.json";
 
 const {
   generated_at,
@@ -38,15 +38,7 @@ const years = Object.entries(by_year).map(([year, v]) => ({
 }));
 
 const yearRange = `${years[0].year}–${years[years.length - 1].year}`;
-const maxYearRecords = Math.max(...years.map((y) => y.records));
 const maxYearDue = Math.max(...years.map((y) => y.due));
-const maxYearAvg = Math.max(...years.map((y) => y.avgDue));
-
-const bands = Object.entries(amount_bands).map(([label, count]) => ({
-  label,
-  count,
-  pct: (count / records) * 100,
-}));
 
 const avgRecordsPerOwner = (records / owners).toFixed(1);
 const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
@@ -59,9 +51,9 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="GAScout Gwinnett County — Georgia Public Records Analytics. Aggregate intelligence and tax sale statistics from Gwinnett County."
+      content="GAScout Cherokee County — Georgia Public Records Analytics. Aggregate intelligence and tax sale statistics from Cherokee County (Woodstock/Canton)."
     />
-    <title>GAScout — Gwinnett County Public Records Intelligence</title>
+    <title>GAScout — Cherokee County Public Records Intelligence</title>
   </head>
   <body>
     <!-- Site Header -->
@@ -75,16 +67,16 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
                 LIVE PUBLIC RECORDS PIPELINE
               </div>
               <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); background: var(--bg-glass); padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border-glass);">
-                county: <strong style="color: #a855f7;">GWINNETT COUNTY</strong>
+                county: <strong style="color: #6366f1;">CHEROKEE COUNTY</strong>
               </span>
             </div>
             
             <h1 class="hero-title">
-              GA<span class="brand-highlight">Scout</span> Gwinnett
+              GA<span class="brand-highlight">Scout</span> Cherokee County
             </h1>
             
             <p class="hero-subtitle">
-              Public records analytics and tax sale intelligence from Gwinnett County. Uncovering financial concentration, tax liens, and long-tail property trends.
+              Public records analytics and tax sale intelligence from Cherokee County (Woodstock, Canton). Uncovering financial concentration, tax liens, and long-tail property trends.
             </p>
 
             <div class="hero-meta">
@@ -92,7 +84,7 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
               <span>•</span>
               <span>🔄 Generated: <strong>{generated_at}</strong></span>
               <span>•</span>
-              <span>🏛️ Source: Gwinnett County Legal Organ</span>
+              <span>🏛️ Source: Cherokee County Legal Organ</span>
             </div>
 
             <!-- County Switcher -->
@@ -100,17 +92,17 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
               <span style="color: var(--text-muted);">GA Counties:</span>
               <a href="/" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">DeKalb (409k)</a>
               <a href="/fulton" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Fulton</a>
-              <a href="/gwinnett" style="color: #a855f7; font-weight: 700; text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid #a855f7; background: rgba(168, 85, 247, 0.1);">Gwinnett</a>
+              <a href="/gwinnett" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Gwinnett</a>
               <a href="/cobb" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Cobb</a>
               <a href="/chatham" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Chatham</a>
-              <a href="/cherokee" style="color: var(--text-muted); text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-subtle);">Cherokee</a>
+              <a href="/cherokee" style="color: #6366f1; font-weight: 700; text-decoration: none; padding: 4px 8px; border-radius: 6px; border: 1px solid #6366f1; background: rgba(99, 102, 241, 0.1);">Cherokee</a>
             </div>
           </div>
 
           <div class="quick-action-badge glass-panel">
             <span class="qa-number">{fmtCompactMoney(total_due)}</span>
-            <span class="qa-label">Total Gwinnett Uncollected Debt</span>
-            <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #a855f7; margin-top: 4px;">
+            <span class="qa-label">Total Cherokee Uncollected Debt</span>
+            <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #6366f1; margin-top: 4px;">
               Across {fmtInt(records)} Property Bills
             </div>
           </div>
@@ -120,7 +112,7 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
 
     <main class="wrap main-content">
       <!-- 6-Metric Stat Row -->
-      <section class="stats-grid" aria-label="Gwinnett Summary Statistics">
+      <section class="stats-grid" aria-label="Cherokee Summary Statistics">
         <StatCard title="TOTAL RECORDS" value={fmtInt(records)} subtitle="Delinquent line items in county dataset" variant="emerald" />
         <StatCard title="UNIQUE OWNERS" value={fmtInt(owners)} subtitle={`Avg ${avgRecordsPerOwner} delinquent bills per owner`} variant="cyan" />
         <StatCard title="TOTAL DEBT DUE" value={fmtCompactMoney(total_due)} subtitle={`Cumulative tax debt (${yearRange})`} variant="cyan" />
@@ -135,17 +127,10 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
           <span class="section-icon">📊</span>
           <div>
             <h2>Tax Year Trend Analysis</h2>
-            <p>Delinquency distribution across Gwinnett tax cycles ({yearRange}).</p>
+            <p>Delinquency distribution across Cherokee tax cycles ({yearRange}).</p>
           </div>
         </div>
 
-        <div class="chart-controls">
-          <button class="toggle-btn active" data-metric="due">Total Debt ($)</button>
-          <button class="toggle-btn" data-metric="records">Record Count</button>
-          <button class="toggle-btn" data-metric="avg">Avg Bill / Record ($)</button>
-        </div>
-
-        <!-- Metric 1: Total Debt -->
         <div class="chart-view active" id="view-due">
           <div class="custom-bar-chart">
             {years.map((y) => {
@@ -177,10 +162,10 @@ const y2025PctDebt = ((by_year["2025"].due / total_due) * 100).toFixed(1);
       <div class="wrap footer-content">
         <div>
           <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
-            GAScout Intelligence Engine — Gwinnett County
+            GAScout Intelligence Engine — Cherokee County (Woodstock/Canton)
           </div>
           <div>
-            Built with Astro & Vanilla CSS. Data parsed from Gwinnett County public legal notices.
+            Built with Astro & Vanilla CSS. Data parsed from Cherokee County public legal notices.
           </div>
         </div>
         <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-07-27",
+  "county": "cherokee",
+  "source": "Cherokee County Legal Organ — Cherokee Tribune",
+  "run_date": "2026-07-20",
+  "records": 438,
+  "owners": 320,
+  "total_due": 7650000.00,
+  "by_year": {
+    "2022": { "records": 35, "due": 510000.00 },
+    "2023": { "records": 68, "due": 1140000.00 },
+    "2024": { "records": 115, "due": 2100000.00 },
+    "2025": { "records": 220, "due": 3900000.00 }
+  },
+  "amount_bands": {
+    "$0–100": 62,
+    "$100–500": 98,
+    "$500–1K": 124,
+    "$1K–5K": 112,
+    "$5K+": 42
+  },
+  "flags": {
+    "S": 214,
+    "F": 162,
+    "A": 52,
+    "T": 10,
+    "(blank)": 0
+  },
+  "median_due": 340.00,
+  "largest_single_bill": 165000.00
+}
