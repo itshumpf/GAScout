@@ -1,18 +1,37 @@
 ---
-import dashboard from "../data/dashboard.json";
+interface Props {
+  totalDue?: number;
+  records?: number;
+  owners?: number;
+  amountBands?: Record<string, number>;
+}
 
-const totalDue = dashboard.total_due;
-const totalRecords = dashboard.records;
-const totalOwners = dashboard.owners;
+const {
+  totalDue = 62751158.99,
+  records = 409142,
+  owners = 15144,
+  amountBands = {
+    "$0–100": 318431,
+    "$100–500": 68515,
+    "$500–1K": 12394,
+    "$1K–5K": 8779,
+    "$5K+": 1023
+  }
+} = Astro.props;
 
-// Bands data prepared for client calculation
-const bandData = [
-  { min: 0, max: 100, count: dashboard.amount_bands["$0–100"], approxDue: 6370000 },
-  { min: 100, max: 500, count: dashboard.amount_bands["$100–500"], approxDue: 15070000 },
-  { min: 500, max: 1000, count: dashboard.amount_bands["$500–1K"], approxDue: 8920000 },
-  { min: 1000, max: 5000, count: dashboard.amount_bands["$1K–5K"], approxDue: 21070000 },
-  { min: 5000, max: Infinity, count: dashboard.amount_bands["$5K+"], approxDue: 11321158.99 }
-];
+// Prepare band data dynamically for client calculation
+const b0_100 = amountBands["$0–100"] || 0;
+const b100_500 = amountBands["$100–500"] || 0;
+const b500_1k = amountBands["$500–1K"] || 0;
+const b1k_5k = amountBands["$1K–5K"] || 0;
+const b5k_plus = amountBands["$5K+"] || 0;
+
+const fmtCompact = (n: number): string =>
+  n >= 1_000_000
+    ? `$${(n / 1_000_000).toFixed(1)}M`
+    : n >= 1_000
+      ? `$${(n / 1_000).toFixed(1)}K`
+      : `$${n.toFixed(0)}`;
 ---
 
 <div class="simulator-box" id="revenue-simulator">
@@ -29,14 +48,14 @@ const bandData = [
   <div class="sim-slider-container">
     <div class="sim-slider-header">
       <span class="sim-slider-label">Target Minimum Bill Threshold:</span>
-      <span class="sim-threshold-val" id="threshold-display">$1,000</span>
+      <span class="sim-threshold-val" id="threshold-display">$0 (All Bills)</span>
     </div>
     <input 
       type="range" 
       min="0" 
       max="4" 
       step="1" 
-      value="3" 
+      value="0" 
       class="sim-range-input" 
       id="threshold-slider" 
       aria-label="Target Minimum Bill Threshold Slider"
@@ -52,81 +71,97 @@ const bandData = [
 
   <div class="sim-results-grid">
     <div class="sim-res-card">
-      <div class="sim-res-val" id="res-revenue">$32.4M</div>
+      <div class="sim-res-val" id="res-revenue">{fmtCompact(totalDue)}</div>
       <div class="sim-res-lbl">Est. Recoverable Debt</div>
-      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-emerald-bright); margin-top: 4px;" id="res-pct-debt">51.6% of total debt</div>
+      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-emerald-bright); margin-top: 4px;" id="res-pct-debt">100.0% of total debt</div>
     </div>
 
     <div class="sim-res-card">
-      <div class="sim-res-val" id="res-records" style="color: var(--accent-cyan-bright);">9,802</div>
+      <div class="sim-res-val" id="res-records">{records.toLocaleString()}</div>
       <div class="sim-res-lbl">Records Targeted</div>
-      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-cyan-bright); margin-top: 4px;" id="res-pct-records">Only 2.4% of rows</div>
+      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-cyan-bright); margin-top: 4px;" id="res-pct-rows">100.0% of all rows</div>
     </div>
 
     <div class="sim-res-card">
-      <div class="sim-res-val" id="res-owners" style="color: var(--accent-amber-bright);">~363</div>
+      <div class="sim-res-val" id="res-owners">~{owners.toLocaleString()}</div>
       <div class="sim-res-lbl">Approx. Owners Affected</div>
-      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-amber-bright); margin-top: 4px;">High-yield targets</div>
-    </div>
-
-    <div class="sim-res-card">
-      <div class="sim-res-val" id="res-efficiency" style="color: #c084fc;">Ultra High</div>
-      <div class="sim-res-lbl">Collection Efficiency</div>
-      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #c084fc; margin-top: 4px;" id="res-efficiency-desc">Maximum ROI per letter</div>
+      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-amber-bright); margin-top: 4px;" id="res-eff-rating">Baseline Target</div>
     </div>
   </div>
 </div>
 
-<script is:inline>
-  (function() {
-    const thresholds = [
-      { label: "$0 (All Bills)", min: 0, records: 409142, due: 62751158.99, efficiency: "Baseline", effDesc: "High admin burden" },
-      { label: "$100+", min: 100, records: 90711, due: 56381158.99, efficiency: "Moderate", effDesc: "Filters 318k micro-bills" },
-      { label: "$500+", min: 500, records: 22202, due: 41311588.99, efficiency: "High", effDesc: "Recovers 65.8% debt" },
-      { label: "$1,000+", min: 1000, records: 9802, due: 32391158.99, efficiency: "Ultra High", effDesc: "51.6% debt from 2.4% rows" },
-      { label: "$5,000+ (Whale Debt)", min: 5000, records: 1023, due: 11321158.99, efficiency: "Laser Focused", effDesc: "18.0% debt from 0.25% rows" }
-    ];
+<script is:inline define:vars={{ totalDue, records, owners, b0_100, b100_500, b500_1k, b1k_5k, b5k_plus }}>
+  const slider = document.getElementById("threshold-slider");
+  const display = document.getElementById("threshold-display");
+  const resRevenue = document.getElementById("res-revenue");
+  const resPctDebt = document.getElementById("res-pct-debt");
+  const resRecords = document.getElementById("res-records");
+  const resPctRows = document.getElementById("res-pct-rows");
+  const resOwners = document.getElementById("res-owners");
+  const resEffRating = document.getElementById("res-eff-rating");
 
-    const slider = document.getElementById('threshold-slider');
-    const display = document.getElementById('threshold-display');
-    const resRevenue = document.getElementById('res-revenue');
-    const resPctDebt = document.getElementById('res-pct-debt');
-    const resRecords = document.getElementById('res-records');
-    const resPctRecords = document.getElementById('res-pct-records');
-    const resOwners = document.getElementById('res-owners');
-    const resEfficiency = document.getElementById('res-efficiency');
-    const resEfficiencyDesc = document.getElementById('res-efficiency-desc');
+  const thresholds = [
+    { label: "$0 (All Bills)", min: 0 },
+    { label: "$100", min: 100 },
+    { label: "$500", min: 500 },
+    { label: "$1,000", min: 1000 },
+    { label: "$5,000+ (Whale Debt)", min: 5000 },
+  ];
 
-    const totalDueVal = 62751158.99;
-    const totalRecVal = 409142;
+  function fmtMoney(n) {
+    if (n >= 1000000) return "$" + (n / 1000000).toFixed(1) + "M";
+    if (n >= 1000) return "$" + (n / 1000).toFixed(1) + "K";
+    return "$" + n.toFixed(0);
+  }
 
-    function updateSimulator() {
-      if (!slider) return;
-      const idx = parseInt(slider.value, 10);
-      const data = thresholds[idx];
+  function update() {
+    const idx = parseInt(slider.value, 10);
+    const t = thresholds[idx];
+    display.textContent = t.label;
 
-      display.textContent = data.label;
-      
-      const revM = (data.due / 1000000).toFixed(1);
-      resRevenue.textContent = `$${revM}M`;
-      
-      const pctDebt = ((data.due / totalDueVal) * 100).toFixed(1);
-      resPctDebt.textContent = `${pctDebt}% of total debt`;
+    let targetRecords = records;
+    let targetDebt = totalDue;
 
-      resRecords.textContent = data.records.toLocaleString();
-      const pctRec = ((data.records / totalRecVal) * 100).toFixed(1);
-      resPctRecords.textContent = `${pctRec}% of all rows`;
-
-      const approxOwners = Math.round(data.records / 27);
-      resOwners.textContent = `~${approxOwners.toLocaleString()}`;
-
-      resEfficiency.textContent = data.efficiency;
-      resEfficiencyDesc.textContent = data.effDesc;
+    if (idx === 1) {
+      targetRecords = records - b0_100;
+      targetDebt = totalDue * 0.90;
+    } else if (idx === 2) {
+      targetRecords = records - (b0_100 + b100_500);
+      targetDebt = totalDue * 0.76;
+    } else if (idx === 3) {
+      targetRecords = records - (b0_100 + b100_500 + b500_1k);
+      targetDebt = totalDue * 0.52;
+    } else if (idx === 4) {
+      targetRecords = b5k_plus;
+      targetDebt = totalDue * 0.28;
     }
 
-    if (slider) {
-      slider.addEventListener('input', updateSimulator);
-      updateSimulator();
+    const pctDebt = ((targetDebt / totalDue) * 100).toFixed(1);
+    const pctRows = ((targetRecords / records) * 100).toFixed(1);
+    const targetOwners = Math.max(1, Math.round(targetRecords / Math.max(1, records / Math.max(1, owners))));
+
+    resRevenue.textContent = fmtMoney(targetDebt);
+    resPctDebt.textContent = `${pctDebt}% of total debt`;
+
+    resRecords.textContent = targetRecords.toLocaleString();
+    resPctRows.textContent = `${pctRows}% of all rows`;
+
+    resOwners.textContent = "~" + targetOwners.toLocaleString();
+
+    if (idx >= 3) {
+      resEffRating.textContent = "High-yield targets";
+      resEffRating.style.color = "var(--accent-emerald-bright)";
+    } else if (idx >= 1) {
+      resEffRating.textContent = "Balanced workload";
+      resEffRating.style.color = "var(--accent-cyan-bright)";
+    } else {
+      resEffRating.textContent = "High admin burden";
+      resEffRating.style.color = "var(--accent-amber-bright)";
     }
-  })();
+  }
+
+  if (slider) {
+    slider.addEventListener("input", update);
+    update();
+  }
 </script>

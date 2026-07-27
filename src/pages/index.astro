@@ -145,7 +145,7 @@ const fmtCompactMoney = (n: number): string =>
       </section>
 
       <!-- Revenue Recovery Simulator -->
-      <Simulator defaultTotalDue={dekalbData.total_due} />
+      <Simulator totalDue={dekalbData.total_due} records={dekalbData.records} owners={dekalbData.owners} amountBands={dekalbData.amount_bands} />
 
       <!-- 6-Node Single Row Pipeline Architecture -->
       <PipelineFlow />

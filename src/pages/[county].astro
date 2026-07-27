@@ -184,7 +184,7 @@ const y2025PctDebt = (by_year && by_year["2025"] && total_due) ? ((by_year["2025
           </section>
 
           <!-- Revenue Recovery Simulator -->
-          <Simulator defaultTotalDue={total_due} />
+          <Simulator totalDue={total_due} records={records} owners={owners} amountBands={amount_bands} />
         </>
       ) : (
         <!-- Audit-Proof Adapter Status Panel for Planned County -->
