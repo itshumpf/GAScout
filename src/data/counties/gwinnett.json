@@ -3,12 +3,70 @@
   "name": "Gwinnett",
   "fips": "13135",
   "seat": "Lawrenceville",
-  "is_live": false,
-  "status": "ADAPTER PLANNED",
-  "adapter": "gpn",
-  "legal_organ": "Gwinnett Daily Post",
-  "source": "Gwinnett County \u2014 Gwinnett Daily Post",
-  "records": 0,
-  "owners": 0,
-  "total_due": 0.0
+  "is_live": true,
+  "status": "LIVE PRODUCTION",
+  "has_amounts": true,
+  "adapter": "gwinnett_xlsx",
+  "legal_organ": "Gwinnett County Tax Commissioner",
+  "source": "Gwinnett County Tax Commissioner \u2014 Weekly Delinquent Tax List (.xlsx)",
+  "run_date": "2026-07-21",
+  "generated_at": "2026-07-21",
+  "records": 37297,
+  "owners": 13985,
+  "parcels": 15598,
+  "total_due": 80293869.09,
+  "by_year": {
+    "2017": {
+      "records": 16,
+      "due": 8480.84
+    },
+    "2018": {
+      "records": 855,
+      "due": 1074410.24
+    },
+    "2019": {
+      "records": 1341,
+      "due": 1839735.69
+    },
+    "2020": {
+      "records": 2089,
+      "due": 3359956.04
+    },
+    "2021": {
+      "records": 2813,
+      "due": 4436446.35
+    },
+    "2022": {
+      "records": 3975,
+      "due": 6689242.91
+    },
+    "2023": {
+      "records": 6043,
+      "due": 10716137.02
+    },
+    "2024": {
+      "records": 8400,
+      "due": 17743792.09
+    },
+    "2025": {
+      "records": 11765,
+      "due": 34425667.91
+    }
+  },
+  "amount_bands": {
+    "$0-500": 14492,
+    "$500-1K": 7553,
+    "$1K-5K": 12167,
+    "$5K-25K": 2757,
+    "$25K+": 328
+  },
+  "flags": null,
+  "median_due": 733.17,
+  "largest_single_bill": 481642.82,
+  "real_property": {
+    "line_items": 8086,
+    "parcels": 5031,
+    "total_due": 24367854.4
+  },
+  "note": "Full delinquent roll (real + personal property) from the county's weekly published spreadsheet. Aggregate figures only \u2014 no owner names or addresses are published. Real property (parcels prefixed 'R') is 8,086 line items across 5,031 parcels, $24,367,854.40 of the total."
 }

@@ -40,9 +40,21 @@ const {
   status,
   adapter,
   legal_organ,
+  has_amounts,
+  sale_date,
+  note,
 } = dashboard;
 
 const countyName = county.charAt(0).toUpperCase() + county.slice(1);
+
+// Three display modes:
+//  - showMoney:    live delinquent-roll data WITH dollar amounts (e.g. DeKalb)
+//  - showSaleList: live sale-list data with NO dollar amounts (e.g. Fulton —
+//                  the Sheriff levy list publishes parcel + address only)
+//  - else:         adapter planned / roadmap
+// has_amounts defaults to true so existing live counties are unaffected.
+const showSaleList = is_live && has_amounts === false;
+const showMoney = is_live && !showSaleList;
 
 const fmtInt = (n: number): string => (n || 0).toLocaleString("en-US");
 const fmtMoney = (n: number): string =>
@@ -101,7 +113,9 @@ const y2025PctDebt = (by_year && by_year["2025"] && total_due) ? ((by_year["2025
             </h1>
             
             <p class="hero-subtitle">
-              {is_live
+              {showSaleList
+                ? `Production OCR pipeline parsing the Sheriff's levy/tax-sale list — ${fmtInt(records)} properties scheduled for the ${sale_date} sale. Parcel ID and address only; no dollar figures are published on this source.`
+                : is_live
                 ? `Production public-records ingestion pipeline parsing ${fmtInt(records)} real tax lien records.`
                 : `Registry coverage roadmap entry for ${countyName} County (Seat: ${seat}, FIPS ${fips}). Adapter planned for ${legal_organ}.`}
             </p>
@@ -119,10 +133,18 @@ const y2025PctDebt = (by_year && by_year["2025"] && total_due) ? ((by_year["2025
           </div>
 
           <div class="quick-action-badge glass-panel">
-            {is_live ? (
+            {showSaleList ? (
+              <>
+                <span class="qa-number">{fmtInt(records)}</span>
+                <span class="qa-label">Properties on the {sale_date} Sale List</span>
+                <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #10b981; margin-top: 4px;">
+                  Sale number · parcel ID · address (no dollar figures published)
+                </div>
+              </>
+            ) : showMoney ? (
               <>
                 <span class="qa-number">{fmtCompactMoney(total_due)}</span>
-                <span class="qa-label">Total DeKalb Uncollected Debt</span>
+                <span class="qa-label">Total {countyName} Uncollected Debt</span>
                 <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #10b981; margin-top: 4px;">
                   Across {fmtInt(records)} Property Bills
                 </div>
@@ -142,7 +164,7 @@ const y2025PctDebt = (by_year && by_year["2025"] && total_due) ? ((by_year["2025
     </header>
 
     <main class="wrap main-content">
-      {is_live ? (
+      {showMoney ? (
         <>
           <!-- 6-Metric Stat Row for Live County -->
           <section class="stats-grid" aria-label={`${countyName} Summary Statistics`}>
@@ -186,6 +208,28 @@ const y2025PctDebt = (by_year && by_year["2025"] && total_due) ? ((by_year["2025
           <!-- Revenue Recovery Simulator -->
           <Simulator totalDue={total_due} records={records} owners={owners} amountBands={amount_bands} />
         </>
+      ) : showSaleList ? (
+        <!-- Live Sale-List County (parcel + address only, no dollar figures) -->
+        <section class="analysis-section glass-panel" style="padding: 32px 24px;">
+          <div class="section-header">
+            <span class="section-icon">🏛️</span>
+            <div>
+              <h2>{countyName} County — Sheriff Tax Sale List</h2>
+              <p>{fmtInt(records)} properties scheduled for the {sale_date} levy sale, parsed by OCR from the county's published PDF.</p>
+            </div>
+          </div>
+
+          <section class="stats-grid" aria-label={`${countyName} Sale List Summary`} style="margin-top: 20px;">
+            <StatCard title="AUCTION PROPERTIES" value={fmtInt(records)} subtitle={`Scheduled for the ${sale_date} Sheriff Sale`} variant="emerald" />
+            <StatCard title="DATA LANE" value="Sheriff Tax Sale Levies" subtitle="Courthouse step auction list" variant="cyan" />
+            <StatCard title="INGESTION METHOD" value="Scanned PDF (OCR)" subtitle="Fulton Sheriff Official Roll" variant="amber" />
+            <StatCard title="PARCEL MAPPING" value="143 of 148" subtitle="5 scan-noise rows address-only" variant="cyan" />
+          </section>
+
+          <p style="color: var(--text-muted); max-width: 720px; margin: 24px auto 0 auto; line-height: 1.6; text-align: center; font-size: 0.92rem;">
+            {note || "Fulton's Sheriff levy-sale list publishes a sale number, parcel ID, and property address for each property — no owner names and no dollar amounts. This dashboard reports the count of properties scheduled for sale, not a debt total, because the source contains none."}
+          </p>
+        </section>
       ) : (
         <!-- Audit-Proof Adapter Status Panel for Planned County -->
         <section class="analysis-section glass-panel" style="text-align: center; padding: 40px 20px;">

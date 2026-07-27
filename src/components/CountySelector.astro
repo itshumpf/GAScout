@@ -22,7 +22,7 @@ const fmtCompactMoney = (n: number): string =>
           GEORGIA PUBLIC RECORDS COVERAGE ENGINE (159 GA COUNTIES)
         </div>
         <div style="font-size: 0.78rem; color: var(--text-muted);">
-          DeKalb County is live in production ($62.7M tracked). Select any county to view registry adapter status & coverage roadmap.
+          3 live counties (DeKalb $62.7M · Gwinnett $80.3M · Fulton 148 auction properties). Select any county to view dashboard or adapter roadmap.
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@ const fmtCompactMoney = (n: number): string =>
             value={item.slug}
             selected={item.slug === currentSlug}
           >
-            {item.is_live ? "🟢 " : "⚪ "} {item.name} County ({item.is_live ? `LIVE — ${fmtCompactMoney(item.total_due)} | ${item.records.toLocaleString()} records` : `Planned — ${item.legal_organ}`})
+            {item.is_live ? "🟢 " : "⚪ "} {item.name} County ({item.is_live ? (item.total_due > 0 ? `LIVE — ${fmtCompactMoney(item.total_due)} | ${item.records.toLocaleString()} records` : `LIVE — ${item.records.toLocaleString()} auction properties`) : `Planned — ${item.legal_organ}`})
           </option>
         ))}
       </select>

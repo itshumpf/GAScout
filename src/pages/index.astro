@@ -96,12 +96,12 @@ const fmtCompactMoney = (n: number): string =>
           <span class="section-icon">🗺️</span>
           <div>
             <h2>Georgia Statewide Pipeline Registry Roadmap (159 Counties)</h2>
-            <p>DeKalb County is live in production ($62.7M). Select any county to inspect adapter status and legal organ registry data.</p>
+            <p>3 live production counties (DeKalb, Gwinnett, Fulton). Select any county to inspect dashboard or adapter status.</p>
           </div>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 16px;">
-          <!-- Live Production Anchor Card -->
+          <!-- Live Production Anchor Card: DeKalb -->
           <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
               <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
@@ -122,8 +122,50 @@ const fmtCompactMoney = (n: number): string =>
             </a>
           </div>
 
+          <!-- Live Production Anchor Card: Gwinnett -->
+          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+              <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
+                🟢 Gwinnett County
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; background: #10b981; color: #000; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
+                LIVE PRODUCTION
+              </span>
+            </div>
+            <div style="font-size: 0.82rem; color: var(--text-primary); margin-bottom: 8px;">
+              $80.29M Debt Tracked • 37,297 Records • 15,598 Parcels
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
+              Adapter: Weekly XLSX Delinquent Roll (Tax Commissioner)
+            </div>
+            <a href="/gwinnett" style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
+              Inspect Production Dashboard →
+            </a>
+          </div>
+
+          <!-- Live Auction Card: Fulton -->
+          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+              <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
+                🟢 Fulton County
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.7rem; background: #10b981; color: #000; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
+                LIVE — TAX SALE LIST
+              </span>
+            </div>
+            <div style="font-size: 0.82rem; color: var(--text-primary); margin-bottom: 8px;">
+              148 Auction Properties • Aug 4, 2026 Sheriff Sale
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
+              Adapter: Scanned PDF OCR (Sheriff Levy Roll)
+            </div>
+            <a href="/fulton" style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
+              Inspect Auction Dashboard →
+            </a>
+          </div>
+
           <!-- Featured Planned County Cards -->
-          {plannedCounties.slice(0, 11).map((c) => (
+          {plannedCounties.slice(0, 9).map((c) => (
             <div style="background: var(--bg-glass); border: 1px solid var(--border-glass); padding: 16px; border-radius: 10px;">
               <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
                 <span style="font-family: var(--font-mono); font-weight: 700; color: var(--text-primary); font-size: 1rem;">
