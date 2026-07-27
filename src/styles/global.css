@@ -805,3 +805,22 @@ input[type=range].sim-range-input::-webkit-slider-thumb:hover {
   color: #ffffff;
   white-space: nowrap;
 }
+
+/* --- County hub cards: clean & stat-forward (restrained, FindStorage-grade) --- */
+.county-card { display:block; text-decoration:none; background:rgba(255,255,255,0.022); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px 20px; transition:border-color .2s ease, transform .2s ease, background .2s ease; }
+.county-card:hover { border-color:rgba(107,176,168,0.55); transform:translateY(-2px); background:rgba(255,255,255,0.04); }
+.county-card__head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:16px; }
+.county-card__name { font-weight:700; font-size:1.02rem; color:var(--text-primary); }
+.county-card__badge { display:inline-flex; align-items:center; gap:6px; font-family:var(--font-mono); font-size:0.64rem; letter-spacing:.12em; color:#10b981; }
+.county-card__badge--planned { color:var(--text-muted); }
+.county-card__dot { width:7px; height:7px; border-radius:50%; background:#10b981; box-shadow:0 0 8px #10b981; }
+.county-card__stats { display:flex; gap:26px; margin-bottom:16px; flex-wrap:wrap; }
+.county-stat__val { font-family:var(--font-mono); font-weight:800; font-size:1.32rem; line-height:1; color:var(--text-primary); }
+.county-stat__val--accent { color:#38bdf8; }
+.county-stat__lbl { font-size:0.64rem; text-transform:uppercase; letter-spacing:.07em; color:var(--text-muted); margin-top:6px; }
+.county-card__planned-body { font-size:0.82rem; color:var(--text-muted); margin-bottom:16px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.county-card__foot { display:flex; align-items:center; justify-content:space-between; gap:10px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.06); }
+.county-card__adapter { font-family:var(--font-mono); font-size:0.68rem; color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:60%; }
+.county-card__link { font-family:var(--font-mono); font-size:0.76rem; font-weight:700; color:#6bb0a8; white-space:nowrap; }
+.county-card__link--planned { color:#38bdf8; }
+.county-hub-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:16px; margin-top:18px; }

@@ -14,16 +14,21 @@ const getCountyData = (slug: string): any => {
 };
 
 const adapterLabels: Record<string, string> = {
-  dekalb_pdf: "Mainframe PDF Parser (DQ205GADEK)",
-  gwinnett_xlsx: "Weekly XLSX Delinquent Roll (Tax Commissioner)",
-  cobb_pdf: "Monthly Delinquent PDF (Tax Commissioner)",
-  fulton_sheriff: "Scanned PDF OCR (Sheriff Levy Roll)",
+  dekalb_pdf: "Mainframe PDF (DQ205GADEK)",
+  gwinnett_xlsx: "Weekly XLSX roll",
+  cobb_pdf: "Monthly delinquent PDF",
+  fulton_sheriff: "Scanned PDF OCR",
 };
+
+// Platform totals — computed live from the county JSONs, so they climb on their own.
+const totalTracked = liveCounties.reduce((s: number, c: any) => s + (c.total_due || 0), 0);
+const totalRecords = liveCounties.reduce((s: number, c: any) => s + (c.records || 0), 0);
 
 const fmtCompactMoney = (n: number): string =>
   n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(2)}M`
   : n >= 10_000 ? `$${(n / 1_000).toFixed(1)}K`
-  : `$${(n || 0).toFixed(2)}`;
+  : `$${(n || 0).toFixed(0)}`;
+const fmtInt = (n: number): string => (n || 0).toLocaleString("en-US");
 ---
 
 <!doctype html>
@@ -54,11 +59,11 @@ const fmtCompactMoney = (n: number): string =>
             </h1>
 
             <p class="hero-subtitle">
-              A statewide Georgia public-records pipeline. <strong>{liveCounties.length}</strong> counties are live with real delinquent-roll and tax-sale data; all 159 are on the registry roadmap. Every published figure is aggregate and traceable to an official county source — zero mock data.
+              A statewide Georgia public-records pipeline. Official county filings turned into clean, aggregate data — every figure traceable to its source, zero mock numbers.
             </p>
 
             <div class="hero-meta">
-              <span>🏛️ Sources: <strong>County Tax Commissioner & Sheriff filings</strong></span>
+              <span>🏛️ Sources: <strong>County Tax Commissioner &amp; Sheriff filings</strong></span>
               <span>•</span>
               <span>🛡️ Integrity: <strong>Zero Mock Data Policy</strong></span>
             </div>
@@ -66,76 +71,73 @@ const fmtCompactMoney = (n: number): string =>
             <CountySelector currentSlug="" />
           </div>
 
-          <div class="quick-action-badge glass-panel">
-            <span class="qa-number">{liveCounties.length}</span>
-            <span class="qa-label">Counties Live</span>
-            <div style="font-family: var(--font-mono); font-size: 0.76rem; color: #10b981; margin-top: 4px;">
-              of 159 on the Georgia roadmap
-            </div>
-          </div>
         </div>
       </div>
     </header>
 
     <main class="wrap main-content">
+      <!-- Platform stat band — all computed live from the county data -->
+      <section class="stats-grid" aria-label="GAScout platform statistics" style="margin-bottom: 8px;">
+        <div class="stat-card-glass accent-cyan"><span class="stat-value">{fmtCompactMoney(totalTracked)}</span><span class="stat-label">Delinquent Taxes Tracked</span><div class="stat-desc">Across {liveCounties.length} live county rolls</div></div>
+        <div class="stat-card-glass accent-emerald"><span class="stat-value">{fmtInt(totalRecords)}</span><span class="stat-label">Records Parsed</span><div class="stat-desc">From official county filings</div></div>
+        <div class="stat-card-glass accent-cyan"><span class="stat-value">{liveCounties.length} <span style="color:var(--text-faint);font-size:1.1rem;">/ 159</span></span><span class="stat-label">Counties Live</span><div class="stat-desc">Rest on the registry roadmap</div></div>
+        <div class="stat-card-glass accent-amber"><span class="stat-value">Zero</span><span class="stat-label">Mock Data</span><div class="stat-desc">Every number source-verified</div></div>
+      </section>
+
       <section class="analysis-section glass-panel">
         <div class="section-header">
           <span class="section-icon">🗺️</span>
           <div>
-            <h2>Georgia Statewide Pipeline Registry (159 Counties)</h2>
-            <p>{liveCounties.length} live production {liveCounties.length === 1 ? 'county' : 'counties'} ({liveCounties.map((c: any) => c.name).join(', ')}). Select any county to inspect its dashboard or adapter status.</p>
+            <h2>Georgia Statewide Pipeline Registry</h2>
+            <p>{liveCounties.length} live production {liveCounties.length === 1 ? 'county' : 'counties'}, all 159 on the roadmap. Select any to inspect its dashboard or adapter status.</p>
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 16px;">
+        <div class="county-hub-grid">
           {liveCounties.map((c: any) => {
             const data = getCountyData(c.slug);
             const isSaleList = data.has_amounts === false;
-            const adapterLabel = adapterLabels[data.adapter] || data.adapter || 'unknown';
-            const parcelsStr = data.parcels ? ` • ${data.parcels.toLocaleString()} Parcels` : '';
-            const description = isSaleList
-              ? `${c.records.toLocaleString()} Auction Properties • ${data.sale_date || ''} Sheriff Sale`
-              : `${fmtCompactMoney(c.total_due)} Debt Tracked • ${c.records.toLocaleString()} Records${parcelsStr}`;
+            const adapterLabel = adapterLabels[data.adapter] || data.adapter || 'live';
             return (
-              <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-                  <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
-                    🟢 {c.name} County
-                  </span>
-                  <span style="font-family: var(--font-mono); font-size: 0.7rem; background: #10b981; color: #000; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
-                    {c.status}
-                  </span>
+              <a href={`/${c.slug}`} class="county-card">
+                <div class="county-card__head">
+                  <span class="county-card__name">{c.name} County</span>
+                  <span class="county-card__badge"><span class="county-card__dot"></span>{isSaleList ? 'LIVE · SALE LIST' : 'LIVE'}</span>
                 </div>
-                <div style="font-size: 0.82rem; color: var(--text-primary); margin-bottom: 8px;">
-                  {description}
+                <div class="county-card__stats">
+                  {isSaleList ? (
+                    <>
+                      <div><div class="county-stat__val county-stat__val--accent">{fmtInt(c.records)}</div><div class="county-stat__lbl">Auction properties</div></div>
+                      <div><div class="county-stat__val">{data.sale_date}</div><div class="county-stat__lbl">Sheriff sale</div></div>
+                    </>
+                  ) : (
+                    <>
+                      <div><div class="county-stat__val county-stat__val--accent">{fmtCompactMoney(c.total_due)}</div><div class="county-stat__lbl">Tracked</div></div>
+                      <div><div class="county-stat__val">{fmtInt(c.records)}</div><div class="county-stat__lbl">Records</div></div>
+                      {data.parcels ? (<div><div class="county-stat__val">{fmtInt(data.parcels)}</div><div class="county-stat__lbl">Parcels</div></div>) : null}
+                    </>
+                  )}
                 </div>
-                <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
-                  Adapter: {adapterLabel}
+                <div class="county-card__foot">
+                  <span class="county-card__adapter">{adapterLabel}</span>
+                  <span class="county-card__link">View dashboard →</span>
                 </div>
-                <a href={`/${c.slug}`} style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
-                  {isSaleList ? 'Inspect Auction Dashboard →' : 'Inspect Production Dashboard →'}
-                </a>
-              </div>
+              </a>
             );
           })}
 
           {plannedCounties.slice(0, 9).map((c: any) => (
-            <div style="background: var(--bg-glass); border: 1px solid var(--border-glass); padding: 16px; border-radius: 10px;">
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-                <span style="font-family: var(--font-mono); font-weight: 700; color: var(--text-primary); font-size: 1rem;">
-                  ⚪ {c.name} County
-                </span>
-                <span style="font-family: var(--font-mono); font-size: 0.68rem; background: rgba(255,255,255,0.1); color: var(--text-muted); padding: 2px 6px; border-radius: 4px;">
-                  {c.seat}
-                </span>
+            <a href={`/${c.slug}`} class="county-card">
+              <div class="county-card__head">
+                <span class="county-card__name">{c.name} County</span>
+                <span class="county-card__badge county-card__badge--planned">PLANNED</span>
               </div>
-              <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                {c.legal_organ}
+              <div class="county-card__planned-body">{c.legal_organ}</div>
+              <div class="county-card__foot">
+                <span class="county-card__adapter">{c.seat}</span>
+                <span class="county-card__link county-card__link--planned">Adapter status →</span>
               </div>
-              <a href={`/${c.slug}`} style="display: inline-block; font-family: var(--font-mono); font-size: 0.76rem; color: #38bdf8; text-decoration: none;">
-                View Adapter Status →
-              </a>
-            </div>
+            </a>
           ))}
         </div>
       </section>
