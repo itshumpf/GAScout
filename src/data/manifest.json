@@ -11,17 +11,6 @@
     "total_due": 62751158.99
   },
   {
-    "slug": "fulton",
-    "name": "Fulton",
-    "fips": "13121",
-    "seat": "Atlanta",
-    "is_live": true,
-    "status": "LIVE SHERIFF TAX SALES",
-    "legal_organ": "Fulton County Sheriff Tax Sales Roll",
-    "records": 3,
-    "total_due": 48200.5
-  },
-  {
     "slug": "appling",
     "name": "Appling",
     "fips": "13001",
@@ -660,6 +649,17 @@
     "total_due": 0.0
   },
   {
+    "slug": "fulton",
+    "name": "Fulton",
+    "fips": "13121",
+    "seat": "Atlanta",
+    "is_live": false,
+    "status": "ADAPTER IN PROGRESS",
+    "legal_organ": "Fulton County Sheriff Tax Sales Roll",
+    "records": 0,
+    "total_due": 0.0
+  },
+  {
     "slug": "gilmer",
     "name": "Gilmer",
     "fips": "13123",
@@ -731,7 +731,7 @@
     "fips": "13135",
     "seat": "Lawrenceville",
     "is_live": false,
-    "status": "DEVELOPMENT",
+    "status": "ADAPTER PLANNED",
     "legal_organ": "Gwinnett Daily Post",
     "records": 0,
     "total_due": 0.0

@@ -3,38 +3,12 @@
   "name": "Fulton",
   "fips": "13121",
   "seat": "Atlanta",
-  "is_live": true,
-  "status": "LIVE SHERIFF TAX SALES",
-  "adapter": "fulton_sheriff",
+  "is_live": false,
+  "status": "ADAPTER IN PROGRESS",
+  "adapter": "fulton_sheriff_pdf",
   "legal_organ": "Fulton County Sheriff Tax Sales Roll",
-  "source": "Fulton County Sheriff's Office \u2014 Tax Sale Levy Roll",
-  "run_date": "2026-07-22",
-  "generated_at": "2026-07-27",
-  "records": 3,
-  "owners": 3,
-  "total_due": 48200.5,
-  "by_year": {
-    "2024": {
-      "records": 1,
-      "due": 9850.5
-    },
-    "2025": {
-      "records": 2,
-      "due": 38350.0
-    }
-  },
-  "amount_bands": {
-    "$5K\u201310K": 1,
-    "$10K\u201320K": 1,
-    "$20K+": 1
-  },
-  "flags": {
-    "S": 3,
-    "F": 0,
-    "A": 0,
-    "T": 0,
-    "(blank)": 0
-  },
-  "median_due": 14250.0,
-  "largest_single_bill": 24100.0
+  "source": "Fulton County \u2014 Fulton County Sheriff Tax Sales Roll",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }
