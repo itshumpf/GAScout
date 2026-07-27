@@ -5,13 +5,15 @@
   "seat": "Decatur",
   "is_live": true,
   "status": "LIVE PRODUCTION",
+  "has_amounts": true,
   "adapter": "dekalb_pdf",
-  "legal_organ": "The Champion",
-  "source": "DeKalb County Tax Commissioner \u2014 Delinquent Tax Listing",
+  "legal_organ": "DeKalb County Tax Commissioner",
+  "source": "DeKalb County Tax Commissioner \u2014 DQ205GADEK Delinquent Tax Cross-Reference (mainframe PDF)",
   "run_date": "2026-06-17",
-  "generated_at": "2026-07-27",
+  "generated_at": "2026-06-17",
   "records": 409142,
-  "owners": 15144,
+  "owners": 15145,
+  "parcels": 21242,
   "total_due": 62751158.99,
   "by_year": {
     "2018": {
@@ -62,5 +64,6 @@
     "(blank)": 4
   },
   "median_due": 19.23,
-  "largest_single_bill": 206250.32
+  "largest_single_bill": 206250.32,
+  "note": "Full delinquent tax roll parsed from the county's 9,915-page DQ205GADEK mainframe report. Each row is one unpaid charge (a bill can carry several). Aggregate figures only \u2014 no owner names or addresses are published."
 }

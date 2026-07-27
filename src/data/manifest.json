@@ -389,11 +389,11 @@
     "name": "Cobb",
     "fips": "13067",
     "seat": "Marietta",
-    "is_live": false,
-    "status": "ADAPTER PLANNED",
-    "legal_organ": "Marietta Daily Journal",
-    "records": 0,
-    "total_due": 0.0
+    "is_live": true,
+    "status": "LIVE PRODUCTION",
+    "legal_organ": "Cobb County Tax Commissioner",
+    "records": 5211,
+    "total_due": 9295705.23
   },
   {
     "slug": "coffee",

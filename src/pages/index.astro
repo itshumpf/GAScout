@@ -7,8 +7,22 @@ import CountySelector from "../components/CountySelector.astro";
 import manifest from "../data/manifest.json";
 import dekalbData from "../data/dashboard.json";
 
-const liveCounty = manifest.find((c) => c.is_live) || manifest[0];
-const plannedCounties = manifest.filter((c) => !c.is_live);
+const liveCounties = manifest.filter((c: any) => c.is_live);
+const plannedCounties = manifest.filter((c: any) => !c.is_live);
+
+// Load county JSON files so live cards can read adapter, has_amounts, sale_date, parcels
+const countyFiles = import.meta.glob('../data/counties/*.json', { eager: true });
+const getCountyData = (slug: string): any => {
+  const path = `../data/counties/${slug}.json`;
+  return (countyFiles[path] as any)?.default || countyFiles[path] || {};
+};
+
+// Human-readable adapter labels (falls back to raw adapter slug for new counties)
+const adapterLabels: Record<string, string> = {
+  dekalb_pdf: "Mainframe PDF Parser (DQ205GADEK)",
+  gwinnett_xlsx: "Weekly XLSX Delinquent Roll (Tax Commissioner)",
+  fulton_sheriff: "Scanned PDF OCR (Sheriff Levy Roll)",
+};
 
 const fmtInt = (n: number): string => n.toLocaleString("en-US");
 const fmtMoney = (n: number): string =>
@@ -96,73 +110,43 @@ const fmtCompactMoney = (n: number): string =>
           <span class="section-icon">🗺️</span>
           <div>
             <h2>Georgia Statewide Pipeline Registry Roadmap (159 Counties)</h2>
-            <p>3 live production counties (DeKalb, Gwinnett, Fulton). Select any county to inspect dashboard or adapter status.</p>
+            <p>{liveCounties.length} live production {liveCounties.length === 1 ? 'county' : 'counties'} ({liveCounties.map((c: any) => c.name).join(', ')}). Select any county to inspect dashboard or adapter status.</p>
           </div>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 16px;">
-          <!-- Live Production Anchor Card: DeKalb -->
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-              <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
-                🟢 DeKalb County
-              </span>
-              <span style="font-family: var(--font-mono); font-size: 0.7rem; background: #10b981; color: #000; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
-                LIVE PRODUCTION
-              </span>
-            </div>
-            <div style="font-size: 0.82rem; color: var(--text-primary); margin-bottom: 8px;">
-              $62.75M Debt Tracked • 409,142 Records
-            </div>
-            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
-              Adapter: Mainframe PDF Parser (DQ205GADEK)
-            </div>
-            <a href="/" style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
-              Inspect Production Dashboard →
-            </a>
-          </div>
-
-          <!-- Live Production Anchor Card: Gwinnett -->
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-              <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
-                🟢 Gwinnett County
-              </span>
-              <span style="font-family: var(--font-mono); font-size: 0.7rem; background: #10b981; color: #000; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
-                LIVE PRODUCTION
-              </span>
-            </div>
-            <div style="font-size: 0.82rem; color: var(--text-primary); margin-bottom: 8px;">
-              $80.29M Debt Tracked • 37,297 Records • 15,598 Parcels
-            </div>
-            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
-              Adapter: Weekly XLSX Delinquent Roll (Tax Commissioner)
-            </div>
-            <a href="/gwinnett" style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
-              Inspect Production Dashboard →
-            </a>
-          </div>
-
-          <!-- Live Auction Card: Fulton -->
-          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-              <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
-                🟢 Fulton County
-              </span>
-              <span style="font-family: var(--font-mono); font-size: 0.7rem; background: #10b981; color: #000; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
-                LIVE — TAX SALE LIST
-              </span>
-            </div>
-            <div style="font-size: 0.82rem; color: var(--text-primary); margin-bottom: 8px;">
-              148 Auction Properties • Aug 4, 2026 Sheriff Sale
-            </div>
-            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
-              Adapter: Scanned PDF OCR (Sheriff Levy Roll)
-            </div>
-            <a href="/fulton" style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
-              Inspect Auction Dashboard →
-            </a>
-          </div>
+          {/* Dynamic Live County Cards — auto-populated from manifest + county JSON */}
+          {liveCounties.map((c: any) => {
+            const data = getCountyData(c.slug);
+            const isSaleList = data.has_amounts === false;
+            const adapterLabel = adapterLabels[data.adapter] || data.adapter || 'unknown';
+            const parcelsStr = data.parcels ? ` \u2022 ${data.parcels.toLocaleString()} Parcels` : '';
+            const description = isSaleList
+              ? `${c.records.toLocaleString()} Auction Properties \u2022 ${data.sale_date || ''} Sheriff Sale`
+              : `${fmtCompactMoney(c.total_due)} Debt Tracked \u2022 ${c.records.toLocaleString()} Records${parcelsStr}`;
+            const href = c.slug === 'dekalb' ? '/' : `/${c.slug}`;
+            return (
+              <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid #10b981; padding: 16px; border-radius: 10px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                  <span style="font-family: var(--font-mono); font-weight: 700; color: #10b981; font-size: 1.05rem;">
+                    \uD83D\uDFE2 {c.name} County
+                  </span>
+                  <span style="font-family: var(--font-mono); font-size: 0.7rem; background: #10b981; color: #000; font-weight: 700; padding: 2px 8px; border-radius: 4px;">
+                    {c.status}
+                  </span>
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-primary); margin-bottom: 8px;">
+                  {description}
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">
+                  Adapter: {adapterLabel}
+                </div>
+                <a href={href} style="display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; color: #10b981; font-weight: 700; text-decoration: none;">
+                  {isSaleList ? 'Inspect Auction Dashboard \u2192' : 'Inspect Production Dashboard \u2192'}
+                </a>
+              </div>
+            );
+          })}
 
           <!-- Featured Planned County Cards -->
           {plannedCounties.slice(0, 9).map((c) => (

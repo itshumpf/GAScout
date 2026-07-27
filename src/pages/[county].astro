@@ -28,6 +28,7 @@ const {
   run_date,
   records,
   owners,
+  parcels,
   total_due,
   by_year,
   amount_bands,
@@ -169,7 +170,13 @@ const y2025PctDebt = (by_year && by_year["2025"] && total_due) ? ((by_year["2025
           <!-- 6-Metric Stat Row for Live County -->
           <section class="stats-grid" aria-label={`${countyName} Summary Statistics`}>
             <StatCard title="TOTAL RECORDS" value={fmtInt(records)} subtitle="Delinquent line items in county dataset" variant="emerald" />
-            <StatCard title="UNIQUE OWNERS" value={fmtInt(owners)} subtitle={`Avg ${avgRecordsPerOwner} delinquent bills per owner`} variant="cyan" />
+            {owners != null ? (
+              <StatCard title="UNIQUE OWNERS" value={fmtInt(owners)} subtitle={`Avg ${avgRecordsPerOwner} delinquent bills per owner`} variant="cyan" />
+            ) : parcels != null ? (
+              <StatCard title="PARCELS" value={fmtInt(parcels)} subtitle="Distinct parcels on the roll" variant="cyan" />
+            ) : (
+              <StatCard title="PARCELS" value="—" subtitle="Not published by source" variant="cyan" />
+            )}
             <StatCard title="TOTAL DEBT DUE" value={fmtCompactMoney(total_due)} subtitle={`Cumulative tax debt (${yearRange})`} variant="cyan" />
             <StatCard title="MEDIAN BILL" value={fmtMoney(median_due)} subtitle="50th percentile delinquent bill" variant="amber" />
             <StatCard title="LARGEST BILL" value={fmtCompactMoney(largest_single_bill)} subtitle="Single highest tax lien balance" variant="amber" />
@@ -206,7 +213,7 @@ const y2025PctDebt = (by_year && by_year["2025"] && total_due) ? ((by_year["2025
           </section>
 
           <!-- Revenue Recovery Simulator -->
-          <Simulator totalDue={total_due} records={records} owners={owners} amountBands={amount_bands} />
+          <Simulator totalDue={total_due} records={records} owners={owners || 0} amountBands={amount_bands} />
         </>
       ) : showSaleList ? (
         <!-- Live Sale-List County (parcel + address only, no dollar figures) -->

@@ -20,7 +20,7 @@ def build(xlsx_path, out_path, run_date="2026-07-21"):
     parcels = set(); owners = set()
     by_year = defaultdict(lambda: [0, 0.0])
     real_rows = 0; real_bal = 0.0; real_parcels = set()
-    bands = {"$0-500": 0, "$500-1K": 0, "$1K-5K": 0, "$5K-25K": 0, "$25K+": 0}
+    bands = {"$0–100": 0, "$100–500": 0, "$500–1K": 0, "$1K–5K": 0, "$5K+": 0}
     bals = []
     for r in ws.iter_rows(min_row=2, values_only=True):
         parcel, owner, situs, year, *_rest = r
@@ -34,11 +34,11 @@ def build(xlsx_path, out_path, run_date="2026-07-21"):
         by_year[y][0] += 1; by_year[y][1] += round(b, 2)
         if str(parcel)[0].upper() == "R":
             real_rows += 1; real_bal += b; real_parcels.add(parcel)
-        if   b < 500:   bands["$0-500"] += 1
-        elif b < 1000:  bands["$500-1K"] += 1
-        elif b < 5000:  bands["$1K-5K"] += 1
-        elif b < 25000: bands["$5K-25K"] += 1
-        else:           bands["$25K+"] += 1
+        if   b < 100:  bands["$0–100"] += 1
+        elif b < 500:  bands["$100–500"] += 1
+        elif b < 1000: bands["$500–1K"] += 1
+        elif b < 5000: bands["$1K–5K"] += 1
+        else:          bands["$5K+"] += 1
     bals.sort()
     median = round(bals[len(bals)//2], 2) if bals else 0.0
     largest = round(max(bals), 2) if bals else 0.0

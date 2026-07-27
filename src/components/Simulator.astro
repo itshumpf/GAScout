@@ -7,16 +7,10 @@ interface Props {
 }
 
 const {
-  totalDue = 62751158.99,
-  records = 409142,
-  owners = 15144,
-  amountBands = {
-    "$0–100": 318431,
-    "$100–500": 68515,
-    "$500–1K": 12394,
-    "$1K–5K": 8779,
-    "$5K+": 1023
-  }
+  totalDue = 0,
+  records = 0,
+  owners = 0,
+  amountBands = {}
 } = Astro.props;
 
 // Prepare band data dynamically for client calculation
@@ -25,6 +19,9 @@ const b100_500 = amountBands["$100–500"] || 0;
 const b500_1k = amountBands["$500–1K"] || 0;
 const b1k_5k = amountBands["$1K–5K"] || 0;
 const b5k_plus = amountBands["$5K+"] || 0;
+
+// Owner count is only shown when the source actually publishes one.
+const ownersKnown = owners > 0;
 
 const fmtCompact = (n: number): string =>
   n >= 1_000_000
@@ -82,11 +79,13 @@ const fmtCompact = (n: number): string =>
       <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-cyan-bright); margin-top: 4px;" id="res-pct-rows">100.0% of all rows</div>
     </div>
 
-    <div class="sim-res-card">
-      <div class="sim-res-val" id="res-owners">~{owners.toLocaleString()}</div>
-      <div class="sim-res-lbl">Approx. Owners Affected</div>
-      <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-amber-bright); margin-top: 4px;" id="res-eff-rating">Baseline Target</div>
-    </div>
+    {ownersKnown && (
+      <div class="sim-res-card">
+        <div class="sim-res-val" id="res-owners">~{owners.toLocaleString()}</div>
+        <div class="sim-res-lbl">Approx. Owners Affected</div>
+        <div style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-amber-bright); margin-top: 4px;" id="res-eff-rating">Baseline Target</div>
+      </div>
+    )}
   </div>
 </div>
 
@@ -146,17 +145,19 @@ const fmtCompact = (n: number): string =>
     resRecords.textContent = targetRecords.toLocaleString();
     resPctRows.textContent = `${pctRows}% of all rows`;
 
-    resOwners.textContent = "~" + targetOwners.toLocaleString();
+    if (resOwners) resOwners.textContent = "~" + targetOwners.toLocaleString();
 
-    if (idx >= 3) {
-      resEffRating.textContent = "High-yield targets";
-      resEffRating.style.color = "var(--accent-emerald-bright)";
-    } else if (idx >= 1) {
-      resEffRating.textContent = "Balanced workload";
-      resEffRating.style.color = "var(--accent-cyan-bright)";
-    } else {
-      resEffRating.textContent = "High admin burden";
-      resEffRating.style.color = "var(--accent-amber-bright)";
+    if (resEffRating) {
+      if (idx >= 3) {
+        resEffRating.textContent = "High-yield targets";
+        resEffRating.style.color = "var(--accent-emerald-bright)";
+      } else if (idx >= 1) {
+        resEffRating.textContent = "Balanced workload";
+        resEffRating.style.color = "var(--accent-cyan-bright)";
+      } else {
+        resEffRating.textContent = "High admin burden";
+        resEffRating.style.color = "var(--accent-amber-bright)";
+      }
     }
   }
 

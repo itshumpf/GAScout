@@ -3,12 +3,57 @@
   "name": "Cobb",
   "fips": "13067",
   "seat": "Marietta",
-  "is_live": false,
-  "status": "ADAPTER PLANNED",
-  "adapter": "gpn",
-  "legal_organ": "Marietta Daily Journal",
-  "source": "Cobb County \u2014 Marietta Daily Journal",
-  "records": 0,
-  "owners": 0,
-  "total_due": 0.0
+  "is_live": true,
+  "status": "LIVE PRODUCTION",
+  "has_amounts": true,
+  "adapter": "cobb_pdf",
+  "legal_organ": "Cobb County Tax Commissioner",
+  "source": "Cobb County Tax Commissioner \u2014 Monthly Delinquent Tax List (text PDF)",
+  "run_date": "2026-07-01",
+  "generated_at": "2026-07-01",
+  "records": 5211,
+  "owners": null,
+  "parcels": 2825,
+  "total_due": 9295705.23,
+  "by_year": {
+    "2019": {
+      "records": 238,
+      "due": 183562.87
+    },
+    "2020": {
+      "records": 244,
+      "due": 97614.89
+    },
+    "2021": {
+      "records": 268,
+      "due": 114027.76
+    },
+    "2022": {
+      "records": 331,
+      "due": 212077.04
+    },
+    "2023": {
+      "records": 474,
+      "due": 459286.68
+    },
+    "2024": {
+      "records": 1002,
+      "due": 1758589.71
+    },
+    "2025": {
+      "records": 2654,
+      "due": 6470546.28
+    }
+  },
+  "amount_bands": {
+    "$0\u2013100": 999,
+    "$100\u2013500": 1094,
+    "$500\u20131K": 804,
+    "$1K\u20135K": 1986,
+    "$5K+": 328
+  },
+  "flags": null,
+  "median_due": 792.14,
+  "largest_single_bill": 95688.4,
+  "note": "Delinquent tax roll from the county's monthly published PDF. Each row is one unpaid bill (a parcel can carry multiple years). Aggregate figures only \u2014 no owner names or addresses are published."
 }
