@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "columbia",
+  "name": "Columbia",
   "fips": "13073",
   "seat": "Appling",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Columbia County News-Times",
   "source": "Columbia County \u2014 Columbia County News-Times",
-  "run_date": "2026-07-23",
-  "records": 36000,
-  "owners": 5400,
-  "total_due": 5040000.0,
-  "by_year": {
-    "2022": {
-      "records": 2880,
-      "due": 352800.0
-    },
-    "2023": {
-      "records": 5040,
-      "due": 655200.0
-    },
-    "2024": {
-      "records": 8280,
-      "due": 1108800.0
-    },
-    "2025": {
-      "records": 19800,
-      "due": 2923200.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 15120,
-    "$100\u2013500": 11160,
-    "$500\u20131K": 5760,
-    "$1K\u20135K": 3240,
-    "$5K+": 720
-  },
-  "flags": {
-    "S": 18720,
-    "F": 13680,
-    "A": 3240,
-    "T": 360,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 75600.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

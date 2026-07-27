@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "monroe",
+  "name": "Monroe",
   "fips": "13207",
   "seat": "Forsyth",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Monroe County Reporter",
   "source": "Monroe County \u2014 Monroe County Reporter",
-  "run_date": "2026-07-23",
-  "records": 7045,
-  "owners": 1056,
-  "total_due": 845400.0,
-  "by_year": {
-    "2022": {
-      "records": 563,
-      "due": 59178.0
-    },
-    "2023": {
-      "records": 986,
-      "due": 109902.0
-    },
-    "2024": {
-      "records": 1620,
-      "due": 185988.0
-    },
-    "2025": {
-      "records": 3874,
-      "due": 490332.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 2958,
-    "$100\u2013500": 2183,
-    "$500\u20131K": 1127,
-    "$1K\u20135K": 634,
-    "$5K+": 140
-  },
-  "flags": {
-    "S": 3663,
-    "F": 2677,
-    "A": 634,
-    "T": 70,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 12681.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

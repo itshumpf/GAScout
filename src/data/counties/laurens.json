@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "laurens",
+  "name": "Laurens",
   "fips": "13175",
   "seat": "Dublin",
-  "source": "Laurens County \u2014 Laurens County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 18900,
-  "owners": 2835,
-  "total_due": 2457000.0,
-  "by_year": {
-    "2022": {
-      "records": 1512,
-      "due": 171990.0
-    },
-    "2023": {
-      "records": 2646,
-      "due": 319410.0
-    },
-    "2024": {
-      "records": 4347,
-      "due": 540540.0
-    },
-    "2025": {
-      "records": 10395,
-      "due": 1425060.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 7938,
-    "$100\u2013500": 5859,
-    "$500\u20131K": 3024,
-    "$1K\u20135K": 1701,
-    "$5K+": 378
-  },
-  "flags": {
-    "S": 9828,
-    "F": 7182,
-    "A": 1701,
-    "T": 189,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 36855.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Laurens Legal Organ",
+  "source": "Laurens County \u2014 Laurens Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

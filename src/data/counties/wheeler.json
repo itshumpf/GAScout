@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "wheeler",
+  "name": "Wheeler",
   "fips": "13309",
   "seat": "Alamo",
-  "source": "Wheeler County \u2014 Wheeler County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 9340,
-  "owners": 1401,
-  "total_due": 1120800.0,
-  "by_year": {
-    "2022": {
-      "records": 747,
-      "due": 78456.0
-    },
-    "2023": {
-      "records": 1307,
-      "due": 145704.0
-    },
-    "2024": {
-      "records": 2148,
-      "due": 246576.0
-    },
-    "2025": {
-      "records": 5137,
-      "due": 650064.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3922,
-    "$100\u2013500": 2895,
-    "$500\u20131K": 1494,
-    "$1K\u20135K": 840,
-    "$5K+": 186
-  },
-  "flags": {
-    "S": 4856,
-    "F": 3549,
-    "A": 840,
-    "T": 93,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 16812.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Wheeler Legal Organ",
+  "source": "Wheeler County \u2014 Wheeler Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

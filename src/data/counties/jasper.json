@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "jasper",
+  "name": "Jasper",
   "fips": "13159",
   "seat": "Monticello",
-  "source": "Jasper County \u2014 Jasper County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 17700,
-  "owners": 2655,
-  "total_due": 2301000.0,
-  "by_year": {
-    "2022": {
-      "records": 1416,
-      "due": 161070.0
-    },
-    "2023": {
-      "records": 2478,
-      "due": 299130.0
-    },
-    "2024": {
-      "records": 4071,
-      "due": 506220.0
-    },
-    "2025": {
-      "records": 9735,
-      "due": 1334580.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 7434,
-    "$100\u2013500": 5487,
-    "$500\u20131K": 2832,
-    "$1K\u20135K": 1593,
-    "$5K+": 354
-  },
-  "flags": {
-    "S": 9204,
-    "F": 6726,
-    "A": 1593,
-    "T": 177,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 34515.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Jasper Legal Organ",
+  "source": "Jasper County \u2014 Jasper Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "early",
+  "name": "Early",
   "fips": "13099",
   "seat": "Blakely",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Early County News",
   "source": "Early County \u2014 Early County News",
-  "run_date": "2026-07-23",
-  "records": 13200,
-  "owners": 1980,
-  "total_due": 1716000.0,
-  "by_year": {
-    "2022": {
-      "records": 1056,
-      "due": 120120.0
-    },
-    "2023": {
-      "records": 1848,
-      "due": 223080.0
-    },
-    "2024": {
-      "records": 3036,
-      "due": 377520.0
-    },
-    "2025": {
-      "records": 7260,
-      "due": 995280.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5544,
-    "$100\u2013500": 4092,
-    "$500\u20131K": 2112,
-    "$1K\u20135K": 1188,
-    "$5K+": 264
-  },
-  "flags": {
-    "S": 6864,
-    "F": 5016,
-    "A": 1188,
-    "T": 132,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 25740.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

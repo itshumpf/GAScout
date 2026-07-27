@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "wilkinson",
+  "name": "Wilkinson",
   "fips": "13319",
   "seat": "Irwinton",
-  "source": "Wilkinson County \u2014 Wilkinson County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 9565,
-  "owners": 1434,
-  "total_due": 1147800.0,
-  "by_year": {
-    "2022": {
-      "records": 765,
-      "due": 80346.0
-    },
-    "2023": {
-      "records": 1339,
-      "due": 149214.0
-    },
-    "2024": {
-      "records": 2199,
-      "due": 252516.0
-    },
-    "2025": {
-      "records": 5260,
-      "due": 665724.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 4017,
-    "$100\u2013500": 2965,
-    "$500\u20131K": 1530,
-    "$1K\u20135K": 860,
-    "$5K+": 191
-  },
-  "flags": {
-    "S": 4973,
-    "F": 3634,
-    "A": 860,
-    "T": 95,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 17217.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Wilkinson Legal Organ",
+  "source": "Wilkinson County \u2014 Wilkinson Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

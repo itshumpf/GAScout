@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "lincoln",
+  "name": "Lincoln",
   "fips": "13181",
   "seat": "Lincolnton",
-  "source": "Lincoln County \u2014 Lincoln County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 19350,
-  "owners": 2902,
-  "total_due": 2515500.0,
-  "by_year": {
-    "2022": {
-      "records": 1548,
-      "due": 176085.0
-    },
-    "2023": {
-      "records": 2709,
-      "due": 327015.0
-    },
-    "2024": {
-      "records": 4450,
-      "due": 553410.0
-    },
-    "2025": {
-      "records": 10642,
-      "due": 1458990.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 8127,
-    "$100\u2013500": 5998,
-    "$500\u20131K": 3096,
-    "$1K\u20135K": 1741,
-    "$5K+": 387
-  },
-  "flags": {
-    "S": 10062,
-    "F": 7353,
-    "A": 1741,
-    "T": 193,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 37732.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Lincoln Legal Organ",
+  "source": "Lincoln County \u2014 Lincoln Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

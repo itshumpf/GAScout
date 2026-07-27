@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "emanuel",
+  "name": "Emanuel",
   "fips": "13107",
   "seat": "Swainsboro",
-  "source": "Emanuel County \u2014 Emanuel County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 13800,
-  "owners": 2070,
-  "total_due": 1794000.0,
-  "by_year": {
-    "2022": {
-      "records": 1104,
-      "due": 125580.0
-    },
-    "2023": {
-      "records": 1932,
-      "due": 233220.0
-    },
-    "2024": {
-      "records": 3174,
-      "due": 394680.0
-    },
-    "2025": {
-      "records": 7590,
-      "due": 1040520.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5796,
-    "$100\u2013500": 4278,
-    "$500\u20131K": 2208,
-    "$1K\u20135K": 1242,
-    "$5K+": 276
-  },
-  "flags": {
-    "S": 7176,
-    "F": 5244,
-    "A": 1242,
-    "T": 138,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 26910.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Emanuel Legal Organ",
+  "source": "Emanuel County \u2014 Emanuel Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

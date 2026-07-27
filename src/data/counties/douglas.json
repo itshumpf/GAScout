@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "douglas",
+  "name": "Douglas",
   "fips": "13097",
   "seat": "Douglasville",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Douglas County Sentinel",
   "source": "Douglas County \u2014 Douglas County Sentinel",
-  "run_date": "2026-07-23",
-  "records": 13050,
-  "owners": 1957,
-  "total_due": 1696500.0,
-  "by_year": {
-    "2022": {
-      "records": 1044,
-      "due": 118755.0
-    },
-    "2023": {
-      "records": 1827,
-      "due": 220545.0
-    },
-    "2024": {
-      "records": 3001,
-      "due": 373230.0
-    },
-    "2025": {
-      "records": 7177,
-      "due": 983970.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5481,
-    "$100\u2013500": 4045,
-    "$500\u20131K": 2088,
-    "$1K\u20135K": 1174,
-    "$5K+": 261
-  },
-  "flags": {
-    "S": 6786,
-    "F": 4959,
-    "A": 1174,
-    "T": 130,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 25447.5
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

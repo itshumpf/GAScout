@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "decatur",
+  "name": "Decatur",
   "fips": "13087",
   "seat": "Bainbridge",
-  "source": "Decatur County \u2014 Decatur County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 12300,
-  "owners": 1845,
-  "total_due": 1599000.0,
-  "by_year": {
-    "2022": {
-      "records": 984,
-      "due": 111930.0
-    },
-    "2023": {
-      "records": 1722,
-      "due": 207870.0
-    },
-    "2024": {
-      "records": 2829,
-      "due": 351780.0
-    },
-    "2025": {
-      "records": 6765,
-      "due": 927420.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5166,
-    "$100\u2013500": 3813,
-    "$500\u20131K": 1968,
-    "$1K\u20135K": 1107,
-    "$5K+": 246
-  },
-  "flags": {
-    "S": 6396,
-    "F": 4674,
-    "A": 1107,
-    "T": 123,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 23985.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Decatur Legal Organ",
+  "source": "Decatur County \u2014 Decatur Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

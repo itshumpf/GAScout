@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "randolph",
+  "name": "Randolph",
   "fips": "13243",
   "seat": "Cuthbert",
-  "source": "Randolph County \u2014 Randolph County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 7855,
-  "owners": 1178,
-  "total_due": 942600.0,
-  "by_year": {
-    "2022": {
-      "records": 628,
-      "due": 65982.0
-    },
-    "2023": {
-      "records": 1099,
-      "due": 122538.0
-    },
-    "2024": {
-      "records": 1806,
-      "due": 207372.0
-    },
-    "2025": {
-      "records": 4320,
-      "due": 546708.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3299,
-    "$100\u2013500": 2435,
-    "$500\u20131K": 1256,
-    "$1K\u20135K": 706,
-    "$5K+": 157
-  },
-  "flags": {
-    "S": 4084,
-    "F": 2984,
-    "A": 706,
-    "T": 78,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 14139.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Randolph Legal Organ",
+  "source": "Randolph County \u2014 Randolph Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

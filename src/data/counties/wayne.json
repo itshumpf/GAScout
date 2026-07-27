@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "wayne",
+  "name": "Wayne",
   "fips": "13305",
   "seat": "Jesup",
-  "source": "Wayne County \u2014 Wayne County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 9250,
-  "owners": 1387,
-  "total_due": 1110000.0,
-  "by_year": {
-    "2022": {
-      "records": 740,
-      "due": 77700.0
-    },
-    "2023": {
-      "records": 1295,
-      "due": 144300.0
-    },
-    "2024": {
-      "records": 2127,
-      "due": 244200.0
-    },
-    "2025": {
-      "records": 5087,
-      "due": 643800.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3885,
-    "$100\u2013500": 2867,
-    "$500\u20131K": 1480,
-    "$1K\u20135K": 832,
-    "$5K+": 185
-  },
-  "flags": {
-    "S": 4810,
-    "F": 3515,
-    "A": 832,
-    "T": 92,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 16650.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Wayne Legal Organ",
+  "source": "Wayne County \u2014 Wayne Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

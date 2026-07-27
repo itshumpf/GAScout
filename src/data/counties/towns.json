@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "towns",
+  "name": "Towns",
   "fips": "13281",
   "seat": "Hiawassee",
-  "source": "Towns County \u2014 Towns County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 8710,
-  "owners": 1306,
-  "total_due": 1045200.0,
-  "by_year": {
-    "2022": {
-      "records": 696,
-      "due": 73164.0
-    },
-    "2023": {
-      "records": 1219,
-      "due": 135876.0
-    },
-    "2024": {
-      "records": 2003,
-      "due": 229944.0
-    },
-    "2025": {
-      "records": 4790,
-      "due": 606216.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3658,
-    "$100\u2013500": 2700,
-    "$500\u20131K": 1393,
-    "$1K\u20135K": 783,
-    "$5K+": 174
-  },
-  "flags": {
-    "S": 4529,
-    "F": 3309,
-    "A": 783,
-    "T": 87,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 15678.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Towns Legal Organ",
+  "source": "Towns County \u2014 Towns Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

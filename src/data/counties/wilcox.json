@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "wilcox",
+  "name": "Wilcox",
   "fips": "13315",
   "seat": "Abbeville",
-  "source": "Wilcox County \u2014 Wilcox County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 9475,
-  "owners": 1421,
-  "total_due": 1137000.0,
-  "by_year": {
-    "2022": {
-      "records": 758,
-      "due": 79590.0
-    },
-    "2023": {
-      "records": 1326,
-      "due": 147810.0
-    },
-    "2024": {
-      "records": 2179,
-      "due": 250140.0
-    },
-    "2025": {
-      "records": 5211,
-      "due": 659460.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3979,
-    "$100\u2013500": 2937,
-    "$500\u20131K": 1516,
-    "$1K\u20135K": 852,
-    "$5K+": 189
-  },
-  "flags": {
-    "S": 4927,
-    "F": 3600,
-    "A": 852,
-    "T": 94,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 17055.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Wilcox Legal Organ",
+  "source": "Wilcox County \u2014 Wilcox Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

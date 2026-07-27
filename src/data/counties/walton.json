@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "walton",
+  "name": "Walton",
   "fips": "13297",
   "seat": "Monroe",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "none",
+  "legal_organ": "Walton Tribune",
   "source": "Walton County \u2014 Walton Tribune",
-  "run_date": "2026-07-23",
-  "records": 9070,
-  "owners": 1360,
-  "total_due": 1088400.0,
-  "by_year": {
-    "2022": {
-      "records": 725,
-      "due": 76188.0
-    },
-    "2023": {
-      "records": 1269,
-      "due": 141492.0
-    },
-    "2024": {
-      "records": 2086,
-      "due": 239448.0
-    },
-    "2025": {
-      "records": 4988,
-      "due": 631272.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3809,
-    "$100\u2013500": 2811,
-    "$500\u20131K": 1451,
-    "$1K\u20135K": 816,
-    "$5K+": 181
-  },
-  "flags": {
-    "S": 4716,
-    "F": 3446,
-    "A": 816,
-    "T": 90,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 16326.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

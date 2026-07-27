@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "coffee",
+  "name": "Coffee",
   "fips": "13069",
   "seat": "Douglas",
-  "source": "Coffee County \u2014 Coffee County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 34800,
-  "owners": 5220,
-  "total_due": 4872000.0,
-  "by_year": {
-    "2022": {
-      "records": 2784,
-      "due": 341040.0
-    },
-    "2023": {
-      "records": 4872,
-      "due": 633360.0
-    },
-    "2024": {
-      "records": 8004,
-      "due": 1071840.0
-    },
-    "2025": {
-      "records": 19140,
-      "due": 2825760.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 14616,
-    "$100\u2013500": 10788,
-    "$500\u20131K": 5568,
-    "$1K\u20135K": 3132,
-    "$5K+": 696
-  },
-  "flags": {
-    "S": 18096,
-    "F": 13224,
-    "A": 3132,
-    "T": 348,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 73080.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Coffee Legal Organ",
+  "source": "Coffee County \u2014 Coffee Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

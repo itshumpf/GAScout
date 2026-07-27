@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "mitchell",
+  "name": "Mitchell",
   "fips": "13205",
   "seat": "Camilla",
-  "source": "Mitchell County \u2014 Mitchell County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 7000,
-  "owners": 1050,
-  "total_due": 840000.0,
-  "by_year": {
-    "2022": {
-      "records": 560,
-      "due": 58800.0
-    },
-    "2023": {
-      "records": 980,
-      "due": 109200.0
-    },
-    "2024": {
-      "records": 1610,
-      "due": 184800.0
-    },
-    "2025": {
-      "records": 3850,
-      "due": 487200.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 2940,
-    "$100\u2013500": 2170,
-    "$500\u20131K": 1120,
-    "$1K\u20135K": 630,
-    "$5K+": 140
-  },
-  "flags": {
-    "S": 3640,
-    "F": 2660,
-    "A": 630,
-    "T": 70,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 12600.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Mitchell Legal Organ",
+  "source": "Mitchell County \u2014 Mitchell Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

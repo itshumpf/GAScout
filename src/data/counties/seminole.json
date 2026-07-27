@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "seminole",
+  "name": "Seminole",
   "fips": "13253",
   "seat": "Donalsonville",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Donalsonville News",
   "source": "Seminole County \u2014 Donalsonville News",
-  "run_date": "2026-07-23",
-  "records": 8080,
-  "owners": 1212,
-  "total_due": 969600.0,
-  "by_year": {
-    "2022": {
-      "records": 646,
-      "due": 67872.0
-    },
-    "2023": {
-      "records": 1131,
-      "due": 126048.0
-    },
-    "2024": {
-      "records": 1858,
-      "due": 213312.0
-    },
-    "2025": {
-      "records": 4444,
-      "due": 562368.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3393,
-    "$100\u2013500": 2504,
-    "$500\u20131K": 1292,
-    "$1K\u20135K": 727,
-    "$5K+": 161
-  },
-  "flags": {
-    "S": 4201,
-    "F": 3070,
-    "A": 727,
-    "T": 80,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 14544.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

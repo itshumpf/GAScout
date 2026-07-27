@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "clayton",
+  "name": "Clayton",
   "fips": "13063",
   "seat": "Jonesboro",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Clayton News Daily",
   "source": "Clayton County \u2014 Clayton News Daily",
-  "run_date": "2026-07-23",
-  "records": 145000,
-  "owners": 21750,
-  "total_due": 21750000.0,
-  "by_year": {
-    "2022": {
-      "records": 11600,
-      "due": 1522500.0
-    },
-    "2023": {
-      "records": 20300,
-      "due": 2827500.0
-    },
-    "2024": {
-      "records": 33350,
-      "due": 4785000.0
-    },
-    "2025": {
-      "records": 79750,
-      "due": 12615000.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 60900,
-    "$100\u2013500": 44950,
-    "$500\u20131K": 23200,
-    "$1K\u20135K": 13050,
-    "$5K+": 2900
-  },
-  "flags": {
-    "S": 75400,
-    "F": 55100,
-    "A": 13050,
-    "T": 1450,
-    "(blank)": 0
-  },
-  "median_due": 270.0,
-  "largest_single_bill": 326250.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

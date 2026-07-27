@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "morgan",
+  "name": "Morgan",
   "fips": "13211",
   "seat": "Madison",
-  "source": "Morgan County \u2014 Morgan County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 7135,
-  "owners": 1070,
-  "total_due": 856200.0,
-  "by_year": {
-    "2022": {
-      "records": 570,
-      "due": 59934.0
-    },
-    "2023": {
-      "records": 998,
-      "due": 111306.0
-    },
-    "2024": {
-      "records": 1641,
-      "due": 188364.0
-    },
-    "2025": {
-      "records": 3924,
-      "due": 496596.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 2996,
-    "$100\u2013500": 2211,
-    "$500\u20131K": 1141,
-    "$1K\u20135K": 642,
-    "$5K+": 142
-  },
-  "flags": {
-    "S": 3710,
-    "F": 2711,
-    "A": 642,
-    "T": 71,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 12843.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Morgan Legal Organ",
+  "source": "Morgan County \u2014 Morgan Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

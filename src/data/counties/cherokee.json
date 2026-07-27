@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "cherokee",
+  "name": "Cherokee",
   "fips": "13057",
   "seat": "Canton",
-  "source": "Cherokee County \u2014 Cherokee County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 134500,
-  "owners": 20175,
-  "total_due": 20175000.0,
-  "by_year": {
-    "2022": {
-      "records": 10760,
-      "due": 1412250.0
-    },
-    "2023": {
-      "records": 18830,
-      "due": 2622750.0
-    },
-    "2024": {
-      "records": 30935,
-      "due": 4438500.0
-    },
-    "2025": {
-      "records": 73975,
-      "due": 11701500.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 56490,
-    "$100\u2013500": 41695,
-    "$500\u20131K": 21520,
-    "$1K\u20135K": 12105,
-    "$5K+": 2690
-  },
-  "flags": {
-    "S": 69940,
-    "F": 51110,
-    "A": 12105,
-    "T": 1345,
-    "(blank)": 0
-  },
-  "median_due": 270.0,
-  "largest_single_bill": 302625.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Cherokee Legal Organ",
+  "source": "Cherokee County \u2014 Cherokee Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

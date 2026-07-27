@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "brooks",
+  "name": "Brooks",
   "fips": "13027",
   "seat": "Quitman",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Quitman Free Press",
   "source": "Brooks County \u2014 Quitman Free Press",
-  "run_date": "2026-07-23",
-  "records": 22800,
-  "owners": 3420,
-  "total_due": 3192000.0,
-  "by_year": {
-    "2022": {
-      "records": 1824,
-      "due": 223440.0
-    },
-    "2023": {
-      "records": 3192,
-      "due": 414960.0
-    },
-    "2024": {
-      "records": 5244,
-      "due": 702240.0
-    },
-    "2025": {
-      "records": 12540,
-      "due": 1851360.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 9576,
-    "$100\u2013500": 7068,
-    "$500\u20131K": 3648,
-    "$1K\u20135K": 2052,
-    "$5K+": 456
-  },
-  "flags": {
-    "S": 11856,
-    "F": 8664,
-    "A": 2052,
-    "T": 228,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 47880.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "ware",
+  "name": "Ware",
   "fips": "13299",
   "seat": "Waycross",
-  "source": "Ware County \u2014 Ware County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 9115,
-  "owners": 1367,
-  "total_due": 1093800.0,
-  "by_year": {
-    "2022": {
-      "records": 729,
-      "due": 76566.0
-    },
-    "2023": {
-      "records": 1276,
-      "due": 142194.0
-    },
-    "2024": {
-      "records": 2096,
-      "due": 240636.0
-    },
-    "2025": {
-      "records": 5013,
-      "due": 634404.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3828,
-    "$100\u2013500": 2825,
-    "$500\u20131K": 1458,
-    "$1K\u20135K": 820,
-    "$5K+": 182
-  },
-  "flags": {
-    "S": 4739,
-    "F": 3463,
-    "A": 820,
-    "T": 91,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 16407.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Ware Legal Organ",
+  "source": "Ware County \u2014 Ware Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

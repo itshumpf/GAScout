@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "bibb",
+  "name": "Bibb",
   "fips": "13021",
   "seat": "Macon",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Telegraph",
   "source": "Bibb County \u2014 The Telegraph",
-  "run_date": "2026-07-23",
-  "records": 21000,
-  "owners": 3150,
-  "total_due": 2940000.0,
-  "by_year": {
-    "2022": {
-      "records": 1680,
-      "due": 205800.0
-    },
-    "2023": {
-      "records": 2940,
-      "due": 382200.0
-    },
-    "2024": {
-      "records": 4830,
-      "due": 646800.0
-    },
-    "2025": {
-      "records": 11550,
-      "due": 1705200.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 8820,
-    "$100\u2013500": 6510,
-    "$500\u20131K": 3360,
-    "$1K\u20135K": 1890,
-    "$5K+": 420
-  },
-  "flags": {
-    "S": 10920,
-    "F": 7980,
-    "A": 1890,
-    "T": 210,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 44100.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

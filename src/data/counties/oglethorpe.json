@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "oglethorpe",
+  "name": "Oglethorpe",
   "fips": "13221",
   "seat": "Lexington",
-  "source": "Oglethorpe County \u2014 Oglethorpe County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 7360,
-  "owners": 1104,
-  "total_due": 883200.0,
-  "by_year": {
-    "2022": {
-      "records": 588,
-      "due": 61824.0
-    },
-    "2023": {
-      "records": 1030,
-      "due": 114816.0
-    },
-    "2024": {
-      "records": 1692,
-      "due": 194304.0
-    },
-    "2025": {
-      "records": 4048,
-      "due": 512256.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3091,
-    "$100\u2013500": 2281,
-    "$500\u20131K": 1177,
-    "$1K\u20135K": 662,
-    "$5K+": 147
-  },
-  "flags": {
-    "S": 3827,
-    "F": 2796,
-    "A": 662,
-    "T": 73,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 13248.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Oglethorpe Legal Organ",
+  "source": "Oglethorpe County \u2014 Oglethorpe Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

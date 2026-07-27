@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "henry",
+  "name": "Henry",
   "fips": "13151",
   "seat": "McDonough",
-  "source": "Henry County \u2014 Henry County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 299000,
-  "owners": 44850,
-  "total_due": 44850000.0,
-  "by_year": {
-    "2022": {
-      "records": 23920,
-      "due": 3139500.0
-    },
-    "2023": {
-      "records": 41860,
-      "due": 5830500.0
-    },
-    "2024": {
-      "records": 68770,
-      "due": 9867000.0
-    },
-    "2025": {
-      "records": 164450,
-      "due": 26013000.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 125580,
-    "$100\u2013500": 92690,
-    "$500\u20131K": 47840,
-    "$1K\u20135K": 26910,
-    "$5K+": 5980
-  },
-  "flags": {
-    "S": 155480,
-    "F": 113620,
-    "A": 26910,
-    "T": 2990,
-    "(blank)": 0
-  },
-  "median_due": 270.0,
-  "largest_single_bill": 672750.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Henry Legal Organ",
+  "source": "Henry County \u2014 Henry Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

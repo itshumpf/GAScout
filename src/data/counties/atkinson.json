@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "atkinson",
+  "name": "Atkinson",
   "fips": "13003",
   "seat": "Pearson",
-  "source": "Atkinson County \u2014 Atkinson County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 15600,
-  "owners": 2340,
-  "total_due": 2184000.0,
-  "by_year": {
-    "2022": {
-      "records": 1248,
-      "due": 152880.0
-    },
-    "2023": {
-      "records": 2184,
-      "due": 283920.0
-    },
-    "2024": {
-      "records": 3588,
-      "due": 480480.0
-    },
-    "2025": {
-      "records": 8580,
-      "due": 1266720.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6552,
-    "$100\u2013500": 4836,
-    "$500\u20131K": 2496,
-    "$1K\u20135K": 1404,
-    "$5K+": 312
-  },
-  "flags": {
-    "S": 8112,
-    "F": 5928,
-    "A": 1404,
-    "T": 156,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 32760.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Atkinson Legal Organ",
+  "source": "Atkinson County \u2014 Atkinson Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

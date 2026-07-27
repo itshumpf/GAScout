@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "carroll",
+  "name": "Carroll",
   "fips": "13045",
   "seat": "Carrollton",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Times-Georgian",
   "source": "Carroll County \u2014 Times-Georgian",
-  "run_date": "2026-07-23",
-  "records": 27600,
-  "owners": 4140,
-  "total_due": 3864000.0,
-  "by_year": {
-    "2022": {
-      "records": 2208,
-      "due": 270480.0
-    },
-    "2023": {
-      "records": 3864,
-      "due": 502320.0
-    },
-    "2024": {
-      "records": 6348,
-      "due": 850080.0
-    },
-    "2025": {
-      "records": 15180,
-      "due": 2241120.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 11592,
-    "$100\u2013500": 8556,
-    "$500\u20131K": 4416,
-    "$1K\u20135K": 2484,
-    "$5K+": 552
-  },
-  "flags": {
-    "S": 14352,
-    "F": 10488,
-    "A": 2484,
-    "T": 276,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 57960.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

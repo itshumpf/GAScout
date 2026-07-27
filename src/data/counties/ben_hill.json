@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "ben_hill",
+  "name": "Ben Hill",
   "fips": "13017",
   "seat": "Fitzgerald",
-  "source": "Ben Hill County \u2014 Ben Hill County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 19800,
-  "owners": 2970,
-  "total_due": 2772000.0,
-  "by_year": {
-    "2022": {
-      "records": 1584,
-      "due": 194040.0
-    },
-    "2023": {
-      "records": 2772,
-      "due": 360360.0
-    },
-    "2024": {
-      "records": 4554,
-      "due": 609840.0
-    },
-    "2025": {
-      "records": 10890,
-      "due": 1607760.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 8316,
-    "$100\u2013500": 6138,
-    "$500\u20131K": 3168,
-    "$1K\u20135K": 1782,
-    "$5K+": 396
-  },
-  "flags": {
-    "S": 10296,
-    "F": 7524,
-    "A": 1782,
-    "T": 198,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 41580.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Ben Hill Legal Organ",
+  "source": "Ben Hill County \u2014 Ben Hill Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

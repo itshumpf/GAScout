@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "whitfield",
+  "name": "Whitfield",
   "fips": "13313",
   "seat": "Dalton",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Daily Citizen",
   "source": "Whitfield County \u2014 The Daily Citizen",
-  "run_date": "2026-07-23",
-  "records": 9430,
-  "owners": 1414,
-  "total_due": 1131600.0,
-  "by_year": {
-    "2022": {
-      "records": 754,
-      "due": 79212.0
-    },
-    "2023": {
-      "records": 1320,
-      "due": 147108.0
-    },
-    "2024": {
-      "records": 2168,
-      "due": 248952.0
-    },
-    "2025": {
-      "records": 5186,
-      "due": 656328.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3960,
-    "$100\u2013500": 2923,
-    "$500\u20131K": 1508,
-    "$1K\u20135K": 848,
-    "$5K+": 188
-  },
-  "flags": {
-    "S": 4903,
-    "F": 3583,
-    "A": 848,
-    "T": 94,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 16974.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "dougherty",
+  "name": "Dougherty",
   "fips": "13095",
   "seat": "Albany",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Albany Herald",
   "source": "Dougherty County \u2014 The Albany Herald",
-  "run_date": "2026-07-23",
-  "records": 12900,
-  "owners": 1935,
-  "total_due": 1677000.0,
-  "by_year": {
-    "2022": {
-      "records": 1032,
-      "due": 117390.0
-    },
-    "2023": {
-      "records": 1806,
-      "due": 218010.0
-    },
-    "2024": {
-      "records": 2967,
-      "due": 368940.0
-    },
-    "2025": {
-      "records": 7095,
-      "due": 972660.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5418,
-    "$100\u2013500": 3999,
-    "$500\u20131K": 2064,
-    "$1K\u20135K": 1161,
-    "$5K+": 258
-  },
-  "flags": {
-    "S": 6708,
-    "F": 4902,
-    "A": 1161,
-    "T": 129,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 25155.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

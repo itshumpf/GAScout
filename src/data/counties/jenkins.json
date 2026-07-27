@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "jenkins",
+  "name": "Jenkins",
   "fips": "13165",
   "seat": "Millen",
-  "source": "Jenkins County \u2014 Jenkins County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 18150,
-  "owners": 2722,
-  "total_due": 2359500.0,
-  "by_year": {
-    "2022": {
-      "records": 1452,
-      "due": 165165.0
-    },
-    "2023": {
-      "records": 2541,
-      "due": 306735.0
-    },
-    "2024": {
-      "records": 4174,
-      "due": 519090.0
-    },
-    "2025": {
-      "records": 9982,
-      "due": 1368510.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 7623,
-    "$100\u2013500": 5626,
-    "$500\u20131K": 2904,
-    "$1K\u20135K": 1633,
-    "$5K+": 363
-  },
-  "flags": {
-    "S": 9438,
-    "F": 6897,
-    "A": 1633,
-    "T": 181,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 35392.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Jenkins Legal Organ",
+  "source": "Jenkins County \u2014 Jenkins Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

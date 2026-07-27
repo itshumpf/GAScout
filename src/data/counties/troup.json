@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "troup",
+  "name": "Troup",
   "fips": "13285",
   "seat": "LaGrange",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "LaGrange Daily News",
   "source": "Troup County \u2014 LaGrange Daily News",
-  "run_date": "2026-07-23",
-  "records": 8800,
-  "owners": 1320,
-  "total_due": 1056000.0,
-  "by_year": {
-    "2022": {
-      "records": 704,
-      "due": 73920.0
-    },
-    "2023": {
-      "records": 1232,
-      "due": 137280.0
-    },
-    "2024": {
-      "records": 2024,
-      "due": 232320.0
-    },
-    "2025": {
-      "records": 4840,
-      "due": 612480.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3696,
-    "$100\u2013500": 2728,
-    "$500\u20131K": 1408,
-    "$1K\u20135K": 792,
-    "$5K+": 176
-  },
-  "flags": {
-    "S": 4576,
-    "F": 3344,
-    "A": 792,
-    "T": 88,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 15840.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

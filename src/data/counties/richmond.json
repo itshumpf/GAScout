@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "richmond",
+  "name": "Richmond",
   "fips": "13245",
   "seat": "Augusta",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Augusta Chronicle",
   "source": "Richmond County \u2014 The Augusta Chronicle",
-  "run_date": "2026-07-23",
-  "records": 7900,
-  "owners": 1185,
-  "total_due": 948000.0,
-  "by_year": {
-    "2022": {
-      "records": 632,
-      "due": 66360.0
-    },
-    "2023": {
-      "records": 1106,
-      "due": 123240.0
-    },
-    "2024": {
-      "records": 1817,
-      "due": 208560.0
-    },
-    "2025": {
-      "records": 4345,
-      "due": 549840.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3318,
-    "$100\u2013500": 2449,
-    "$500\u20131K": 1264,
-    "$1K\u20135K": 711,
-    "$5K+": 158
-  },
-  "flags": {
-    "S": 4108,
-    "F": 3002,
-    "A": 711,
-    "T": 79,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 14220.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

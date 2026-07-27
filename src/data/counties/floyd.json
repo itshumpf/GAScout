@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "floyd",
+  "name": "Floyd",
   "fips": "13115",
   "seat": "Rome",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Rome News-Tribune",
   "source": "Floyd County \u2014 Rome News-Tribune",
-  "run_date": "2026-07-23",
-  "records": 14400,
-  "owners": 2160,
-  "total_due": 1872000.0,
-  "by_year": {
-    "2022": {
-      "records": 1152,
-      "due": 131040.0
-    },
-    "2023": {
-      "records": 2016,
-      "due": 243360.0
-    },
-    "2024": {
-      "records": 3312,
-      "due": 411840.0
-    },
-    "2025": {
-      "records": 7920,
-      "due": 1085760.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6048,
-    "$100\u2013500": 4464,
-    "$500\u20131K": 2304,
-    "$1K\u20135K": 1296,
-    "$5K+": 288
-  },
-  "flags": {
-    "S": 7488,
-    "F": 5472,
-    "A": 1296,
-    "T": 144,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 28080.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

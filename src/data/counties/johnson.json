@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "johnson",
+  "name": "Johnson",
   "fips": "13167",
   "seat": "Wrightsville",
-  "source": "Johnson County \u2014 Johnson County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 18300,
-  "owners": 2745,
-  "total_due": 2379000.0,
-  "by_year": {
-    "2022": {
-      "records": 1464,
-      "due": 166530.0
-    },
-    "2023": {
-      "records": 2562,
-      "due": 309270.0
-    },
-    "2024": {
-      "records": 4209,
-      "due": 523380.0
-    },
-    "2025": {
-      "records": 10065,
-      "due": 1379820.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 7686,
-    "$100\u2013500": 5673,
-    "$500\u20131K": 2928,
-    "$1K\u20135K": 1647,
-    "$5K+": 366
-  },
-  "flags": {
-    "S": 9516,
-    "F": 6954,
-    "A": 1647,
-    "T": 183,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 35685.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Johnson Legal Organ",
+  "source": "Johnson County \u2014 Johnson Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

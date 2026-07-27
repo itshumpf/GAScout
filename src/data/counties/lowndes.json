@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "lowndes",
+  "name": "Lowndes",
   "fips": "13185",
   "seat": "Valdosta",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Valdosta Daily Times",
   "source": "Lowndes County \u2014 The Valdosta Daily Times",
-  "run_date": "2026-07-23",
-  "records": 6595,
-  "owners": 989,
-  "total_due": 791400.0,
-  "by_year": {
-    "2022": {
-      "records": 527,
-      "due": 55398.0
-    },
-    "2023": {
-      "records": 923,
-      "due": 102882.0
-    },
-    "2024": {
-      "records": 1516,
-      "due": 174108.0
-    },
-    "2025": {
-      "records": 3627,
-      "due": 459012.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 2769,
-    "$100\u2013500": 2044,
-    "$500\u20131K": 1055,
-    "$1K\u20135K": 593,
-    "$5K+": 131
-  },
-  "flags": {
-    "S": 3429,
-    "F": 2506,
-    "A": 593,
-    "T": 65,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 11871.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "twiggs",
+  "name": "Twiggs",
   "fips": "13289",
   "seat": "Jeffersonville",
-  "source": "Twiggs County \u2014 Twiggs County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 8890,
-  "owners": 1333,
-  "total_due": 1066800.0,
-  "by_year": {
-    "2022": {
-      "records": 711,
-      "due": 74676.0
-    },
-    "2023": {
-      "records": 1244,
-      "due": 138684.0
-    },
-    "2024": {
-      "records": 2044,
-      "due": 234696.0
-    },
-    "2025": {
-      "records": 4889,
-      "due": 618744.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3733,
-    "$100\u2013500": 2755,
-    "$500\u20131K": 1422,
-    "$1K\u20135K": 800,
-    "$5K+": 177
-  },
-  "flags": {
-    "S": 4622,
-    "F": 3378,
-    "A": 800,
-    "T": 88,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 16002.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Twiggs Legal Organ",
+  "source": "Twiggs County \u2014 Twiggs Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

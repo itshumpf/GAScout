@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "bulloch",
+  "name": "Bulloch",
   "fips": "13031",
   "seat": "Statesboro",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Statesboro Herald",
   "source": "Bulloch County \u2014 Statesboro Herald",
-  "run_date": "2026-07-23",
-  "records": 24000,
-  "owners": 3600,
-  "total_due": 3360000.0,
-  "by_year": {
-    "2022": {
-      "records": 1920,
-      "due": 235200.0
-    },
-    "2023": {
-      "records": 3360,
-      "due": 436800.0
-    },
-    "2024": {
-      "records": 5520,
-      "due": 739200.0
-    },
-    "2025": {
-      "records": 13200,
-      "due": 1948800.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 10080,
-    "$100\u2013500": 7440,
-    "$500\u20131K": 3840,
-    "$1K\u20135K": 2160,
-    "$5K+": 480
-  },
-  "flags": {
-    "S": 12480,
-    "F": 9120,
-    "A": 2160,
-    "T": 240,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 50400.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

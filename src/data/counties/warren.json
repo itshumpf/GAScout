@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "warren",
+  "name": "Warren",
   "fips": "13301",
   "seat": "Warrenton",
-  "source": "Warren County \u2014 Warren County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 9160,
-  "owners": 1374,
-  "total_due": 1099200.0,
-  "by_year": {
-    "2022": {
-      "records": 732,
-      "due": 76944.0
-    },
-    "2023": {
-      "records": 1282,
-      "due": 142896.0
-    },
-    "2024": {
-      "records": 2106,
-      "due": 241824.0
-    },
-    "2025": {
-      "records": 5038,
-      "due": 637536.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3847,
-    "$100\u2013500": 2839,
-    "$500\u20131K": 1465,
-    "$1K\u20135K": 824,
-    "$5K+": 183
-  },
-  "flags": {
-    "S": 4763,
-    "F": 3480,
-    "A": 824,
-    "T": 91,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 16488.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Warren Legal Organ",
+  "source": "Warren County \u2014 Warren Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

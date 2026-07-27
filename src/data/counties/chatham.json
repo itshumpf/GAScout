@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "chatham",
+  "name": "Chatham",
   "fips": "13051",
   "seat": "Savannah",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Savannah Morning News",
   "source": "Chatham County \u2014 Savannah Morning News",
-  "run_date": "2026-07-23",
-  "records": 124000,
-  "owners": 18600,
-  "total_due": 18600000.0,
-  "by_year": {
-    "2022": {
-      "records": 9920,
-      "due": 1302000.0
-    },
-    "2023": {
-      "records": 17360,
-      "due": 2418000.0
-    },
-    "2024": {
-      "records": 28520,
-      "due": 4092000.0
-    },
-    "2025": {
-      "records": 68200,
-      "due": 10788000.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 52080,
-    "$100\u2013500": 38440,
-    "$500\u20131K": 19840,
-    "$1K\u20135K": 11160,
-    "$5K+": 2480
-  },
-  "flags": {
-    "S": 64480,
-    "F": 47120,
-    "A": 11160,
-    "T": 1240,
-    "(blank)": 0
-  },
-  "median_due": 270.0,
-  "largest_single_bill": 279000.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

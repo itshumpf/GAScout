@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "hall",
+  "name": "Hall",
   "fips": "13139",
   "seat": "Gainesville",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Times",
   "source": "Hall County \u2014 The Times",
-  "run_date": "2026-07-23",
-  "records": 278000,
-  "owners": 41700,
-  "total_due": 41700000.0,
-  "by_year": {
-    "2022": {
-      "records": 22240,
-      "due": 2919000.0
-    },
-    "2023": {
-      "records": 38920,
-      "due": 5421000.0
-    },
-    "2024": {
-      "records": 63940,
-      "due": 9174000.0
-    },
-    "2025": {
-      "records": 152900,
-      "due": 24186000.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 116760,
-    "$100\u2013500": 86180,
-    "$500\u20131K": 44480,
-    "$1K\u20135K": 25020,
-    "$5K+": 5560
-  },
-  "flags": {
-    "S": 144560,
-    "F": 105640,
-    "A": 25020,
-    "T": 2780,
-    "(blank)": 0
-  },
-  "median_due": 270.0,
-  "largest_single_bill": 625500.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

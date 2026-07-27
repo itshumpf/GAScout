@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "liberty",
+  "name": "Liberty",
   "fips": "13179",
   "seat": "Hinesville",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Coastal Courier",
   "source": "Liberty County \u2014 Coastal Courier",
-  "run_date": "2026-07-23",
-  "records": 19200,
-  "owners": 2880,
-  "total_due": 2496000.0,
-  "by_year": {
-    "2022": {
-      "records": 1536,
-      "due": 174720.0
-    },
-    "2023": {
-      "records": 2688,
-      "due": 324480.0
-    },
-    "2024": {
-      "records": 4416,
-      "due": 549120.0
-    },
-    "2025": {
-      "records": 10560,
-      "due": 1447680.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 8064,
-    "$100\u2013500": 5952,
-    "$500\u20131K": 3072,
-    "$1K\u20135K": 1728,
-    "$5K+": 384
-  },
-  "flags": {
-    "S": 9984,
-    "F": 7296,
-    "A": 1728,
-    "T": 192,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 37440.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

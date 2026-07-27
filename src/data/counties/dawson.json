@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "dawson",
+  "name": "Dawson",
   "fips": "13085",
   "seat": "Dawsonville",
-  "source": "Dawson County \u2014 Dawson County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 12150,
-  "owners": 1822,
-  "total_due": 1579500.0,
-  "by_year": {
-    "2022": {
-      "records": 972,
-      "due": 110565.0
-    },
-    "2023": {
-      "records": 1701,
-      "due": 205335.0
-    },
-    "2024": {
-      "records": 2794,
-      "due": 347490.0
-    },
-    "2025": {
-      "records": 6682,
-      "due": 916110.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5103,
-    "$100\u2013500": 3766,
-    "$500\u20131K": 1944,
-    "$1K\u20135K": 1093,
-    "$5K+": 243
-  },
-  "flags": {
-    "S": 6318,
-    "F": 4617,
-    "A": 1093,
-    "T": 121,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 23692.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Dawson Legal Organ",
+  "source": "Dawson County \u2014 Dawson Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

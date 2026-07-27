@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "fayette",
+  "name": "Fayette",
   "fips": "13113",
   "seat": "Fayetteville",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Fayette County News",
   "source": "Fayette County \u2014 Fayette County News",
-  "run_date": "2026-07-23",
-  "records": 14250,
-  "owners": 2137,
-  "total_due": 1852500.0,
-  "by_year": {
-    "2022": {
-      "records": 1140,
-      "due": 129675.0
-    },
-    "2023": {
-      "records": 1995,
-      "due": 240825.0
-    },
-    "2024": {
-      "records": 3277,
-      "due": 407550.0
-    },
-    "2025": {
-      "records": 7837,
-      "due": 1074450.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5985,
-    "$100\u2013500": 4417,
-    "$500\u20131K": 2280,
-    "$1K\u20135K": 1282,
-    "$5K+": 285
-  },
-  "flags": {
-    "S": 7410,
-    "F": 5415,
-    "A": 1282,
-    "T": 142,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 27787.5
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

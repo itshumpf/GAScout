@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "paulding",
+  "name": "Paulding",
   "fips": "13223",
   "seat": "Dallas",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Dallas New Era",
   "source": "Paulding County \u2014 Dallas New Era",
-  "run_date": "2026-07-23",
-  "records": 7405,
-  "owners": 1110,
-  "total_due": 888600.0,
-  "by_year": {
-    "2022": {
-      "records": 592,
-      "due": 62202.0
-    },
-    "2023": {
-      "records": 1036,
-      "due": 115518.0
-    },
-    "2024": {
-      "records": 1703,
-      "due": 195492.0
-    },
-    "2025": {
-      "records": 4072,
-      "due": 515388.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3110,
-    "$100\u2013500": 2295,
-    "$500\u20131K": 1184,
-    "$1K\u20135K": 666,
-    "$5K+": 148
-  },
-  "flags": {
-    "S": 3850,
-    "F": 2813,
-    "A": 666,
-    "T": 74,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 13329.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "walker",
+  "name": "Walker",
   "fips": "13295",
   "seat": "LaFayette",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Walker County Messenger",
   "source": "Walker County \u2014 Walker County Messenger",
-  "run_date": "2026-07-23",
-  "records": 9025,
-  "owners": 1353,
-  "total_due": 1083000.0,
-  "by_year": {
-    "2022": {
-      "records": 722,
-      "due": 75810.0
-    },
-    "2023": {
-      "records": 1263,
-      "due": 140790.0
-    },
-    "2024": {
-      "records": 2075,
-      "due": 238260.0
-    },
-    "2025": {
-      "records": 4963,
-      "due": 628140.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3790,
-    "$100\u2013500": 2797,
-    "$500\u20131K": 1444,
-    "$1K\u20135K": 812,
-    "$5K+": 180
-  },
-  "flags": {
-    "S": 4693,
-    "F": 3429,
-    "A": 812,
-    "T": 90,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 16245.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

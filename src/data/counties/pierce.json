@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "pierce",
+  "name": "Pierce",
   "fips": "13229",
   "seat": "Blackshear",
-  "source": "Pierce County \u2014 Pierce County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 7540,
-  "owners": 1131,
-  "total_due": 904800.0,
-  "by_year": {
-    "2022": {
-      "records": 603,
-      "due": 63336.0
-    },
-    "2023": {
-      "records": 1055,
-      "due": 117624.0
-    },
-    "2024": {
-      "records": 1734,
-      "due": 199056.0
-    },
-    "2025": {
-      "records": 4147,
-      "due": 524784.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3166,
-    "$100\u2013500": 2337,
-    "$500\u20131K": 1206,
-    "$1K\u20135K": 678,
-    "$5K+": 150
-  },
-  "flags": {
-    "S": 3920,
-    "F": 2865,
-    "A": 678,
-    "T": 75,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 13572.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Pierce Legal Organ",
+  "source": "Pierce County \u2014 Pierce Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

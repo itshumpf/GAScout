@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "schley",
+  "name": "Schley",
   "fips": "13249",
   "seat": "Ellaville",
-  "source": "Schley County \u2014 Schley County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 7990,
-  "owners": 1198,
-  "total_due": 958800.0,
-  "by_year": {
-    "2022": {
-      "records": 639,
-      "due": 67116.0
-    },
-    "2023": {
-      "records": 1118,
-      "due": 124644.0
-    },
-    "2024": {
-      "records": 1837,
-      "due": 210936.0
-    },
-    "2025": {
-      "records": 4394,
-      "due": 556104.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3355,
-    "$100\u2013500": 2476,
-    "$500\u20131K": 1278,
-    "$1K\u20135K": 719,
-    "$5K+": 159
-  },
-  "flags": {
-    "S": 4154,
-    "F": 3036,
-    "A": 719,
-    "T": 79,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 14382.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Schley Legal Organ",
+  "source": "Schley County \u2014 Schley Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

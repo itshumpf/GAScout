@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "lumpkin",
+  "name": "Lumpkin",
   "fips": "13187",
   "seat": "Dahlonega",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Dahlonega Nugget",
   "source": "Lumpkin County \u2014 The Dahlonega Nugget",
-  "run_date": "2026-07-23",
-  "records": 6640,
-  "owners": 996,
-  "total_due": 796800.0,
-  "by_year": {
-    "2022": {
-      "records": 531,
-      "due": 55776.0
-    },
-    "2023": {
-      "records": 929,
-      "due": 103584.0
-    },
-    "2024": {
-      "records": 1527,
-      "due": 175296.0
-    },
-    "2025": {
-      "records": 3652,
-      "due": 462144.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 2788,
-    "$100\u2013500": 2058,
-    "$500\u20131K": 1062,
-    "$1K\u20135K": 597,
-    "$5K+": 132
-  },
-  "flags": {
-    "S": 3452,
-    "F": 2523,
-    "A": 597,
-    "T": 66,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 11952.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

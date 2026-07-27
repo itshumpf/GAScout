@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "meriwether",
+  "name": "Meriwether",
   "fips": "13199",
   "seat": "Greenville",
-  "source": "Meriwether County \u2014 Meriwether County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 6910,
-  "owners": 1036,
-  "total_due": 829200.0,
-  "by_year": {
-    "2022": {
-      "records": 552,
-      "due": 58044.0
-    },
-    "2023": {
-      "records": 967,
-      "due": 107796.0
-    },
-    "2024": {
-      "records": 1589,
-      "due": 182424.0
-    },
-    "2025": {
-      "records": 3800,
-      "due": 480936.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 2902,
-    "$100\u2013500": 2142,
-    "$500\u20131K": 1105,
-    "$1K\u20135K": 621,
-    "$5K+": 138
-  },
-  "flags": {
-    "S": 3593,
-    "F": 2625,
-    "A": 621,
-    "T": 69,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 12438.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Meriwether Legal Organ",
+  "source": "Meriwether County \u2014 Meriwether Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "clarke",
+  "name": "Clarke",
   "fips": "13059",
   "seat": "Athens",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Athens Banner-Herald",
   "source": "Clarke County \u2014 Athens Banner-Herald",
-  "run_date": "2026-07-23",
-  "records": 31800,
-  "owners": 4770,
-  "total_due": 4452000.0,
-  "by_year": {
-    "2022": {
-      "records": 2544,
-      "due": 311640.0
-    },
-    "2023": {
-      "records": 4452,
-      "due": 578760.0
-    },
-    "2024": {
-      "records": 7314,
-      "due": 979440.0
-    },
-    "2025": {
-      "records": 17490,
-      "due": 2582160.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 13356,
-    "$100\u2013500": 9858,
-    "$500\u20131K": 5088,
-    "$1K\u20135K": 2862,
-    "$5K+": 636
-  },
-  "flags": {
-    "S": 16536,
-    "F": 12084,
-    "A": 2862,
-    "T": 318,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 66780.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

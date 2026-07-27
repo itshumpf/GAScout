@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "jones",
+  "name": "Jones",
   "fips": "13169",
   "seat": "Gray",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Jones County News",
   "source": "Jones County \u2014 The Jones County News",
-  "run_date": "2026-07-23",
-  "records": 18450,
-  "owners": 2767,
-  "total_due": 2398500.0,
-  "by_year": {
-    "2022": {
-      "records": 1476,
-      "due": 167895.0
-    },
-    "2023": {
-      "records": 2583,
-      "due": 311805.0
-    },
-    "2024": {
-      "records": 4243,
-      "due": 527670.0
-    },
-    "2025": {
-      "records": 10147,
-      "due": 1391130.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 7749,
-    "$100\u2013500": 5719,
-    "$500\u20131K": 2952,
-    "$1K\u20135K": 1660,
-    "$5K+": 369
-  },
-  "flags": {
-    "S": 9594,
-    "F": 7011,
-    "A": 1660,
-    "T": 184,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 35977.5
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

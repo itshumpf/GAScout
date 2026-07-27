@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "tift",
+  "name": "Tift",
   "fips": "13277",
   "seat": "Tifton",
-  "source": "Tift County \u2014 Tift County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 8620,
-  "owners": 1293,
-  "total_due": 1034400.0,
-  "by_year": {
-    "2022": {
-      "records": 689,
-      "due": 72408.0
-    },
-    "2023": {
-      "records": 1206,
-      "due": 134472.0
-    },
-    "2024": {
-      "records": 1982,
-      "due": 227568.0
-    },
-    "2025": {
-      "records": 4741,
-      "due": 599952.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3620,
-    "$100\u2013500": 2672,
-    "$500\u20131K": 1379,
-    "$1K\u20135K": 775,
-    "$5K+": 172
-  },
-  "flags": {
-    "S": 4482,
-    "F": 3275,
-    "A": 775,
-    "T": 86,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 15516.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Tift Legal Organ",
+  "source": "Tift County \u2014 Tift Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

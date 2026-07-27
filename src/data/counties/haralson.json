@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "haralson",
+  "name": "Haralson",
   "fips": "13143",
   "seat": "Buchanan",
-  "source": "Haralson County \u2014 Haralson County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 16500,
-  "owners": 2475,
-  "total_due": 2145000.0,
-  "by_year": {
-    "2022": {
-      "records": 1320,
-      "due": 150150.0
-    },
-    "2023": {
-      "records": 2310,
-      "due": 278850.0
-    },
-    "2024": {
-      "records": 3795,
-      "due": 471900.0
-    },
-    "2025": {
-      "records": 9075,
-      "due": 1244100.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6930,
-    "$100\u2013500": 5115,
-    "$500\u20131K": 2640,
-    "$1K\u20135K": 1485,
-    "$5K+": 330
-  },
-  "flags": {
-    "S": 8580,
-    "F": 6270,
-    "A": 1485,
-    "T": 165,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 32175.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Haralson Legal Organ",
+  "source": "Haralson County \u2014 Haralson Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

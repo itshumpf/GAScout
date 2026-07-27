@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "houston",
+  "name": "Houston",
   "fips": "13153",
   "seat": "Perry",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Houston Home Journal",
   "source": "Houston County \u2014 Houston Home Journal",
-  "run_date": "2026-07-23",
-  "records": 17250,
-  "owners": 2587,
-  "total_due": 2242500.0,
-  "by_year": {
-    "2022": {
-      "records": 1380,
-      "due": 156975.0
-    },
-    "2023": {
-      "records": 2415,
-      "due": 291525.0
-    },
-    "2024": {
-      "records": 3967,
-      "due": 493350.0
-    },
-    "2025": {
-      "records": 9487,
-      "due": 1300650.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 7245,
-    "$100\u2013500": 5347,
-    "$500\u20131K": 2760,
-    "$1K\u20135K": 1552,
-    "$5K+": 345
-  },
-  "flags": {
-    "S": 8970,
-    "F": 6555,
-    "A": 1552,
-    "T": 172,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 33637.5
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

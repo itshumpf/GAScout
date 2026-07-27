@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "madison",
+  "name": "Madison",
   "fips": "13195",
   "seat": "Danielsville",
-  "source": "Madison County \u2014 Madison County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 6820,
-  "owners": 1023,
-  "total_due": 818400.0,
-  "by_year": {
-    "2022": {
-      "records": 545,
-      "due": 57288.0
-    },
-    "2023": {
-      "records": 954,
-      "due": 106392.0
-    },
-    "2024": {
-      "records": 1568,
-      "due": 180048.0
-    },
-    "2025": {
-      "records": 3751,
-      "due": 474672.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 2864,
-    "$100\u2013500": 2114,
-    "$500\u20131K": 1091,
-    "$1K\u20135K": 613,
-    "$5K+": 136
-  },
-  "flags": {
-    "S": 3546,
-    "F": 2591,
-    "A": 613,
-    "T": 68,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 12276.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Madison Legal Organ",
+  "source": "Madison County \u2014 Madison Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

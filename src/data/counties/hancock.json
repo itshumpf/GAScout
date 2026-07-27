@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "hancock",
+  "name": "Hancock",
   "fips": "13141",
   "seat": "Sparta",
-  "source": "Hancock County \u2014 Hancock County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 16350,
-  "owners": 2452,
-  "total_due": 2125500.0,
-  "by_year": {
-    "2022": {
-      "records": 1308,
-      "due": 148785.0
-    },
-    "2023": {
-      "records": 2289,
-      "due": 276315.0
-    },
-    "2024": {
-      "records": 3760,
-      "due": 467610.0
-    },
-    "2025": {
-      "records": 8992,
-      "due": 1232790.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6867,
-    "$100\u2013500": 5068,
-    "$500\u20131K": 2616,
-    "$1K\u20135K": 1471,
-    "$5K+": 327
-  },
-  "flags": {
-    "S": 8502,
-    "F": 6213,
-    "A": 1471,
-    "T": 163,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 31882.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Hancock Legal Organ",
+  "source": "Hancock County \u2014 Hancock Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

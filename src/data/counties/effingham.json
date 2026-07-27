@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "effingham",
+  "name": "Effingham",
   "fips": "13103",
   "seat": "Springfield",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Effingham Herald",
   "source": "Effingham County \u2014 Effingham Herald",
-  "run_date": "2026-07-23",
-  "records": 13500,
-  "owners": 2025,
-  "total_due": 1755000.0,
-  "by_year": {
-    "2022": {
-      "records": 1080,
-      "due": 122850.0
-    },
-    "2023": {
-      "records": 1890,
-      "due": 228150.0
-    },
-    "2024": {
-      "records": 3105,
-      "due": 386100.0
-    },
-    "2025": {
-      "records": 7425,
-      "due": 1017900.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5670,
-    "$100\u2013500": 4185,
-    "$500\u20131K": 2160,
-    "$1K\u20135K": 1215,
-    "$5K+": 270
-  },
-  "flags": {
-    "S": 7020,
-    "F": 5130,
-    "A": 1215,
-    "T": 135,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 26325.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

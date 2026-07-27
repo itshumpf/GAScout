@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "taylor",
+  "name": "Taylor",
   "fips": "13269",
   "seat": "Butler",
-  "source": "Taylor County \u2014 Taylor County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 8440,
-  "owners": 1266,
-  "total_due": 1012800.0,
-  "by_year": {
-    "2022": {
-      "records": 675,
-      "due": 70896.0
-    },
-    "2023": {
-      "records": 1181,
-      "due": 131664.0
-    },
-    "2024": {
-      "records": 1941,
-      "due": 222816.0
-    },
-    "2025": {
-      "records": 4642,
-      "due": 587424.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3544,
-    "$100\u2013500": 2616,
-    "$500\u20131K": 1350,
-    "$1K\u20135K": 759,
-    "$5K+": 168
-  },
-  "flags": {
-    "S": 4388,
-    "F": 3207,
-    "A": 759,
-    "T": 84,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 15192.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Taylor Legal Organ",
+  "source": "Taylor County \u2014 Taylor Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

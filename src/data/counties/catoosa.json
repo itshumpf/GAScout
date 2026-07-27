@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "catoosa",
+  "name": "Catoosa",
   "fips": "13047",
   "seat": "Ringgold",
-  "source": "Catoosa County \u2014 Catoosa County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 28200,
-  "owners": 4230,
-  "total_due": 3948000.0,
-  "by_year": {
-    "2022": {
-      "records": 2256,
-      "due": 276360.0
-    },
-    "2023": {
-      "records": 3948,
-      "due": 513240.0
-    },
-    "2024": {
-      "records": 6486,
-      "due": 868560.0
-    },
-    "2025": {
-      "records": 15510,
-      "due": 2289840.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 11844,
-    "$100\u2013500": 8742,
-    "$500\u20131K": 4512,
-    "$1K\u20135K": 2538,
-    "$5K+": 564
-  },
-  "flags": {
-    "S": 14664,
-    "F": 10716,
-    "A": 2538,
-    "T": 282,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 59220.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Catoosa Legal Organ",
+  "source": "Catoosa County \u2014 Catoosa Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

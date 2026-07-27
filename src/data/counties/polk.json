@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "polk",
+  "name": "Polk",
   "fips": "13233",
   "seat": "Cedartown",
-  "source": "Polk County \u2014 Polk County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 7630,
-  "owners": 1144,
-  "total_due": 915600.0,
-  "by_year": {
-    "2022": {
-      "records": 610,
-      "due": 64092.0
-    },
-    "2023": {
-      "records": 1068,
-      "due": 119028.0
-    },
-    "2024": {
-      "records": 1754,
-      "due": 201432.0
-    },
-    "2025": {
-      "records": 4196,
-      "due": 531048.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3204,
-    "$100\u2013500": 2365,
-    "$500\u20131K": 1220,
-    "$1K\u20135K": 686,
-    "$5K+": 152
-  },
-  "flags": {
-    "S": 3967,
-    "F": 2899,
-    "A": 686,
-    "T": 76,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 13734.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Polk Legal Organ",
+  "source": "Polk County \u2014 Polk Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

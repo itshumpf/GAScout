@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "treutlen",
+  "name": "Treutlen",
   "fips": "13283",
   "seat": "Soperton",
-  "source": "Treutlen County \u2014 Treutlen County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 8755,
-  "owners": 1313,
-  "total_due": 1050600.0,
-  "by_year": {
-    "2022": {
-      "records": 700,
-      "due": 73542.0
-    },
-    "2023": {
-      "records": 1225,
-      "due": 136578.0
-    },
-    "2024": {
-      "records": 2013,
-      "due": 231132.0
-    },
-    "2025": {
-      "records": 4815,
-      "due": 609348.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3677,
-    "$100\u2013500": 2714,
-    "$500\u20131K": 1400,
-    "$1K\u20135K": 787,
-    "$5K+": 175
-  },
-  "flags": {
-    "S": 4552,
-    "F": 3326,
-    "A": 787,
-    "T": 87,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 15759.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Treutlen Legal Organ",
+  "source": "Treutlen County \u2014 Treutlen Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

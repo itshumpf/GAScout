@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "wilkes",
+  "name": "Wilkes",
   "fips": "13317",
   "seat": "Washington",
-  "source": "Wilkes County \u2014 Wilkes County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 9520,
-  "owners": 1428,
-  "total_due": 1142400.0,
-  "by_year": {
-    "2022": {
-      "records": 761,
-      "due": 79968.0
-    },
-    "2023": {
-      "records": 1332,
-      "due": 148512.0
-    },
-    "2024": {
-      "records": 2189,
-      "due": 251328.0
-    },
-    "2025": {
-      "records": 5236,
-      "due": 662592.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3998,
-    "$100\u2013500": 2951,
-    "$500\u20131K": 1523,
-    "$1K\u20135K": 856,
-    "$5K+": 190
-  },
-  "flags": {
-    "S": 4950,
-    "F": 3617,
-    "A": 856,
-    "T": 95,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 17136.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Wilkes Legal Organ",
+  "source": "Wilkes County \u2014 Wilkes Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "candler",
+  "name": "Candler",
   "fips": "13043",
   "seat": "Metter",
-  "source": "Candler County \u2014 Candler County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 27000,
-  "owners": 4050,
-  "total_due": 3780000.0,
-  "by_year": {
-    "2022": {
-      "records": 2160,
-      "due": 264600.0
-    },
-    "2023": {
-      "records": 3780,
-      "due": 491400.0
-    },
-    "2024": {
-      "records": 6210,
-      "due": 831600.0
-    },
-    "2025": {
-      "records": 14850,
-      "due": 2192400.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 11340,
-    "$100\u2013500": 8370,
-    "$500\u20131K": 4320,
-    "$1K\u20135K": 2430,
-    "$5K+": 540
-  },
-  "flags": {
-    "S": 14040,
-    "F": 10260,
-    "A": 2430,
-    "T": 270,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 56700.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Candler Legal Organ",
+  "source": "Candler County \u2014 Candler Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

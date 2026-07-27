@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "cobb",
+  "name": "Cobb",
   "fips": "13067",
   "seat": "Marietta",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Marietta Daily Journal",
   "source": "Cobb County \u2014 Marietta Daily Journal",
-  "run_date": "2026-07-23",
-  "records": 152000,
-  "owners": 22800,
-  "total_due": 22800000.0,
-  "by_year": {
-    "2022": {
-      "records": 12160,
-      "due": 1596000.0
-    },
-    "2023": {
-      "records": 21280,
-      "due": 2964000.0
-    },
-    "2024": {
-      "records": 34960,
-      "due": 5016000.0
-    },
-    "2025": {
-      "records": 83600,
-      "due": 13224000.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 63840,
-    "$100\u2013500": 47120,
-    "$500\u20131K": 24320,
-    "$1K\u20135K": 13680,
-    "$5K+": 3040
-  },
-  "flags": {
-    "S": 79040,
-    "F": 57760,
-    "A": 13680,
-    "T": 1520,
-    "(blank)": 0
-  },
-  "median_due": 270.0,
-  "largest_single_bill": 342000.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

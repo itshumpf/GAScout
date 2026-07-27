@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "colquitt",
+  "name": "Colquitt",
   "fips": "13071",
   "seat": "Moultrie",
-  "source": "Colquitt County \u2014 Colquitt County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 35400,
-  "owners": 5310,
-  "total_due": 4956000.0,
-  "by_year": {
-    "2022": {
-      "records": 2832,
-      "due": 346920.0
-    },
-    "2023": {
-      "records": 4956,
-      "due": 644280.0
-    },
-    "2024": {
-      "records": 8142,
-      "due": 1090320.0
-    },
-    "2025": {
-      "records": 19470,
-      "due": 2874480.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 14868,
-    "$100\u2013500": 10974,
-    "$500\u20131K": 5664,
-    "$1K\u20135K": 3186,
-    "$5K+": 708
-  },
-  "flags": {
-    "S": 18408,
-    "F": 13452,
-    "A": 3186,
-    "T": 354,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 74340.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Colquitt Legal Organ",
+  "source": "Colquitt County \u2014 Colquitt Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

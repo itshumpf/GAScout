@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "appling",
+  "name": "Appling",
   "fips": "13001",
   "seat": "Baxley",
-  "source": "Appling County \u2014 Appling County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 15000,
-  "owners": 2250,
-  "total_due": 2100000.0,
-  "by_year": {
-    "2022": {
-      "records": 1200,
-      "due": 147000.0
-    },
-    "2023": {
-      "records": 2100,
-      "due": 273000.0
-    },
-    "2024": {
-      "records": 3450,
-      "due": 462000.0
-    },
-    "2025": {
-      "records": 8250,
-      "due": 1218000.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6300,
-    "$100\u2013500": 4650,
-    "$500\u20131K": 2400,
-    "$1K\u20135K": 1350,
-    "$5K+": 300
-  },
-  "flags": {
-    "S": 7800,
-    "F": 5700,
-    "A": 1350,
-    "T": 150,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 31500.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Appling Legal Organ",
+  "source": "Appling County \u2014 Appling Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

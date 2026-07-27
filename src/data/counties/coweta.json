@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "coweta",
+  "name": "Coweta",
   "fips": "13077",
   "seat": "Newnan",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Newnan Times-Herald",
   "source": "Coweta County \u2014 The Newnan Times-Herald",
-  "run_date": "2026-07-23",
-  "records": 37200,
-  "owners": 5580,
-  "total_due": 5208000.0,
-  "by_year": {
-    "2022": {
-      "records": 2976,
-      "due": 364560.0
-    },
-    "2023": {
-      "records": 5208,
-      "due": 677040.0
-    },
-    "2024": {
-      "records": 8556,
-      "due": 1145760.0
-    },
-    "2025": {
-      "records": 20460,
-      "due": 3020640.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 15624,
-    "$100\u2013500": 11532,
-    "$500\u20131K": 5952,
-    "$1K\u20135K": 3348,
-    "$5K+": 744
-  },
-  "flags": {
-    "S": 19344,
-    "F": 14136,
-    "A": 3348,
-    "T": 372,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 78120.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

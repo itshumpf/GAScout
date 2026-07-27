@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "gordon",
+  "name": "Gordon",
   "fips": "13129",
   "seat": "Calhoun",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Calhoun Times",
   "source": "Gordon County \u2014 Calhoun Times",
-  "run_date": "2026-07-23",
-  "records": 15450,
-  "owners": 2317,
-  "total_due": 2008500.0,
-  "by_year": {
-    "2022": {
-      "records": 1236,
-      "due": 140595.0
-    },
-    "2023": {
-      "records": 2163,
-      "due": 261105.0
-    },
-    "2024": {
-      "records": 3553,
-      "due": 441870.0
-    },
-    "2025": {
-      "records": 8497,
-      "due": 1164930.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6489,
-    "$100\u2013500": 4789,
-    "$500\u20131K": 2472,
-    "$1K\u20135K": 1390,
-    "$5K+": 309
-  },
-  "flags": {
-    "S": 8034,
-    "F": 5871,
-    "A": 1390,
-    "T": 154,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 30127.5
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

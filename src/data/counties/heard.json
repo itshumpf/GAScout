@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "heard",
+  "name": "Heard",
   "fips": "13149",
   "seat": "Franklin",
-  "source": "Heard County \u2014 Heard County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 16950,
-  "owners": 2542,
-  "total_due": 2203500.0,
-  "by_year": {
-    "2022": {
-      "records": 1356,
-      "due": 154245.0
-    },
-    "2023": {
-      "records": 2373,
-      "due": 286455.0
-    },
-    "2024": {
-      "records": 3898,
-      "due": 484770.0
-    },
-    "2025": {
-      "records": 9322,
-      "due": 1278030.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 7119,
-    "$100\u2013500": 5254,
-    "$500\u20131K": 2712,
-    "$1K\u20135K": 1525,
-    "$5K+": 339
-  },
-  "flags": {
-    "S": 8814,
-    "F": 6441,
-    "A": 1525,
-    "T": 169,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 33052.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Heard Legal Organ",
+  "source": "Heard County \u2014 Heard Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

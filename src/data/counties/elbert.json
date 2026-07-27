@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "elbert",
+  "name": "Elbert",
   "fips": "13105",
   "seat": "Elberton",
-  "source": "Elbert County \u2014 Elbert County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 13650,
-  "owners": 2047,
-  "total_due": 1774500.0,
-  "by_year": {
-    "2022": {
-      "records": 1092,
-      "due": 124215.0
-    },
-    "2023": {
-      "records": 1911,
-      "due": 230685.0
-    },
-    "2024": {
-      "records": 3139,
-      "due": 390390.0
-    },
-    "2025": {
-      "records": 7507,
-      "due": 1029210.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 5733,
-    "$100\u2013500": 4231,
-    "$500\u20131K": 2184,
-    "$1K\u20135K": 1228,
-    "$5K+": 273
-  },
-  "flags": {
-    "S": 7098,
-    "F": 5187,
-    "A": 1228,
-    "T": 136,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 26617.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Elbert Legal Organ",
+  "source": "Elbert County \u2014 Elbert Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

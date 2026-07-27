@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "thomas",
+  "name": "Thomas",
   "fips": "13275",
   "seat": "Thomasville",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Thomasville Times-Enterprise",
   "source": "Thomas County \u2014 Thomasville Times-Enterprise",
-  "run_date": "2026-07-23",
-  "records": 8575,
-  "owners": 1286,
-  "total_due": 1029000.0,
-  "by_year": {
-    "2022": {
-      "records": 686,
-      "due": 72030.0
-    },
-    "2023": {
-      "records": 1200,
-      "due": 133770.0
-    },
-    "2024": {
-      "records": 1972,
-      "due": 226380.0
-    },
-    "2025": {
-      "records": 4716,
-      "due": 596820.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3601,
-    "$100\u2013500": 2658,
-    "$500\u20131K": 1372,
-    "$1K\u20135K": 771,
-    "$5K+": 171
-  },
-  "flags": {
-    "S": 4459,
-    "F": 3258,
-    "A": 771,
-    "T": 85,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 15435.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

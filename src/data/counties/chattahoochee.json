@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "chattahoochee",
+  "name": "Chattahoochee",
   "fips": "13053",
   "seat": "Cussetta",
-  "source": "Chattahoochee County \u2014 Chattahoochee County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 30000,
-  "owners": 4500,
-  "total_due": 4200000.0,
-  "by_year": {
-    "2022": {
-      "records": 2400,
-      "due": 294000.0
-    },
-    "2023": {
-      "records": 4200,
-      "due": 546000.0
-    },
-    "2024": {
-      "records": 6900,
-      "due": 924000.0
-    },
-    "2025": {
-      "records": 16500,
-      "due": 2436000.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 12600,
-    "$100\u2013500": 9300,
-    "$500\u20131K": 4800,
-    "$1K\u20135K": 2700,
-    "$5K+": 600
-  },
-  "flags": {
-    "S": 15600,
-    "F": 11400,
-    "A": 2700,
-    "T": 300,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 63000.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Chattahoochee Legal Organ",
+  "source": "Chattahoochee County \u2014 Chattahoochee Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

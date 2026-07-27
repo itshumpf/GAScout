@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "newton",
+  "name": "Newton",
   "fips": "13217",
   "seat": "Covington",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Covington News",
   "source": "Newton County \u2014 The Covington News",
-  "run_date": "2026-07-23",
-  "records": 7270,
-  "owners": 1090,
-  "total_due": 872400.0,
-  "by_year": {
-    "2022": {
-      "records": 581,
-      "due": 61068.0
-    },
-    "2023": {
-      "records": 1017,
-      "due": 113412.0
-    },
-    "2024": {
-      "records": 1672,
-      "due": 191928.0
-    },
-    "2025": {
-      "records": 3998,
-      "due": 505992.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3053,
-    "$100\u2013500": 2253,
-    "$500\u20131K": 1163,
-    "$1K\u20135K": 654,
-    "$5K+": 145
-  },
-  "flags": {
-    "S": 3780,
-    "F": 2762,
-    "A": 654,
-    "T": 72,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 13086.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "bleckley",
+  "name": "Bleckley",
   "fips": "13023",
   "seat": "Cochran",
-  "source": "Bleckley County \u2014 Bleckley County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 21600,
-  "owners": 3240,
-  "total_due": 3024000.0,
-  "by_year": {
-    "2022": {
-      "records": 1728,
-      "due": 211680.0
-    },
-    "2023": {
-      "records": 3024,
-      "due": 393120.0
-    },
-    "2024": {
-      "records": 4968,
-      "due": 665280.0
-    },
-    "2025": {
-      "records": 11880,
-      "due": 1753920.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 9072,
-    "$100\u2013500": 6696,
-    "$500\u20131K": 3456,
-    "$1K\u20135K": 1944,
-    "$5K+": 432
-  },
-  "flags": {
-    "S": 11232,
-    "F": 8208,
-    "A": 1944,
-    "T": 216,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 45360.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Bleckley Legal Organ",
+  "source": "Bleckley County \u2014 Bleckley Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

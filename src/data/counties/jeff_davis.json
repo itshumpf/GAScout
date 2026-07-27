@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "jeff_davis",
+  "name": "Jeff Davis",
   "fips": "13161",
   "seat": "Hazlehurst",
-  "source": "Jeff Davis County \u2014 Jeff Davis County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 17850,
-  "owners": 2677,
-  "total_due": 2320500.0,
-  "by_year": {
-    "2022": {
-      "records": 1428,
-      "due": 162435.0
-    },
-    "2023": {
-      "records": 2499,
-      "due": 301665.0
-    },
-    "2024": {
-      "records": 4105,
-      "due": 510510.0
-    },
-    "2025": {
-      "records": 9817,
-      "due": 1345890.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 7497,
-    "$100\u2013500": 5533,
-    "$500\u20131K": 2856,
-    "$1K\u20135K": 1606,
-    "$5K+": 357
-  },
-  "flags": {
-    "S": 9282,
-    "F": 6783,
-    "A": 1606,
-    "T": 178,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 34807.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Jeff Davis Legal Organ",
+  "source": "Jeff Davis County \u2014 Jeff Davis Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "bacon",
+  "name": "Bacon",
   "fips": "13005",
   "seat": "Alma",
-  "source": "Bacon County \u2014 Bacon County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 16200,
-  "owners": 2430,
-  "total_due": 2268000.0,
-  "by_year": {
-    "2022": {
-      "records": 1296,
-      "due": 158760.0
-    },
-    "2023": {
-      "records": 2268,
-      "due": 294840.0
-    },
-    "2024": {
-      "records": 3726,
-      "due": 498960.0
-    },
-    "2025": {
-      "records": 8910,
-      "due": 1315440.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6804,
-    "$100\u2013500": 5022,
-    "$500\u20131K": 2592,
-    "$1K\u20135K": 1458,
-    "$5K+": 324
-  },
-  "flags": {
-    "S": 8424,
-    "F": 6156,
-    "A": 1458,
-    "T": 162,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 34020.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Bacon Legal Organ",
+  "source": "Bacon County \u2014 Bacon Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

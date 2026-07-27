@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "terrell",
+  "name": "Terrell",
   "fips": "13273",
   "seat": "Dawson",
-  "source": "Terrell County \u2014 Terrell County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 8530,
-  "owners": 1279,
-  "total_due": 1023600.0,
-  "by_year": {
-    "2022": {
-      "records": 682,
-      "due": 71652.0
-    },
-    "2023": {
-      "records": 1194,
-      "due": 133068.0
-    },
-    "2024": {
-      "records": 1961,
-      "due": 225192.0
-    },
-    "2025": {
-      "records": 4691,
-      "due": 593688.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3582,
-    "$100\u2013500": 2644,
-    "$500\u20131K": 1364,
-    "$1K\u20135K": 767,
-    "$5K+": 170
-  },
-  "flags": {
-    "S": 4435,
-    "F": 3241,
-    "A": 767,
-    "T": 85,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 15354.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Terrell Legal Organ",
+  "source": "Terrell County \u2014 Terrell Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "forsyth",
+  "name": "Forsyth",
   "fips": "13117",
   "seat": "Cumming",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Forsyth County News",
   "source": "Forsyth County \u2014 Forsyth County News",
-  "run_date": "2026-07-23",
-  "records": 239500,
-  "owners": 35925,
-  "total_due": 35925000.0,
-  "by_year": {
-    "2022": {
-      "records": 19160,
-      "due": 2514750.0
-    },
-    "2023": {
-      "records": 33530,
-      "due": 4670250.0
-    },
-    "2024": {
-      "records": 55085,
-      "due": 7903500.0
-    },
-    "2025": {
-      "records": 131725,
-      "due": 20836500.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 100590,
-    "$100\u2013500": 74245,
-    "$500\u20131K": 38320,
-    "$1K\u20135K": 21555,
-    "$5K+": 4790
-  },
-  "flags": {
-    "S": 124540,
-    "F": 91010,
-    "A": 21555,
-    "T": 2395,
-    "(blank)": 0
-  },
-  "median_due": 270.0,
-  "largest_single_bill": 538875.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

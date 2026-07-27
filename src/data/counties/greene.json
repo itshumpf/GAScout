@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "greene",
+  "name": "Greene",
   "fips": "13133",
   "seat": "Greensboro",
-  "source": "Greene County \u2014 Greene County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 15750,
-  "owners": 2362,
-  "total_due": 2047500.0,
-  "by_year": {
-    "2022": {
-      "records": 1260,
-      "due": 143325.0
-    },
-    "2023": {
-      "records": 2205,
-      "due": 266175.0
-    },
-    "2024": {
-      "records": 3622,
-      "due": 450450.0
-    },
-    "2025": {
-      "records": 8662,
-      "due": 1187550.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6615,
-    "$100\u2013500": 4882,
-    "$500\u20131K": 2520,
-    "$1K\u20135K": 1417,
-    "$5K+": 315
-  },
-  "flags": {
-    "S": 8190,
-    "F": 5985,
-    "A": 1417,
-    "T": 157,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 30712.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Greene Legal Organ",
+  "source": "Greene County \u2014 Greene Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

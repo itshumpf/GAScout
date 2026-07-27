@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "harris",
+  "name": "Harris",
   "fips": "13145",
   "seat": "Hamilton",
-  "source": "Harris County \u2014 Harris County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 16650,
-  "owners": 2497,
-  "total_due": 2164500.0,
-  "by_year": {
-    "2022": {
-      "records": 1332,
-      "due": 151515.0
-    },
-    "2023": {
-      "records": 2331,
-      "due": 281385.0
-    },
-    "2024": {
-      "records": 3829,
-      "due": 476190.0
-    },
-    "2025": {
-      "records": 9157,
-      "due": 1255410.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6993,
-    "$100\u2013500": 5161,
-    "$500\u20131K": 2664,
-    "$1K\u20135K": 1498,
-    "$5K+": 333
-  },
-  "flags": {
-    "S": 8658,
-    "F": 6327,
-    "A": 1498,
-    "T": 166,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 32467.5
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Harris Legal Organ",
+  "source": "Harris County \u2014 Harris Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "charlton",
+  "name": "Charlton",
   "fips": "13049",
   "seat": "Folkston",
-  "source": "Charlton County \u2014 Charlton County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 28800,
-  "owners": 4320,
-  "total_due": 4032000.0,
-  "by_year": {
-    "2022": {
-      "records": 2304,
-      "due": 282240.0
-    },
-    "2023": {
-      "records": 4032,
-      "due": 524160.0
-    },
-    "2024": {
-      "records": 6624,
-      "due": 887040.0
-    },
-    "2025": {
-      "records": 15840,
-      "due": 2338560.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 12096,
-    "$100\u2013500": 8928,
-    "$500\u20131K": 4608,
-    "$1K\u20135K": 2592,
-    "$5K+": 576
-  },
-  "flags": {
-    "S": 14976,
-    "F": 10944,
-    "A": 2592,
-    "T": 288,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 60480.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Charlton Legal Organ",
+  "source": "Charlton County \u2014 Charlton Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

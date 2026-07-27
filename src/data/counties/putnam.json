@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "putnam",
+  "name": "Putnam",
   "fips": "13237",
   "seat": "Eatonton",
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "The Eatonton Messenger",
   "source": "Putnam County \u2014 The Eatonton Messenger",
-  "run_date": "2026-07-23",
-  "records": 7720,
-  "owners": 1158,
-  "total_due": 926400.0,
-  "by_year": {
-    "2022": {
-      "records": 617,
-      "due": 64848.0
-    },
-    "2023": {
-      "records": 1080,
-      "due": 120432.0
-    },
-    "2024": {
-      "records": 1775,
-      "due": 203808.0
-    },
-    "2025": {
-      "records": 4246,
-      "due": 537312.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 3242,
-    "$100\u2013500": 2393,
-    "$500\u20131K": 1235,
-    "$1K\u20135K": 694,
-    "$5K+": 154
-  },
-  "flags": {
-    "S": 4014,
-    "F": 2933,
-    "A": 694,
-    "T": 77,
-    "(blank)": 0
-  },
-  "median_due": 216.0,
-  "largest_single_bill": 13896.0
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

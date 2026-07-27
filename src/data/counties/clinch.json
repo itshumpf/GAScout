@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "clinch",
+  "name": "Clinch",
   "fips": "13065",
   "seat": "Homerville",
-  "source": "Clinch County \u2014 Clinch County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 33600,
-  "owners": 5040,
-  "total_due": 4704000.0,
-  "by_year": {
-    "2022": {
-      "records": 2688,
-      "due": 329280.0
-    },
-    "2023": {
-      "records": 4704,
-      "due": 611520.0
-    },
-    "2024": {
-      "records": 7728,
-      "due": 1034880.0
-    },
-    "2025": {
-      "records": 18480,
-      "due": 2728320.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 14112,
-    "$100\u2013500": 10416,
-    "$500\u20131K": 5376,
-    "$1K\u20135K": 3024,
-    "$5K+": 672
-  },
-  "flags": {
-    "S": 17472,
-    "F": 12768,
-    "A": 3024,
-    "T": 336,
-    "(blank)": 0
-  },
-  "median_due": 252.0,
-  "largest_single_bill": 70560.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Clinch Legal Organ",
+  "source": "Clinch County \u2014 Clinch Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }

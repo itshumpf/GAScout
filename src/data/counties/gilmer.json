@@ -1,45 +1,14 @@
 {
-  "generated_at": "2026-07-27",
   "county": "gilmer",
+  "name": "Gilmer",
   "fips": "13123",
   "seat": "Ellijay",
-  "source": "Gilmer County \u2014 Gilmer County Legal Organ",
-  "run_date": "2026-07-23",
-  "records": 15000,
-  "owners": 2250,
-  "total_due": 1950000.0,
-  "by_year": {
-    "2022": {
-      "records": 1200,
-      "due": 136500.0
-    },
-    "2023": {
-      "records": 2100,
-      "due": 253500.0
-    },
-    "2024": {
-      "records": 3450,
-      "due": 429000.0
-    },
-    "2025": {
-      "records": 8250,
-      "due": 1131000.0
-    }
-  },
-  "amount_bands": {
-    "$0\u2013100": 6300,
-    "$100\u2013500": 4650,
-    "$500\u20131K": 2400,
-    "$1K\u20135K": 1350,
-    "$5K+": 300
-  },
-  "flags": {
-    "S": 7800,
-    "F": 5700,
-    "A": 1350,
-    "T": 150,
-    "(blank)": 0
-  },
-  "median_due": 234.0,
-  "largest_single_bill": 29250.0
+  "is_live": false,
+  "status": "ADAPTER PLANNED",
+  "adapter": "gpn",
+  "legal_organ": "Gilmer Legal Organ",
+  "source": "Gilmer County \u2014 Gilmer Legal Organ",
+  "records": 0,
+  "owners": 0,
+  "total_due": 0.0
 }
